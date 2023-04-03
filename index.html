@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question</title>
+<style>
+	.divs {
+	  float:left;
+	  width:50%;
+	  display: inline-block;
+	}
+	.divright {
+	  text-align: left;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="divs divleft">
+			<h3>1. Wymień i krótko scharakteryzuj najważniejsze modele cyklu życia oprogramowania.
+			</h3>
+			<pre>
+
+Sekwencyjne (np. kaskadowy (waterfall)/wodospadowy) – kolejne etapy 
+wytwarzania oprogramowania następują bezpośrednio po sobie. Kolejne 
+etapy modelu: planowanie, analiza, projekt, implementacja, testowanie 
+pielęgnacja. Nie wolno przejść do następnego etapu przed zakończeniem 
+poprzedniego. Błąd popełniony na etapie planowania ma wpływ na całość 
+projektu. Łatwy nadzór nad realizacją projektu. Dużo dokumentacji z 
+jego powstawania. 
+
+Ewolucyjne (programowanie zwinne (Agile development), model 
+przyrostowy/inkrementacyjny, model spiralny) – aktywności się przeplatają. 
+Te same etapy jak w modelu sekwencyjnym, ale pozwala się na powroty do 
+etapów poprzedzających ten aktualnie realizowany. Najważniejszą cechą tego
+modelu jest adaptowanie systemu do zmian w wymaganiach i korygowanie 
+popełnionych błędów. Realizacja projektu z wykorzystaniem tego modelu 
+jest trudna w nadzorze, przez co wymaga dodatkowych strategii w celu 
+uporządkowania procesu wytwarzania oprogramowania.
+
+Prototypowanie – model oparty na wytwarzaniu prototypów, czyli niepełnych 
+systemów, spełniających jedynie część wymagań. Prototyp wykorzystywany 
+jest do testowania rozwiązań wykorzystywanych do jego wytwarzania. 
+Prototyp można w łatwy sposób zmieniać. Istnienie prototypu pozwala klientowi
+zobaczyć, jak mniej więcej system będzie wyglądał. Głównym minusem 
+prototypowania jest wysoki koszt budowy systemu.
+
+Model komponentowy – sprowadza się do składania systemu z gotowych 
+komponentów (programów). Po określeniu wymagań (etap pierwszy) następuje 
+analiza możliwości wykorzystania istniejących, gotowych komponentów. 
+Następnie następuje faza modyfikacji wymagań, w konsekwencji zastosowania 
+komponentów. Należy pamiętać, że wymagania narzucone przez gotowe komponenty
+mogą być niezgodne z wymaganiami klientów. Modyfikacje kodu mogą być utrudnione 
+przez brak kontroli nad pochodzącymi z zewnątrz komponentami. Wykorzystanie tego 
+typu rozwiązania jest mało kosztowne.
+
+Model iteracyjny (przyrostowy) – po określeniu wymagań (etap pierwszy realizacji 
+projektu) następuje podział na kolejne iteracje (przyrosty), czyli funkcje systemu, 
+które można zaimplementować i testować. Pierwsze wersje zazwyczaj ujmują podstawowe 
+funkcjonalności systemu. Model spiralny – przewiduje wykorzystanie gotowych komponentów. 
+Faza oceny w każdym cyklu pozwala uniknąć błędów lub wcześniej je wykryć. Cały czas 
+istnieje możliwość rozwijania projektu. 
+
+
+
+</pre>
+			<h3>2. Wymień i krótko omów zastosowania najważniejszych diagramów UML.</h3>
+<pre>
+Diagram klas (class diagram) – prezentuje klasy i zależności między nimi. 
+Pozwala na szczegółowy opis klas zwracając uwagę na dostępne atrybuty i operacje. 
+Diagram klas pozwala na prezentację wycinka większego systemu. Między klasami 
+występują relacje (np. dziedziczenie, asocjacja, agregacja, itp.). 
+
+Diagram komponentów (component diagram) – kluczową rolę odgrywają komponenty. 
+Komponent należy rozumieć jako część systemu, która ma swoje interfejsy, 
+czyli dokładnie określone sposoby komunikacjiz pozostały komponentami. 
+
+Diagram wdrożenia (deployment diagram) – służy do odwzorowania zależności pomiędzy
+oprogramowanie a sprzętem. Pozwala na demonstrację sposobu wdrożenia aplikacji.
+
+Diagram sekwencji – jeden z diagramów interakcji. Diagram sekwencji pokazuje kolejność wykonania
+metod w poszczególnych obiektach. 
+
+
+
+</pre>
+			<h3>3. Co to jest programowanie ekstremalne (Extreme Programming)?</h3>
+<pre>
+Jedna ze zwinnych metodyk tworzenia oprogramowania (agile programming), charakteryzująca się
+prostotą komunikacją, informacją zwrotną i odwagą. XP obniża koszty ewentualnych zmian wymagań
+poprzez zastosowanie krótkich cykli iteracyjnych. Określenie stabilnego zestawu wymagań w
+przypadku tej metodyki jest niemożliwe. Dzięki krótkim iteracjom produkt jest dostarczany wcześnie
+do klienta, który wydaje opinię nt. postępów pracy oraz jest w stanie szybko dostarczyć informację
+zwrotną. Wady to brak dokładnej specyfikacji tworzonego oprogramowania, stała dostępność
+przedstawiciela klienta, brak dokumentacji. 
+</pre>
+<h3>4. Podaj charakterystykę SCRUM.</h3>
+<pre>
+Zwinne podejście do wytwarzania nowego produktu (programu i nie tylko). Rozwój produktu
+podzielony jest na sprinty – iteracje, trwające max miesiąc (zaleca się stosowanie interwałów
+czasowych o stałych długościach). Po każdym sprincie zespół dostarcza klientowi działającą wersję
+produktu. Wymagania użytkownika są gromadzone w postaci historyjek (User Stories). Każda
+historyjka to pojedyncza funkcjonalność/cecha. Właściciel produktu (Product Owner) przedstawia
+priorytety wymagań, na podstawie którego tworzony jest rejestr wymagań (Product Backlog). Każdy
+sprint realizuje określoną liczbę wymagań (Sprint Backlog). Scrum Master to osoba odpowiedzialna za
+poprawną implementację procesu i metod. 
+</pre>
+<h3>5. Podaj i krótko scharakteryzuj rodzaje testów oprogramowania. </h3>
+<pre>
+Testy funkcjonalne (np. testy zabezpieczeń) – sprawdzają jak działa system lub moduł. Testy te
+obejmują funkcje opisane w dokumentach oraz współpracę badanego systemu z innymi systemami.
+Zajmują się zewnętrznym zachowaniem oprogramowania, traktując je jako czarną skrzynkę.
+Testy niefunkcjonalne (wydajnościowe, obciążeniowe, przeciążeniowe, użyteczności,
+pielęgnowalności, niezawodności, przenaszalności) – testowanie niezbędne do zmierzenia
+charakterystyk systemów i oprogramowania, które mogą zostać ocenione na skali (np. czasy
+odpowiedzi w przypadku testów wydajnościowych).
+Testy strukturalne – używane zaraz po zastosowaniu technik bazujących na specyfikacji, jako wsparcia
+pomiarów dokładności. Dzięki temu możliwe jest zmierzenie precyzji testowania przez oszacowanie
+stopnia pokrycia wybranego typu struktury. Pokrycie to stopień w jakim zakresie zestaw testowy
+wykorzystał przedmiot pokrycia. Czyli w jakiej skali struktura została przetestowana przez zestaw
+testów, wyrażona procentowo jako odsetek pokrytych elementów.
+Test potwierdzający – retest potwierdzający usunięcie błędu.
+Testowanie regresywne – ponowne przetestowanie uprzednio testowanego programu po dokonaniu
+w nim modyfikacji, w celu upewnienia się, że w wyniku zmian nie powstały nowe defekty lub nie
+ujawniły się defekty w niezmienionej części oprogramowania.
+
+</pre>
+<h3>6. Wymienić etapy cyklu życia systemu informacyjnego i przedstawić krótką charakterystykę</h3>
+<pre>
+1. Planowanie – określenie celów systemu z punktu widzenia przyszłego użytkownika systemu,
+zakresu oraz kontekstu systemu, określenie funkcji i obszarów, które realizowany system
+będzie wspomagał
+2. Analizę – badanie potrzeb informacyjnych, modelowanie systemu; szczegółowe zdefiniowanie
+tych obszarów działalności organizacji, które systemy informacyjny ma wspomagać.
+Wyspecyfikowanie informacji wynikowych, które system ma emitować i danych źródłowych,
+które są niezbędne, aby otrzymać informacje wynikowe.
+3. Projektowanie – projektowanie dialogu, bazy danych, procesów; technologiczne
+przekształcenie modelu logicznego systemu w model fizyczny
+4. Programowanie – implementacja; Opracowywanie programu na podstawie projektu systemu
+5. Wdrożenie – instalacja oprogramowania i przekazanie dokumentacji użytkowej, szkolenie
+użytkowników systemu, przekazanie systemu do eksploatacji.
+6. Eksploatacja – stałe użytkowanie systemu informacyjnego, zapewnienie poprawności jego
+działania ustalonymi wymaganiami użytkownika, doskonalenie systemu zgodnie ze
+zmieniającymi się potrzebami informacyjnymi
+</pre>
+<h3>7. Opisać diagram związków encji (ERD)</h3>
+<pre>
+Rodzaj graficznej reprezentacji struktur danych i relacji między nimi. Diagram demonstruje logiczne
+związki między różnymi encjami (tablicami). Związki mają dwie cechy:
+a) Opcjonalność – każda encja musi lub może wystąpić równocześnie z inną. W reprezentacji
+graficznej linia przerywana oznacza opcjonalność związku, natomiast ciągła to wymóg związku
+b) Krotność - określającą ile encji wchodzi w skład związku
+a. 1:1 (jeden do jeden) – encji odpowiada dokładnie jedna encja
+b. 1:N (jeden do wielu) – encji odpowiada jedna lub więcej encji
+c. M:N (wiele do wielu) – jednej lub więcej encjom odpowiada jedna lub więcej encji –
+tutaj w bazach relacyjnych trzeba zastosować normalizację diagramu, która polega na
+dodaniu encji pośredniej i zastąpienie M:N dwoma związkami 1:N z nową encją
+Wśród stosowanych konwencji zapisu dla diagramów ERD są IDEF1X, notacja UML, Crow’s Feet,
+notacja Chena, notacja (min,max), itd.
+
+
+
+</pre>
+<h3>8. Czym jest programowanie współbieżne?</h3>
+<pre>
+Przetwarzanie oparte na współistnieniu wielu wątków lub procesów, operujących na współdzielonych
+danych. Wątki uruchomione na tym samym procesorze są przełączane w krótkich przedziałach czasu,
+co sprawia wrażenie, że wykonują się równolegle. W przypadku procesorów wielordzeniowych lub
+wielowątkowych, możliwe jest faktycznie współbieżne przetwarzanie. Tego rodzaju przetwarzanie jest
+też możliwe w architekturach wieloprocesorowych.
+Zastosowanie w serwerach, które obsługują liczne żądania od różnych klientów. Jednoczesna praca na
+współdzielonych danych może doprowadzić do utraty ich spójności, dlatego konieczne jest stosowanie
+mechanizmów synchronizacyjnych. Do taki zaliczyć można monitory (obiekty, które mogą być
+bezpiecznie wykorzystane przez wiele wątków), tudzież semafory (chronione zmienne).
+
+</pre>
+<h3>9. Czym różni się programowanie równoległe od rozproszonego?</h3>
+<pre>
+Programowanie równoległe i programowanie rozproszone to dwa różne paradygmaty 
+programowania, które są używane do osiągnięcia wysokiej wydajności i skalowalności 
+w systemach oprogramowania.
+
+Programowanie równoległe polega na podzieleniu pojedynczego zadania na mniejsze 
+podzadania, które mogą być wykonywane jednocześnie przez wiele procesorów lub rdzeni. 
+W programowaniu równoległym wszystkie elementy przetwarzające mają wspólną pamięć 
+i komunikują się ze sobą za pomocą współdzielonych zmiennych. Celem programowania 
+równoległego jest przyspieszenie wykonania pojedynczego zadania poprzez rozłożenie
+go na wiele elementów przetwarzających.
+
+Z drugiej strony programowanie rozproszone polega na podzieleniu dużego zadania na 
+mniejsze podzadania, które mogą być wykonywane przez różne komputery połączone przez 
+sieć. W programowaniu rozproszonym każdy element przetwarzający ma własną pamięć i 
+komunikuje się z innymi elementami przetwarzającymi za pomocą przekazywania komunikatów. 
+Celem programowania rozproszonego jest rozwiązanie większego problemu poprzez podzielenie 
+go na mniejsze podzadania, które mogą być wykonywane równolegle na różnych komputerach.
+</pre>
+<h3>10. W jaki sposób realizowane jest wywoływanie funkcji systemu operacyjnego?</h3>
+<pre>
+Wywoływanie funkcji systemu operacyjnego jest zazwyczaj realizowane poprzez wywołania 
+systemowe, które są interfejsami programistycznymi udostępnianymi przez system operacyjny
+w celu umożliwienia aplikacjom interakcji z usługami systemu.
+
+Kiedy aplikacja musi wykonać funkcję systemową, taką jak odczyt pliku lub utworzenie 
+połączenia sieciowego, wykonuje wywołanie systemowe poprzez wydanie żądania do systemu 
+operacyjnego. Żądanie to jest zwykle wykonywane za pomocą specjalnej instrukcji przerwania 
+programowego, która powoduje przełączenie kontekstu z trybu użytkownika do trybu jądra, 
+gdzie wykonywany jest kod systemu operacyjnego.
+
+Gdy system operacyjny otrzyma żądanie, sprawdza jego ważność, w razie potrzeby przydziela 
+zasoby systemowe i wykonuje żądaną operację. Po zakończeniu operacji system operacyjny 
+zwraca kontrolę do aplikacji, wznawiając wykonanie w trybie użytkownika.
+
+Interfejs wywołań systemowych zapewnia zestaw funkcji, które umożliwiają aplikacjom dostęp 
+do usług systemu operacyjnego, w tym do operacji wejścia/wyjścia plików, zarządzania procesami, 
+zarządzania pamięcią, komunikacji sieciowej i innych. Dokładny zestaw wywołań systemowych 
+udostępnianych przez system operacyjny zależy od projektu i implementacji systemu operacyjnego.
+
+</pre>
+<h3>11. Opisać standard wątków POSIX</h3>
+<pre>
+POSIX threads / pthreads – specyfikacja wchodząca w skład standardu POSIX (Portable Operating
+System Interface for UNIX – przenośny interfejs dla systemu operacyjnego Unix), określająca
+implementację wielowątkowości (w ramach jednego procesu wykonywanych jest wiele wątków), która
+obejmuje podstawowe mechanizmy zarządzania wątkami, obiektami synchronizującymi oraz definiuje
+jednolity interfejs programistyczny (API – Application Programming Interface; zbiór reguł ściśle
+opisujący, w jaki sposób programy lub podprogramy komunikują się ze sobą) dla języka C. Standard
+definiuje pewien podstawowy zestaw funkcji oraz szereg opcji, które mogą być udostępnione przez
+implementację. Standard pthreads jest dobrze rozpowszechniony wśród systemów rodziny Unix.
+API jest zaprojektowany obiektowo. Podstawowe funkcje:
+• Tworzenie wątków
+• Synchroniczne kończenie wątków
+• Asynchroniczne kończenie wątków
+• Lokalne dane wątku
+• Stos funkcji finalizujących ułatwiający zarządzanie zasobami w języku C
+Ważniejsze opcje standardu
+• Dodatkowe mechanizmy synchronizacji
+o Blokady do odczytu/zapisu
+o Bariery
+o Wirujące blokady
+• Możliwość współdzielenia obiektów synchronizujących miedzy wątkami różnych procesów
+• Indywidualne ustalanie priorytetów wątku i innych parametrów szeregowania
+• Ograniczone czasowo oczekiwanie na zajście niektórych zdarzeń (np. założenie blokady)
+• Odczyt czasu procesora zużyty przez wątek
+
+
+
+</pre>
+<h3>12. Scharakteryzować interfejs definicji usług internetowych (WSDL)</h3>
+<pre>
+Web Services Description Language (WSDL) – język definiowania usług sieciowych oparty na XML.
+Opisuje protokoły i formaty używane przez usługi sieciowe. Opisy WSDL mogą być umieszczone w
+rejestrze UDDI . WSDL wykorzystuje język XML do opisu punktów dostępu do usług internetowych.
+Język WSDL definiuje zestaw kilku struktur XML pozwalających na pełny opis usług (struktury danych
+wymienianych z usługą, sposób połączenia z usługą, najczęściej http).
+
+</pre>
+<h3>13. Na czym polega przetwarzanie metodą GPGPU? Jakiego rodzaju sprzęt jest w tym celu wykorzystywany?</h3>
+<pre>
+GPGPU (General-Purpose computing on Graphics Processing Units) to technika, 
+która wykorzystuje procesor graficzny (GPU) do wykonywania obliczeń ogólnego 
+przeznaczenia. GPGPU opiera się na fakcie, że procesory graficzne są wysoce 
+równoległymi procesorami zdolnymi do wykonywania wielu prostych operacji 
+jednocześnie, co czyni je dobrze przystosowanymi do pewnych typów obliczeń, 
+które można poddać paralelizacji.
+
+Sprzęt wykorzystywany do przetwarzania GPGPU składa się zazwyczaj z CPU i 
+jednego lub więcej GPU. Jednostka centralna jest odpowiedzialna za kontrolę 
+ogólnego wykonania programu i obsługę zadań, których nie można sparaliżować, 
+takich jak operacje wejścia/wyjścia i zarządzanie systemem. Układy GPU są 
+wykorzystywane do wykonywania wymagających obliczeniowo zadań, takich jak 
+mnożenie macierzy, przetwarzanie obrazów i symulacje.
+
+Układy GPU wykorzystywane do przetwarzania GPGPU to zazwyczaj wysokowydajne 
+karty graficzne przeznaczone do gier lub profesjonalnych zadań graficznych. 
+Te układy GPU są zoptymalizowane do przetwarzania równoległego i mogą wykonywać 
+wiele prostych operacji jednocześnie. Niektóre z popularnych układów GPU 
+wykorzystywanych w przetwarzaniu GPGPU to serie GeForce i Quadro firmy NVIDIA 
+oraz serie Radeon i FirePro firmy AMD.
+
+Aby wykonać przetwarzanie GPGPU, należy napisać program, który wykorzysta 
+możliwości przetwarzania równoległego GPU. Zazwyczaj odbywa się to przy użyciu 
+wyspecjalizowanego języka programowania, takiego jak CUDA (NVIDIA) lub OpenCL 
+(Khronos Group), który zapewnia interfejs umożliwiający aplikacji komunikację 
+z układem GPU i zarządzanie zadaniami przetwarzania równoległego.
+</pre>
+<h3>14. Scharakteryzować zarządzanie pamięcią przez 64-bitowy system operacyjny.</h3>
+<pre>
+Zarządzanie pamięcią w 64-bitowym systemie operacyjnym charakteryzuje się 
+kilkoma kluczowymi cechami i możliwościami, które zostały zaprojektowane 
+w celu efektywnego zarządzania dużymi ilościami pamięci, które są dostępne 
+w systemach 64-bitowych.
+
+Jedną z kluczowych cech zarządzania pamięcią w 64-bitowym systemie operacyjnym 
+jest możliwość adresowania dużych ilości pamięci i uzyskiwania do nich dostępu. 
+Dzięki 64-bitowej przestrzeni adresowej 64-bitowy system operacyjny może 
+teoretycznie zaadresować nawet 16 eksabajtów pamięci, czyli znacznie więcej niż 
+limit 4 GB w systemach 32-bitowych. Umożliwia to aplikacjom pracę z dużo większymi 
+zbiorami danych i może poprawić wydajność aplikacji intensywnie korzystających 
+z pamięci.
+
+Inną ważną cechą zarządzania pamięcią w systemach 64-bitowych jest wykorzystanie 
+pamięci wirtualnej. Pamięć wirtualna to technika, która umożliwia systemowi 
+operacyjnemu wykorzystanie części dysku twardego komputera tak, jakby była to 
+dodatkowa pamięć RAM. Dzięki temu system operacyjny może przydzielać aplikacjom 
+więcej pamięci niż jest fizycznie dostępne w systemie i może zapobiegać wyczerpywaniu 
+się pamięci przez aplikacje. Używanie pamięci wirtualnej jest również ważne z punktu 
+widzenia bezpieczeństwa, ponieważ może uniemożliwić jednej aplikacji dostęp do pamięci 
+używanej przez inną aplikację.
+
+Oprócz pamięci wirtualnej 64-bitowe systemy operacyjne zazwyczaj zawierają inne funkcje
+zarządzania pamięcią, takie jak ochrona pamięci, mapowanie pamięci i zamiana pamięci. 
+Ochrona pamięci służy do uniemożliwienia aplikacjom dostępu do pamięci, do której nie 
+mają uprawnień, natomiast mapowanie pamięci służy do umożliwienia efektywnego dostępu do 
+urządzeń z mapą pamięci, takich jak karty wideo i karty dźwiękowe. Zamiana pamięci służy 
+do tymczasowego przechowywania nieużywanej pamięci na dysku twardym, zwalniając fizyczną 
+pamięć RAM dla innych aplikacji.
+
+</pre>
+<h3>15. Wymienić i krótko omówić dwie metody komunikacji międzyprocesowej. </h3>
+<pre>
+Komunikacja międzyprocesowa (IPC) jest metodą wymiany danych i komunikatów pomiędzy 
+różnymi procesami działającymi na tej samej lub różnych maszynach. Oto dwie metody IPC:
+
+Shared Memory: Pamięć współdzielona to technika, w której dwa lub więcej procesów 
+dzieli wspólny region pamięci, do którego mają bezpośredni dostęp. Technika ta zapewnia 
+szybką komunikację między procesami, ponieważ pozwala uniknąć kosztów ogólnych kopiowania 
+danych między procesami. W pamięci współdzielonej, blok pamięci jest przydzielany przez 
+jeden proces, a pozostałe procesy mogą następnie uzyskać dostęp do tego regionu pamięci 
+poprzez dołączenie się do niego. Pamięć współdzielona jest powszechnie stosowana w 
+aplikacjach, w których wymagany jest szybki transfer danych, takich jak aplikacje 
+multimedialne, symulacje naukowe i systemy czasu rzeczywistego.
+
+Przekazywanie komunikatów: Przekazywanie komunikatów to technika, w której procesy 
+komunikują się poprzez wymianę komunikatów. W tej technice procesy wysyłają do siebie 
+wiadomości za pomocą systemu przesyłania wiadomości dostarczonego przez system operacyjny 
+lub warstwę oprogramowania pośredniego. Wiadomości mogą być wysyłane albo synchronicznie 
+(nadawca czeka na odpowiedź przed kontynuacją) albo asynchronicznie (nadawca nie czeka 
+na odpowiedź). Przekazywanie wiadomości może być realizowane przy użyciu różnych protokołów, 
+takich jak TCP/IP, UDP i RPC (Remote Procedure Call). Technika ta jest szeroko stosowana w 
+systemach rozproszonych, gdzie procesy działają na różnych maszynach i muszą komunikować się 
+ze sobą przez sieć.
+
+Zarówno pamięć współdzielona, jak i przekazywanie komunikatów mają swoje wady i zalety, a 
+wybór techniki zależy od specyficznych wymagań aplikacji. Pamięć współdzielona zapewnia 
+szybką komunikację, ale wymaga starannego zarządzania, aby uniknąć problemów z synchronizacją 
+i konfliktów pamięci. Przekazywanie komunikatów jest bardziej elastyczne i może obsługiwać 
+bardziej złożone scenariusze komunikacyjne, ale wiąże się z większym narzutem z powodu 
+konieczności kodowania i dekodowania wiadomości.
+</pre>
+<h3>16. Omówić metody zabezpieczenia aplikacji internetowych.</h3>
+<pre>
+Zabezpieczanie aplikacji internetowych jest ważnym zadaniem, aby chronić wrażliwe 
+dane i zapobiegać nieautoryzowanemu dostępowi. Oto kilka metod zabezpieczania 
+aplikacji internetowych:
+
+Walidacja wejść: Walidacja wejścia to proces weryfikacji i walidacji danych 
+wprowadzanych przez użytkownika. Proces ten pomaga zapobiec złośliwym atakom 
+takim jak SQL injection, cross-site scripting (XSS) oraz cross-site request 
+forgery (CSRF). Walidacja danych wejściowych może być wykonana przy użyciu skryptów
+ po stronie serwera lub klienta i może pomóc zapobiec wstrzyknięciu złośliwego kodu 
+ do formularzy internetowych.
+
+Uwierzytelnianie i autoryzacja: Uwierzytelnianie i autoryzacja to ważne metody 
+zabezpieczania aplikacji internetowych. Uwierzytelnianie to proces weryfikacji 
+tożsamości użytkownika, natomiast autoryzacja to proces określania praw dostępu 
+użytkownika do określonych zasobów lub funkcji. Nazwy użytkowników i hasła są 
+powszechnie używane do uwierzytelniania, podczas gdy listy kontroli dostępu (ACL) 
+lub kontrola dostępu oparta na rolach (RBAC) są powszechnie używane do autoryzacji.
+
+Bezpieczna komunikacja: Bezpieczna komunikacja jest niezbędna do zabezpieczenia 
+aplikacji internetowych. Komunikacja pomiędzy klientem a serwerem powinna być szyfrowana
+przy użyciu protokołów takich jak HTTPS, SSL lub TLS. Protokoły te pomagają zapobiegać 
+podsłuchom, atakom typu man-in-the-middle oraz innym formom przechwytywania poufnych danych.
+
+Zarządzanie sesją: Zarządzanie sesją to proces zarządzania sesjami użytkowników w 
+aplikacji internetowej. Obejmuje on zarządzanie identyfikatorami sesji, limitami 
+czasu sesji oraz danymi sesji. Właściwe zarządzanie sesją może pomóc w zapobieganiu 
+porwania sesji, gdzie atakujący uzyskuje dostęp do sesji użytkownika poprzez kradzież 
+jego identyfikatora sesji.
+
+Rejestrowanie i monitorowanie dostępu: Rejestrowanie dostępu i monitorowanie to ważne 
+metody wykrywania i zapobiegania nieautoryzowanemu dostępowi do aplikacji internetowych. 
+Logi dostępu powinny być włączone, aby rejestrować wszystkie próby dostępu, w tym próby 
+udane i nieudane. Narzędzia monitorujące mogą być również wykorzystywane do wykrywania 
+podejrzanych zachowań, takich jak powtarzające się próby logowania lub nietypowe wzorce ruchu.
+
+</pre>
+<h3>17. Wymienić i krótko omówić systemy zarządzania bazami danych</h3>
+<pre>
+System zarządzania bazą danych (DBMS) to oprogramowanie służące do zarządzania i 
+organizowania danych w bazie danych. Oto kilka popularnych typów DBMS i krótki 
+opis każdego z nich:
+
+Relacyjny DBMS (RDBMS): RDBMS organizuje dane w jedną lub więcej tabel z unikalnym 
+kluczem dla każdego wiersza. RDBMS używa SQL (Structured Query Language) do manipulacji
+ i zarządzania danymi. Przykłady RDBMS to MySQL, Oracle Database i Microsoft SQL Server.
+
+Obiektowy system DBMS (OODBMS): OODBMS organizuje dane w obiekty, które mogą zawierać 
+atrybuty danych i metody zachowania. Systemy OODBMS wykorzystują koncepcje programowania
+ obiektowego do manipulacji i zarządzania danymi. Przykładami OODBMS są ObjectStore i ObjectDB.
+
+DBMS zorientowany na dokumenty: DBMS zorientowany na dokumenty organizuje dane w dokumentach,
+ które mogą zawierać struktury danych JSON lub XML. DBMS zorientowane na dokumenty są często 
+ używane w aplikacjach internetowych i bazach danych NoSQL. Przykłady DBMS zorientowanych 
+ na dokumenty to MongoDB i CouchDB.
+
+DBMS klucz-wartość: DBMS klucz-wartość organizuje dane w pary klucz-wartość, gdzie klucz jest
+ używany do identyfikacji danych, a wartość jest rzeczywistymi danymi. SZBD klucz-wartość są 
+ często używane w systemach buforowania i do przechowywania danych sesji. Przykłady SZBD 
+ klucz-wartość to Redis i Riak.
+
+Grafowy SZBD: Grafowy SZBD organizuje dane w węzły i krawędzie, które są używane do 
+reprezentowania złożonych relacji pomiędzy danymi. Grafowe systemy DBMS są często używane 
+w sieciach społecznościowych i systemach rekomendacji. Przykłady grafowych SZBD obejmują Neo4j 
+i OrientDB.
+
+</pre>
+<h3>18. Wymienić i krótko omówić różne typy indeksów w SQL</h3>
+<pre>
+W języku SQL, indeks jest strukturą danych używaną do poprawy wydajności zapytań 
+poprzez umożliwienie systemowi zarządzania bazą danych szybsze znalezienie danych. 
+Oto kilka rodzajów indeksów w SQL i krótki opis każdego z nich:
+
+Indeks klastrowany: Indeks klastrowany określa fizyczną kolejność danych w tabeli. 
+Każda tabela może posiadać tylko jeden indeks klastrowany i jest on zazwyczaj tworzony
+ na kluczu głównym tabeli.
+
+Indeks niezgrupowany: Indeks niezgrupowany jest oddzielną strukturą danych, która 
+przechowuje kopię indeksowanych kolumn i wskaźnik do lokalizacji danych w tabeli. 
+Każda tabela może posiadać wiele indeksów niezgrupowanych i są one zazwyczaj tworzone
+na kolumnach często używanych w zapytaniach.
+
+Indeks unikalny: Indeks unikalny zapewnia, że wartości w indeksowanej kolumnie lub 
+kolumnach są unikalne. Może być utworzony jako indeks klastrowany lub nieklastrowany.
+
+Indeks bitmapowy: Indeks bitmapowy jest używany do indeksowania kolumn z małą liczbą 
+odrębnych wartości. Indeks bitmapowy jest używany do indeksowania kolumn z małą liczbą 
+wartości. Używa on struktury danych bitmapowych do reprezentowania obecności lub braku 
+wartości w indeksowanej kolumnie.
+
+Indeks pokrycia: Indeks zakrywający zawiera wszystkie kolumny wymagane do zaspokojenia 
+zapytania, więc system zarządzania bazą danych nie musi uzyskiwać dostępu do tabeli bazowej. 
+Ten typ indeksu może poprawić wydajność zapytania poprzez zmniejszenie liczby 
+wymaganych odczytów z dysku.
+
+</pre>
+<h3>19. Jakie są rodzaje złączeń w SQL? Krótko je omów.</h3>
+<pre>
+W języku SQL join jest metodą łączenia danych z dwóch lub więcej tabel na podstawie 
+wspólnej kolumny między nimi. Oto kilka rodzajów złączeń w SQL i krótki opis każdego z nich:
+
+Złączenie wewnętrzne: Złącze wewnętrzne zwraca tylko te wiersze, które mają pasujące 
+wartości w obu łączonych tabelach. Jest to najczęściej spotykany typ złączenia w SQL 
+i jest używany do łączenia powiązanych danych z dwóch lub więcej tabel.
+
+Złączenie lewe: Lewe złączenie zwraca wszystkie wiersze z lewej tabeli i pasujące wiersze 
+z prawej tabeli. Jeśli nie ma dopasowania w prawej tabeli, wynik zawiera wartości NULL.
+
+Złączenie prawe: Prawe złączenie zwraca wszystkie wiersze z prawej tabeli i pasujące wiersze 
+z lewej tabeli. Jeśli nie ma dopasowania w lewej tabeli, wynik zawiera wartości NULL.
+
+Pełne złączenie zewnętrzne: Pełne złączenie zewnętrzne zwraca wszystkie wiersze z obu łączonych 
+tabel wraz z wszelkimi niedopasowanymi wierszami. Jeśli nie ma dopasowania w jednej z tabel, 
+wynik zawiera wartości NULL.
+
+Złączenie krzyżowe: Złączenie krzyżowe, znane również jako produkt kartezjański, zwraca 
+wszystkie możliwe kombinacje wierszy z obu łączonych tabel. Jest ono używane, gdy nie ma 
+wspólnej kolumny między łączonymi tabelami.
+</pre>
+<h3>20. Wymień podstawowe cechy baz typu NoSQL. Podaj przykłądy takich baz</h3>
+<pre>
+Bazy danych typu NoSQL to nierelacyjne bazy danych, które nie wykorzystują SQL jako 
+podstawowego języka zapytań. Oto kilka podstawowych cech baz danych typu NoSQL:
+
+Schema-free: Bazy danych NoSQL nie mają ustalonego schematu, co oznacza, że dane mogą 
+być dodawane lub usuwane bez konieczności modyfikacji struktury bazy.
+
+Skalowalność: Bazy danych NoSQL są zaprojektowane do skalowania poziomego, co oznacza, 
+że mogą obsługiwać duże ilości danych poprzez dodawanie kolejnych węzłów do klastra bazy danych.
+
+Wysoka wydajność: Bazy danych NoSQL są zoptymalizowane pod kątem wydajności i mogą 
+obsługiwać duże ilości danych oraz wysoką przepustowość.
+
+Rozproszone: Bazy danych NoSQL są zaprojektowane do pracy w systemach rozproszonych, 
+co oznacza, że dane mogą być przechowywane i przetwarzane na wielu maszynach.
+
+Wsparcie dla niestrukturalnych danych: Bazy danych NoSQL są zaprojektowane do obsługi 
+nieustrukturyzowanych danych, takich jak dokumenty, obrazy i filmy.
+
+Przykłady baz danych NoSQL obejmują:
+
+MongoDB: Baza danych zorientowana na dokumenty, która wykorzystuje dokumenty podobne do 
+JSON do przechowywania danych.
+
+Cassandra: Kolumnowa baza danych, która jest zoptymalizowana do ciężkich prac związanych 
+z zapisem i może obsługiwać duże ilości danych w wielu centrach danych.
+
+Couchbase: Baza danych zorientowana na wartości kluczowe i dokumenty, która jest przeznaczona
+do wysokowydajnych, rozproszonych aplikacji.
+
+Redis: Magazyn wartości kluczowych, który może być używany do buforowania, zarządzania sesjami 
+i przetwarzania danych w czasie rzeczywistym.
+
+Amazon DynamoDB: Baza danych zorientowana na wartości kluczowe i dokumenty, która jest w pełni 
+zarządzana i zaprojektowana dla skalowalnych aplikacji.
+</pre>
+		</div>
+		<div class="divs divright">
+<h3>1 Перечислите и кратко охарактеризуйте наиболее важные модели жизненного цикла программного обеспечения.</h3>
+<pre>
+Последовательная (например, каскадная (водопад)/waterfall) - последовательные этапы 
+разработки программного обеспечения следуют друг за другом непосредственно. Последовательная 
+этапы модели: планирование, анализ, проектирование, реализация, тестирование, сопровождение 
+сопровождение. Не допускается переход к следующему этапу до завершения 
+предыдущего. Ошибка, допущенная на этапе планирования, влияет на весь 
+проект. Легкий контроль за реализацией проекта. Большое количество документации о 
+его создания. 
+
+Эволюционный (Agile-разработка, инкрементная/инкрементная модель, спиральная модель) 
+- виды деятельности переплетаются.
+
+Incremental/incremental, спиральная модель) - виды деятельности переплетаются. 
+Те же этапы, что и в последовательной модели, но допускается возврат к 
+этапам, предшествующим текущему. Наиболее важной особенностью этой
+модели является то, что система адаптируется к изменениям в требованиях и исправляет 
+допущенные ошибки. Реализация проекта с использованием этой модели 
+модели трудно контролировать и поэтому требует дополнительных стратегий для 
+структурирования процесса разработки программного обеспечения.
+
+Прототипирование - модель, основанная на производстве прототипов, т.е. неполных 
+систем, которые отвечают только части требований. Прототип используется 
+используется для тестирования решений, использованных для его создания. 
+Прототип может быть легко изменен. Существование прототипа позволяет заказчику
+увидеть, как будет выглядеть система в большей или меньшей степени. Основным недостатком 
+прототипирования является высокая стоимость создания системы.
+
+Компонентная модель - сводится к сборке системы из готовых 
+компонентов (программ). После определения требований (первый этап) происходит следующее 
+анализ возможности использования существующих, готовых компонентов. 
+Затем следует этап модификации требований, как следствие использования 
+компонентов. Следует иметь в виду, что требования, предъявляемые готовыми компонентами
+могут быть несовместимы с требованиями заказчика. Модификации кода могут быть затруднены 
+из-за отсутствия контроля над компонентами, поставляемыми извне. Использование этого 
+типа решения является низкозатратным.
+
+Итеративная (инкрементальная) модель - после определения требований (первый этап проекта) 
+разбивается на последовательные итерации. проекта) разбивается на последовательные итерации 
+(инкременты), т.е. системные функции. которые могут быть реализованы и протестированы. 
+Первые версии обычно включают основные функциональные возможности системы. Спиральная модель 
+- предусматривает использование готовых компонентов. Фаза оценки в каждом цикле позволяет 
+избежать ошибок или обнаружить их раньше. Все время 
+возможно развитие.
+</pre>
+<h3>2. Перечислите и кратко обсудите применение наиболее важных диаграмм UML.</h3>
+<pre>
+Диаграмма классов - представляет классы и отношения между ними. 
+Она позволяет подробно описать классы, выделяя имеющиеся атрибуты и операции. 
+Диаграмма классов позволяет представить участок более крупной системы. Между классами 
+устанавливаются отношения (например, наследование, ассоциация, агрегация и т.д.). 
+
+Диаграмма компонентов - ключевую роль играют компоненты. 
+Компонент следует понимать как часть системы, которая имеет свои интерфейсы, 
+Ключевую роль играет компонент, который следует понимать как часть системы, имеющую свои интерфейсы, 
+т.е. точно определенные способы взаимодействия с другими компонентами. 
+
+Диаграмма развертывания - используется для отображения зависимостей между программным и 
+аппаратным обеспечением. Программное и аппаратное обеспечение. Используется для демонстрации того,
+как реализовано приложение.
+
+Диаграмма последовательности - одна из диаграмм взаимодействия. Диаграмма последовательности 
+показывает порядок выполнения методов в отдельных объектах.</pre>
+<h3>3. Что такое экстремальное программирование?</h3>
+<pre>
+Одна из agile-методологий разработки программного обеспечения (agile-программирование), 
+характеризующаяся простотой коммуникации, обратной связью и смелостью. XP снижает стоимость возможных 
+изменений требований за счет использования коротких циклов итераций. Определить стабильный набор 
+требований с помощью этой методологии невозможно. Благодаря коротким итерациям продукт доставляется 
+на ранних этапах заказчику, который следит за ходом работы и может быстро предоставить обратную связь.
+обратную связь. К недостаткам можно отнести отсутствие точной спецификации разрабатываемого 
+программного  обеспечения, постоянное присутствие представителя заказчика, отсутствие документации.</pre>
+<h3>4. Назовите характеристики SCRUM.</h3>
+<pre>
+Ускоренный подход к производству нового продукта (программного обеспечения и других). 
+Разработка продукта делится на спринты - итерации, длящиеся максимум один месяц 
+(рекомендуются интервалы фиксированной длины). После каждого спринта команда предоставляет 
+рабочую версию продукта клиенту. Требования пользователей собираются в виде пользовательских 
+историй. Каждая история - это одна особенность/функциональность. Владелец продукта 
+(Product Owner) представляет приоритеты требований, на основе которых создается бэклог 
+продукта. Каждый спринт реализует определенное количество требований (Sprint Backlog). 
+Скрам-мастер - это лицо, ответственное за правильное внедрение процесса и методов.</pre>
+<h3>5. Назовите и кратко охарактеризуйте виды тестирования программного обеспечения.</h3>
+<pre>
+Функциональные тесты (например, тесты безопасности) - проверяют, как работает система или модуль. 
+Эти тесты охватывают функции, описанные в документах, и взаимодействие тестируемой системы 
+с другими системами.
+Они касаются внешнего поведения программного обеспечения, рассматривая его как "черный ящик".
+Нефункциональные тесты (производительность, нагрузка, перегрузка, удобство использования,
+ремонтопригодность, надежность, переносимость) - тестирование, необходимое для измерения
+характеристики систем и программного обеспечения, которые могут быть оценены по шкале (напр.
+время отклика в случае тестов производительности).
+Структурное тестирование - используется сразу после методов, основанных на спецификации, в поддержку
+измерения точности. Это позволяет измерить точность тестирования путем оценки
+степень покрытия выбранного типа структуры. Охват - это степень, в которой набор тестов
+использовал объект покрытия. То есть, в какой степени структура была протестирована тестовым набором
+тестов, выраженное в процентах от покрытых предметов.
+Подтверждающее тестирование - повторное тестирование, которое подтверждает, что ошибка была исправлена.
+Регрессионное тестирование - повторное тестирование ранее протестированной программы после 
+внесения в нее изменений в ней, чтобы убедиться, что в результате изменений не возникло 
+новых дефектов или что дефекты не дефекты были выявлены в неизмененной части программы.
+</pre>
+<h3>6. Перечислите этапы жизненного цикла информационной системы и дайте краткий обзор</h3>
+<pre>
+1. планирование - определение целей системы с точки зрения будущего пользователя системы,
+область применения и контекст системы, определение функций и областей, которые внедряемая система
+будет поддерживать
+2. анализ - исследование информационных потребностей, моделирование системы; детальное определение
+те области деятельности организации, которые должна поддерживать информационная система.
+Определение результирующей информации, которую должна выдать система, и исходных данных,
+которые необходимы для получения результирующей информации.
+3 Проектирование - проектирование диалога, базы данных, процессов; технологическое
+преобразование логической модели системы в физическую модель.
+4 Программирование - реализация; разработка программы на основе проекта системы
+5. внедрение - установка программного обеспечения и передача пользовательской документации, обучение
+пользователей системы, ввод системы в эксплуатацию. 6.
+6. эксплуатация - непрерывное использование информационной системы, обеспечение правильности ее
+функционирования в соответствии с установленными требованиями пользователей, совершенствование 
+системы в соответствии с изменяющимися информационными потребностями
+</pre>
+<h3>7. Описать диаграмму отношений между сущностями (ERD)</h3>
+<pre>
+Тип графического представления структур данных и отношений между ними. Диаграмма демонстрирует 
+логические отношения между различными сущностями (массивами). Отношения имеют две характеристики:
+(a) необязательность - каждая сущность должна или может встречаться одновременно с другой. В
+графическом представлении пунктирная линия указывает на необязательность отношения, в то время 
+как сплошная линия является требованием отношения (b) Множественность - указывает, сколько 
+сущностей включено в отношения.
+a. 1:1 (один к одному) - сущность соответствует ровно одной сущности
+b. 1:N (один ко многим) - одна или более сущностей соответствуют одной сущности
+c. M:N (многие ко многим) - одна или несколько сущностей соответствуют одной или нескольким сущностям.
+Здесь, в реляционных базах данных, необходимо применить нормализацию диаграммы, которая заключается 
+в том, чтобы добавлении промежуточной сущности и замене отношений M:N на два отношения 1:N 
+с новой сущностью.
+Среди условных обозначений, используемых для ERD-диаграмм, можно назвать IDEF1X, нотацию UML, 
+"вороньи ноги", нотация Чена, нотация (min,max) и т.д.
+</pre>
+<h3>8. Что такое параллельное программирование?</h3>
+<pre>
+Обработка, основанная на сосуществовании нескольких потоков или процессов, работающих с общими данными.
+данные. Потоки, работающие на одном процессоре, переключаются через короткие промежутки времени,
+что создает впечатление, что они выполняются параллельно. В случае многоядерных или
+многоядерных или многопоточных процессоров, действительно возможна параллельная обработка. 
+Такой вид обработки также возможен в многопроцессорных архитектурах.
+Применяется в серверах, которые обрабатывают несколько запросов от разных клиентов. 
+Одновременная работа с общими данными может привести к потере целостности данных, поэтому 
+необходимо использовать механизмы синхронизации. К таким механизмам относятся мониторы 
+(объекты, которые могут безопасно использоваться несколькими потоками), 
+или семафоры (защищенные переменные).
+</pre>
+<h3>9. В чем разница между параллельным и распределенным программированием?</h3>
+<pre>
+Параллельное программирование и распределенное программирование - это две разные 
+парадигмы программирования программирования, которые используются для достижения 
+высокой производительности и масштабируемости в программных системах.
+
+Параллельное программирование подразумевает разделение одной задачи на более мелкие 
+подзадачи, которые могут выполняться одновременно несколькими процессорами или ядрами. 
+При параллельном программировании все элементы обработки имеют общую память 
+и взаимодействуют друг с другом с помощью общих переменных. Цель параллельного 
+программирования. Цель параллельного программирования - ускорить выполнение одной 
+задачи, распределив ее на несколько вычислительных элементов.
+
+Распределенное программирование, с другой стороны, предполагает разделение большой задачи на 
+меньшие подзадачи, которые могут быть выполнены различными компьютерами, соединенными через 
+сеть. При распределенном программировании каждый элемент обработки имеет свою собственную память и 
+взаимодействует с другими элементами обработки посредством передачи сообщений. 
+Цель распределенного программирования - решить большую задачу, разбив ее на более мелкие подзадачи. 
+ее на более мелкие подзадачи, которые могут выполняться параллельно на разных компьютерах.</pre>
+<h3>10. как реализован вызов функций операционной системы?</h3>
+<pre>
+Вызовы функций операционной системы обычно реализуются через вызовы 
+системные вызовы, которые представляют собой программные интерфейсы, предоставляемые 
+операционной системойчтобы позволить приложениям взаимодействовать с системными службами.
+
+Когда приложению необходимо выполнить системную функцию, например, прочитать файл 
+или создать сетевое соединение, оно выполняет системный вызов, выдавая запрос 
+операционной системе. Этот запрос обычно выполняется с помощью специальной инструкции прерывания 
+программное прерывание, которое переключает контекст из пользовательского режима в режим ядра, 
+где выполняется код операционной системы.
+
+Когда операционная система получает запрос, она проверяет его достоверность, выделяет, 
+если необходимо системные ресурсы и выполняет запрошенную операцию. Как только операция 
+завершена, операционная система возвращает управление приложению, 
+возобновляя выполнение в пользовательском режиме.
+
+Интерфейс системных вызовов предоставляет набор функций, которые позволяют приложениям 
+получать доступ к сервисам операционной системы, включая операции ввода/вывода файлов, 
+управление процессами управление памятью, сетевое взаимодействие и другие. 
+Точный набор системных вызовов предоставляемых операционной системой, зависит от дизайна 
+и реализации операционной системы.</pre>
+<h3>11. описание стандарта POSIX threads</h3>
+<pre>
+POSIX threads / pthreads - спецификация в рамках стандарта POSIX (Portable Operating
+Системный интерфейс для UNIX (Portable Operating System Interface for Unix) стандарт, 
+который определяет реализацию многопоточности (несколько потоков выполняются в рамках 
+одного процесса), которая определяет включает основные механизмы для управления потоками, 
+синхронизации объектов и определяет единый интерфейс программирования 
+(API - Application Programming Interface; набор правил, строго описывающих, 
+как программы или подпрограммы взаимодействуют друг с другом) для языка C. Стандарт
+определяет определенный базовый набор функций и ряд опций, которые могут быть доступны при
+реализации. Стандарт pthreads хорошо распространен среди систем семейства Unix.
+API разработан объектно-ориентированным. Основные функции:
+- Создание потоков
+- Синхронное завершение потоков
+- Асинхронное завершение потоков
+- Локальные данные потоков
+- Стек завершающих функций для облегчения управления ресурсами в C
+Важные особенности стандарта
+- Дополнительные механизмы синхронизации
+o Блокировки чтения/записи
+o Барьеры
+o Вращающиеся блокировки
+- Возможность совместного использования объектов синхронизации между потоками 
+различных процессов
+- Индивидуальная настройка приоритетов потоков и других параметров планирования
+- Ограниченное по времени ожидание наступления определенных событий (например, установление блокировки)
+- Считывание процессорного времени, потребляемого потоком</pre>
+<h3>12. охарактеризовать интерфейс определения веб-сервисов (WSDL)</h3>
+<pre>
+Язык описания веб-сервисов (WSDL) - язык на основе XML для определения веб-сервисов.
+Он описывает протоколы и форматы, используемые веб-службами. Описания WSDL 
+могут быть размещены в реестре UDDI. WSDL использует XML для описания точек доступа 
+к веб-сервисам. Язык WSDL определяет набор из нескольких XML-структур, которые 
+позволяют полностью описать сервисы (структуры данных которыми обменивается сервис, 
+способ подключения к сервису, чаще всего http).</pre>
+<h3>13. В чем заключается обработка данных на GPGPU? Какое оборудование используется для этого?</h3>
+<pre>
+GPGPU (General-Purpose computing on Graphics Processing Units) - это технология, 
+которая использует графический процессор (GPU) для выполнения вычислений общего назначения. 
+цель. В основе GPGPU лежит тот факт, что графические процессоры - это очень 
+параллельные процессоры, способные выполнять множество простых операций 
+одновременно, что делает их хорошо подходящими для определенных типов вычислений, 
+которые могут быть распараллелены.
+
+Аппаратное обеспечение, используемое для обработки на GPGPU, обычно состоит из центрального процессора 
+и одного или нескольких графических процессоров. Центральный процессор отвечает за управление 
+общее выполнение программы и обработку задач, которые не могут быть распараллелены, 
+например, операции ввода/вывода и управление системой. Графические процессоры 
+используются для выполнения задач с интенсивными вычислениями, таких как 
+матричное умножение, обработка изображений и моделирование.
+
+GPU, используемые для обработки GPGPU, обычно представляют собой высокопроизводительные 
+графические карты, предназначенные для игр или профессиональных графических задач. 
+Эти графические процессоры оптимизированы для параллельной обработки и могут выполнять 
+множество простых операций одновременно. Некоторые из популярных графических процессоров 
+используемых в GPGPU, являются серии GeForce и Quadro от NVIDIA 
+и серии Radeon и FirePro от AMD.
+
+Чтобы выполнить обработку на GPGPU, вам нужно написать программу, которая использует преимущества 
+возможности параллельной обработки данных на GPU. Обычно для этого используется 
+специализированного языка программирования, такого как CUDA (NVIDIA) или OpenCL 
+(Khronos Group), который предоставляет интерфейс, позволяющий приложению взаимодействовать 
+с GPU и управлять задачами параллельной обработки.</pre>
+<h3>14. Охарактеризуйте управление памятью в 64-битной операционной системе.</h3>
+<pre>
+Управление памятью в 64-битной операционной системе характеризуется 
+несколькими ключевыми функциями и возможностями, которые разработаны 
+для того, чтобы эффективно управлять большими объемами памяти, которые доступны 
+в 64-битных системах.
+
+Одной из ключевых особенностей управления памятью в 64-битной операционной системе 
+является возможность адресации и доступа к большим объемам памяти. 
+С 64-битным адресным пространством 64-битная операционная система может 
+теоретически адресовать до 16 экзабайт памяти, что значительно больше, чем 
+4 ГБ в 32-разрядных системах. Это позволяет приложениям работать с гораздо большими 
+наборов данных и может повысить производительность приложений, интенсивно использующих память. 
+приложений с большим объемом памяти.
+
+Еще одной важной особенностью управления памятью в 64-битных системах является использование 
+виртуальной памяти. Виртуальная память - это техника, которая позволяет операционной системе 
+использовать часть компьютера. 
+Операционной системе использовать часть жесткого диска компьютера, как если бы это была 
+дополнительную оперативную память. Это позволяет операционной системе выделять приложениям 
+больше памяти, чем физически доступно в системе, и может предотвратить исчерпание памяти приложениями. 
+исчерпание памяти приложениями. Использование виртуальной памяти также важно с точки зрения 
+безопасности, поскольку оно может предотвратить доступ одного приложения к памяти 
+используемой другим приложением.
+
+В дополнение к виртуальной памяти 64-битные операционные системы обычно включают другие функции
+управления памятью, такие как защита памяти, отображение памяти и свопинг памяти. 
+Защита памяти используется для предотвращения доступа приложений к памяти, к которой они не 
+в то время как отображение памяти используется для обеспечения эффективного доступа к 
+устройствам, сопоставленным с памятью, таким как видеокарты и звуковые карты. Подмена памяти 
+используется для временного хранения неиспользуемой памяти на жестком диске, освобождая физическую 
+память для других приложений. ОЗУ для других приложений.</pre>
+<h3>15. Перечислите и кратко обсудите два метода межпроцессного взаимодействия.</h3>
+<pre>
+Межпроцессное взаимодействие (IPC) - это метод обмена данными и сообщениями между 
+различными процессами, запущенными на одной или разных машинах. Вот два метода IPC:
+
+Общая память: Общая память - это метод, при котором два или более процессов 
+разделяют общую область памяти, к которой они имеют прямой доступ. Эта техника обеспечивает 
+быстрое взаимодействие между процессами, поскольку позволяет избежать накладных расходов на 
+копирование данных между процессами. При использовании общей памяти блок памяти выделяется 
+одним процессом, а другие процессы могут получить доступ к этой области памяти 
+присоединяясь к нему. Общая память обычно используется в 
+приложениях, где требуется быстрая передача данных, таких как мультимедийные приложения 
+мультимедиа, научное моделирование и системы реального времени.
+
+Передача сообщений: Передача сообщений - это техника, при которой процессы 
+обмениваются сообщениями. В этой технике процессы посылают друг другу 
+сообщения, используя систему обмена сообщениями, предоставляемую операционной системой 
+или промежуточным программным обеспечением. Сообщения могут быть отправлены либо синхронно 
+(отправитель ждет ответа, прежде чем продолжить) или асинхронно (отправитель не ждет 
+ответа). Пересылка сообщений может быть реализована с использованием различных протоколов, 
+таких как TCP/IP, UDP и RPC (удаленный вызов процедур). Эта техника широко используется в 
+распределенных системах, где процессы выполняются на разных машинах и должны взаимодействовать 
+друг с другом по сети.
+
+Как общая память, так и передача сообщений имеют свои преимущества и недостатки, и 
+выбор техники зависит от конкретных требований приложения. Общая память обеспечивает 
+быструю связь, но требует тщательного управления, чтобы избежать проблем синхронизации 
+и конфликтов памяти. Передача сообщений является более гибкой и может обрабатывать 
+более сложные сценарии взаимодействия, но требует больших накладных расходов из-за 
+необходимости кодировать и декодировать сообщения.</pre>
+<h3>16. Обсудите методы обеспечения безопасности веб-приложений.</h3>
+<pre>
+Обеспечение безопасности веб-приложений является важной задачей для защиты конфиденциальных 
+данных и предотвращения несанкционированного доступа. Вот некоторые методы обеспечения безопасности 
+веб-приложений:
+
+Валидация ввода: Валидация ввода - это процесс проверки и подтверждения данных. 
+введенных пользователем. Этот процесс помогает предотвратить вредоносные атаки 
+таких как SQL-инъекции, межсайтовый скриптинг (XSS) и межсайтовая подделка запросов (CSRF). 
+подделка межсайтового запроса (CSRF). Проверка ввода может быть выполнена с помощью скриптов
+ на стороне сервера или на стороне клиента и может помочь предотвратить внедрение вредоносного кода 
+ в веб-формы.
+
+Аутентификация и авторизация: Аутентификация и авторизация являются важными методами для 
+обеспечения безопасности веб-приложений. Аутентификация - это процесс проверки 
+личности пользователя, в то время как аутентификация - это процесс определения прав доступа
+пользователя к определенным ресурсам или функциям. Имена пользователей и пароли 
+обычно используются для аутентификации, в то время как списки контроля доступа (ACL) 
+или управление доступом на основе ролей (RBAC) обычно используются для авторизации.
+
+Безопасная связь: Безопасная связь необходима для обеспечения безопасности 
+веб-приложений. Связь между клиентом и сервером должна быть зашифрована
+используя такие протоколы, как HTTPS, SSL или TLS. Эти протоколы помогают предотвратить 
+подслушивание, атаки "человек посередине" и другие формы перехвата конфиденциальных данных.
+
+Управление сеансами: Управление сеансами - это процесс управления сеансами пользователей в 
+веб-приложении. Оно включает в себя управление идентификаторами сеансов, ограничениями времени сеанса 
+тайм-ауты сеансов и данные сеанса. Правильное управление сеансами может помочь предотвратить 
+перехвата сеанса, когда злоумышленник получает доступ к сеансу пользователя путем кражи 
+его/ее идентификатор сеанса.
+
+Регистрация и мониторинг доступа: Регистрация и мониторинг доступа являются важными 
+методы обнаружения и предотвращения несанкционированного доступа к веб-приложениям. 
+Журналы доступа должны быть включены для записи всех попыток доступа, включая успешные 
+и неуспешные попытки. Инструменты мониторинга также могут быть использованы для обнаружения 
+подозрительного поведения, например, повторяющихся попыток входа в систему или необычных 
+моделей трафика.</pre>
+<h3>17. Перечислите и кратко обсудите системы управления базами данных</h3>
+<pre>
+Система управления базами данных (СУБД) - это программное обеспечение, используемое для управления и 
+организации данных в базе данных. Ниже приведены некоторые распространенные типы СУБД и краткое 
+описание каждой из них:
+
+Реляционная СУБД (РСУБД): Реляционная СУБД организует данные в одну или несколько таблиц с уникальным 
+ключом для каждой строки. РСУБД использует SQL (язык структурированных запросов) для 
+манипулирования и управления данными.Примерами СУБД являются MySQL, Oracle Database и 
+Microsoft SQL Server.
+
+Объектно-ориентированная СУБД (OODBMS): СУБД OODBMS организует данные в объекты, 
+которые могут содержать атрибуты данных и поведенческие методы. Системы OODBMS используют 
+концепции объектно-ориентированного программирования для манипулирования и управления данными. 
+Примерами OODBMS являются ObjectStore и ObjectDB.
+
+Документно-ориентированная СУБД: Документо-ориентированная СУБД организует данные в виде документов,
+которые могут содержать структуры данных JSON или XML. Документно-ориентированные СУБД часто 
+используются в веб-приложениях и базах данных NoSQL. Примеры документно-ориентированных СУБД 
+ориентированных на документы являются MongoDB и CouchDB.
+
+СУБД "ключ-значение": СУБД "ключ-значение" организует данные в пары "ключ-значение", где ключ
+используется для идентификации данных, а значение - это фактические данные. Ключево-значимые СУБД 
+часто используются в системах кэширования и для хранения сессионных данных. Примерами СЗБД 
+Key-value включают Redis и Riak.
+
+Графовая СЗБД: Графовая СЗБД организует данные в узлы и ребра, которые используются для 
+представления сложных отношений между данными. Графовые СУБД часто используются 
+в социальных сетях и рекомендательных системах. Примерами графовых СУБД являются Neo4j и OrientDB.
+</pre>
+<h3>18. Перечислите и кратко обсудите различные типы индексов в SQL</h3>
+<pre>
+В SQL индекс - это структура данных, используемая для повышения производительности запросов. 
+позволяя системе управления базой данных быстрее находить данные. 
+Вот несколько типов индексов в SQL и краткое описание каждого из них:
+
+Кластерный индекс: кластерный индекс определяет физический порядок данных в таблице. 
+Каждая таблица может иметь только один кластеризованный индекс, и обычно он создается
+ на первичном ключе таблицы.
+
+Некластеризованный индекс: Некластеризованный индекс представляет собой отдельную 
+структуру данных, которая хранит копию индексируемых столбцов и указатель на 
+расположение данных в таблице. Каждая таблица может иметь несколько несгруппированных 
+индексов, и обычно они создаются на столбцах, часто используемых в запросах.
+
+Уникальный индекс: уникальный индекс гарантирует, что значения в индексируемом столбце или 
+столбца или столбцов являются уникальными. Он может быть создан как кластеризованный или 
+некластеризованный индекс.
+
+Растровый индекс: растровый индекс используется для индексирования столбцов с небольшим числом 
+отдельных значений. Растровый индекс используется для индексирования столбцов с небольшим количеством 
+значений. Он использует растровую структуру данных для представления наличия или отсутствия 
+значений в индексируемом столбце.
+
+Накрывающий индекс: Накрывающий индекс содержит все столбцы, необходимые для выполнения запроса. 
+Таким образом, системе управления базой данных не нужно обращаться к базовой таблице. 
+Этот тип индекса может повысить производительность запроса за счет уменьшения количества 
+необходимых дисковых чтений.</pre>
+<h3>19. Какие существуют типы объединений в SQL? Кратко расскажите о них.</h3>
+<pre>
+В SQL соединение - это метод объединения данных из двух или более таблиц на основе 
+общего столбца между ними. Вот несколько типов объединений в SQL и краткое описание каждого из них:
+
+Внутреннее соединение: внутреннее соединение возвращает только те строки, которые имеют совпадающие 
+значения в обеих объединяемых таблицах. Это наиболее распространенный тип соединения в SQL 
+и используется для объединения связанных данных из двух или более таблиц.
+
+Левое соединение: левое соединение возвращает все строки из левой таблицы и совпадающие строки 
+из правой таблицы. Если в правой таблице нет совпадений, результат содержит значения NULL.
+
+Правое соединение: Правое соединение возвращает все строки из правой таблицы и совпадающие строки 
+из левой таблицы. Если в левой таблице нет совпадений, результат содержит значения NULL.
+
+Полное внешнее объединение: Полное внешнее объединение возвращает все строки из обеих объединенных 
+таблицы вместе с любыми несовпадающими строками. Если ни в одной из таблиц нет совпадений, 
+результат содержит значения NULL.
+
+Перекрестное соединение: Перекрестное соединение, также известное как декартово произведение, 
+возвращает все возможные комбинации строк из обеих объединяемых таблиц. Оно используется, 
+когда нет общего столбца между объединяемыми таблицами.</pre>
+<h3>20. Перечислите основные особенности баз данных типа NoSQL. Приведите примеры таких баз данных</h3>
+<pre>
+Базы данных NoSQL - это нереляционные базы данных, которые не используют SQL 
+в качестве основного языка запросов. Вот некоторые основные особенности баз данных типа NoSQL:
+
+Бессхемность: Базы данных NoSQL не имеют фиксированной схемы, что означает, что данные 
+могут быть добавлены или удалены без изменения структуры базы данных.
+
+Масштабируемость: базы данных NoSQL разработаны для горизонтального масштабирования, что означает, 
+что они могут обрабатывать большие объемы данных путем добавления дополнительных 
+узлов в кластер базы данных.
+
+Высокая производительность: базы данных NoSQL оптимизированы для производительности и могут 
+обрабатывать большие объемы данных и высокую пропускную способность.
+
+Распределенность: Базы данных NoSQL предназначены для работы в распределенных системах, 
+Это означает, что данные могут храниться и обрабатываться на нескольких машинах.
+
+Поддержка неструктурированных данных: Базы данных NoSQL разработаны для поддержки 
+неструктурированных данных, таких как документы, изображения и видео.
+
+Примеры баз данных NoSQL включают:
+
+MongoDB: документально-ориентированная база данных, которая использует документы, похожие на 
+JSON для хранения данных.
+
+Cassandra: колоночная база данных, которая оптимизирована для больших нагрузок на 
+хранения и может обрабатывать большие объемы данных в нескольких центрах обработки данных.
+
+Couchbase: база данных, ориентированная на ключи-значения и документы, разработанная для 
+высокопроизводительных распределенных приложений.
+
+Redis: хранилище ключевых значений, которое может использоваться для кэширования, управления сессиями 
+и обработки данных в реальном времени.
+
+Amazon DynamoDB: база данных, ориентированная на ключевые значения и документы, которая полностью 
+управляемой и предназначенной для масштабируемых приложений.</pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+<h3></h3>
+<pre></pre>
+		</div>
+	</div>
+</body>
+</html>
