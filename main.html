@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question</title>
+<style>
+	.divs {
+	  float:left;
+	  width:50%;
+	  display: inline-block;
+	}
+	.divright {
+	  text-align: left;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="divs divleft">
+			<h3>1. Wymień i krótko scharakteryzuj najważniejsze modele cyklu życia oprogramowania.
+			</h3>
+			<pre>
+
+Sekwencyjne (np. kaskadowy (waterfall)/wodospadowy) – kolejne etapy 
+wytwarzania oprogramowania następują bezpośrednio po sobie. Kolejne 
+etapy modelu: planowanie, analiza, projekt, implementacja, testowanie 
+pielęgnacja. Nie wolno przejść do następnego etapu przed zakończeniem 
+poprzedniego. Błąd popełniony na etapie planowania ma wpływ na całość 
+projektu. Łatwy nadzór nad realizacją projektu. Dużo dokumentacji z 
+jego powstawania. 
+
+Ewolucyjne (programowanie zwinne (Agile development), model 
+przyrostowy/inkrementacyjny, model spiralny) – aktywności się przeplatają. 
+Te same etapy jak w modelu sekwencyjnym, ale pozwala się na powroty do 
+etapów poprzedzających ten aktualnie realizowany. Najważniejszą cechą tego
+modelu jest adaptowanie systemu do zmian w wymaganiach i korygowanie 
+popełnionych błędów. Realizacja projektu z wykorzystaniem tego modelu 
+jest trudna w nadzorze, przez co wymaga dodatkowych strategii w celu 
+uporządkowania procesu wytwarzania oprogramowania.
+
+Prototypowanie – model oparty na wytwarzaniu prototypów, czyli niepełnych 
+systemów, spełniających jedynie część wymagań. Prototyp wykorzystywany 
+jest do testowania rozwiązań wykorzystywanych do jego wytwarzania. 
+Prototyp można w łatwy sposób zmieniać. Istnienie prototypu pozwala klientowi
+zobaczyć, jak mniej więcej system będzie wyglądał. Głównym minusem 
+prototypowania jest wysoki koszt budowy systemu.
+
+Model komponentowy – sprowadza się do składania systemu z gotowych 
+komponentów (programów). Po określeniu wymagań (etap pierwszy) następuje 
+analiza możliwości wykorzystania istniejących, gotowych komponentów. 
+Następnie następuje faza modyfikacji wymagań, w konsekwencji zastosowania 
+komponentów. Należy pamiętać, że wymagania narzucone przez gotowe komponenty
+mogą być niezgodne z wymaganiami klientów. Modyfikacje kodu mogą być utrudnione 
+przez brak kontroli nad pochodzącymi z zewnątrz komponentami. Wykorzystanie tego 
+typu rozwiązania jest mało kosztowne.
+
+Model iteracyjny (przyrostowy) – po określeniu wymagań (etap pierwszy realizacji 
+projektu) następuje podział na kolejne iteracje (przyrosty), czyli funkcje systemu, 
+które można zaimplementować i testować. Pierwsze wersje zazwyczaj ujmują podstawowe 
+funkcjonalności systemu. Model spiralny – przewiduje wykorzystanie gotowych komponentów. 
+Faza oceny w każdym cyklu pozwala uniknąć błędów lub wcześniej je wykryć. Cały czas 
+istnieje możliwość rozwijania projektu. 
+
+
+
+</pre>
+			<h3>2. Wymień i krótko omów zastosowania najważniejszych diagramów UML.</h3>
+<pre>
+Diagram klas (class diagram) – prezentuje klasy i zależności między nimi. 
+Pozwala na szczegółowy opis klas zwracając uwagę na dostępne atrybuty i operacje. 
+Diagram klas pozwala na prezentację wycinka większego systemu. Między klasami 
+występują relacje (np. dziedziczenie, asocjacja, agregacja, itp.). 
+
+Diagram komponentów (component diagram) – kluczową rolę odgrywają komponenty. 
+Komponent należy rozumieć jako część systemu, która ma swoje interfejsy, 
+czyli dokładnie określone sposoby komunikacjiz pozostały komponentami. 
+
+Diagram wdrożenia (deployment diagram) – służy do odwzorowania zależności pomiędzy
+oprogramowanie a sprzętem. Pozwala na demonstrację sposobu wdrożenia aplikacji.
+
+Diagram sekwencji – jeden z diagramów interakcji. Diagram sekwencji pokazuje kolejność wykonania
+metod w poszczególnych obiektach. 
+
+
+
+</pre>
+<h3>3. Co to jest programowanie ekstremalne (Extreme Programming)?</h3>
+<pre>
+Jedna ze zwinnych metodyk tworzenia oprogramowania (agile programming), charakteryzująca się
+prostotą komunikacją, informacją zwrotną i odwagą. XP obniża koszty ewentualnych zmian wymagań
+poprzez zastosowanie krótkich cykli iteracyjnych. Określenie stabilnego zestawu wymagań w
+przypadku tej metodyki jest niemożliwe. Dzięki krótkim iteracjom produkt jest dostarczany wcześnie
+do klienta, który wydaje opinię nt. postępów pracy oraz jest w stanie szybko dostarczyć informację
+zwrotną. Wady to brak dokładnej specyfikacji tworzonego oprogramowania, stała dostępność
+przedstawiciela klienta, brak dokumentacji. 
+</pre>
+<h3>4. Podaj charakterystykę SCRUM.</h3>
+<pre>
+Zwinne podejście do wytwarzania nowego produktu (programu i nie tylko). Rozwój produktu
+podzielony jest na sprinty – iteracje, trwające max miesiąc (zaleca się stosowanie interwałów
+czasowych o stałych długościach). Po każdym sprincie zespół dostarcza klientowi działającą wersję
+produktu. Wymagania użytkownika są gromadzone w postaci historyjek (User Stories). Każda
+historyjka to pojedyncza funkcjonalność/cecha. Właściciel produktu (Product Owner) przedstawia
+priorytety wymagań, na podstawie którego tworzony jest rejestr wymagań (Product Backlog). Każdy
+sprint realizuje określoną liczbę wymagań (Sprint Backlog). Scrum Master to osoba odpowiedzialna za
+poprawną implementację procesu i metod. 
+</pre>
+<h3>5. Podaj i krótko scharakteryzuj rodzaje testów oprogramowania. </h3>
+<pre>
+Testy funkcjonalne (np. testy zabezpieczeń) – sprawdzają jak działa system lub moduł. Testy te
+obejmują funkcje opisane w dokumentach oraz współpracę badanego systemu z innymi systemami.
+Zajmują się zewnętrznym zachowaniem oprogramowania, traktując je jako czarną skrzynkę.
+Testy niefunkcjonalne (wydajnościowe, obciążeniowe, przeciążeniowe, użyteczności,
+pielęgnowalności, niezawodności, przenaszalności) – testowanie niezbędne do zmierzenia
+charakterystyk systemów i oprogramowania, które mogą zostać ocenione na skali (np. czasy
+odpowiedzi w przypadku testów wydajnościowych).
+Testy strukturalne – używane zaraz po zastosowaniu technik bazujących na specyfikacji, jako wsparcia
+pomiarów dokładności. Dzięki temu możliwe jest zmierzenie precyzji testowania przez oszacowanie
+stopnia pokrycia wybranego typu struktury. Pokrycie to stopień w jakim zakresie zestaw testowy
+wykorzystał przedmiot pokrycia. Czyli w jakiej skali struktura została przetestowana przez zestaw
+testów, wyrażona procentowo jako odsetek pokrytych elementów.
+Test potwierdzający – retest potwierdzający usunięcie błędu.
+Testowanie regresywne – ponowne przetestowanie uprzednio testowanego programu po dokonaniu
+w nim modyfikacji, w celu upewnienia się, że w wyniku zmian nie powstały nowe defekty lub nie
+ujawniły się defekty w niezmienionej części oprogramowania.
+
+</pre>
+<h3>6. Wymienić etapy cyklu życia systemu informacyjnego i przedstawić krótką charakterystykę</h3>
+<pre>
+1. Planowanie – określenie celów systemu z punktu widzenia przyszłego użytkownika systemu,
+zakresu oraz kontekstu systemu, określenie funkcji i obszarów, które realizowany system
+będzie wspomagał
+2. Analizę – badanie potrzeb informacyjnych, modelowanie systemu; szczegółowe zdefiniowanie
+tych obszarów działalności organizacji, które systemy informacyjny ma wspomagać.
+Wyspecyfikowanie informacji wynikowych, które system ma emitować i danych źródłowych,
+które są niezbędne, aby otrzymać informacje wynikowe.
+3. Projektowanie – projektowanie dialogu, bazy danych, procesów; technologiczne
+przekształcenie modelu logicznego systemu w model fizyczny
+4. Programowanie – implementacja; Opracowywanie programu na podstawie projektu systemu
+5. Wdrożenie – instalacja oprogramowania i przekazanie dokumentacji użytkowej, szkolenie
+użytkowników systemu, przekazanie systemu do eksploatacji.
+6. Eksploatacja – stałe użytkowanie systemu informacyjnego, zapewnienie poprawności jego
+działania ustalonymi wymaganiami użytkownika, doskonalenie systemu zgodnie ze
+zmieniającymi się potrzebami informacyjnymi
+</pre>
+<h3>7. Opisać diagram związków encji (ERD)</h3>
+<pre>
+Rodzaj graficznej reprezentacji struktur danych i relacji między nimi. Diagram demonstruje logiczne
+związki między różnymi encjami (tablicami). Związki mają dwie cechy:
+a) Opcjonalność – każda encja musi lub może wystąpić równocześnie z inną. W reprezentacji
+graficznej linia przerywana oznacza opcjonalność związku, natomiast ciągła to wymóg związku
+b) Krotność - określającą ile encji wchodzi w skład związku
+a. 1:1 (jeden do jeden) – encji odpowiada dokładnie jedna encja
+b. 1:N (jeden do wielu) – encji odpowiada jedna lub więcej encji
+c. M:N (wiele do wielu) – jednej lub więcej encjom odpowiada jedna lub więcej encji –
+tutaj w bazach relacyjnych trzeba zastosować normalizację diagramu, która polega na
+dodaniu encji pośredniej i zastąpienie M:N dwoma związkami 1:N z nową encją
+Wśród stosowanych konwencji zapisu dla diagramów ERD są IDEF1X, notacja UML, Crow’s Feet,
+notacja Chena, notacja (min,max), itd.
+
+
+
+</pre>
+<h3>8. Czym jest programowanie współbieżne?</h3>
+<pre>
+Przetwarzanie oparte na współistnieniu wielu wątków lub procesów, operujących na współdzielonych
+danych. Wątki uruchomione na tym samym procesorze są przełączane w krótkich przedziałach czasu,
+co sprawia wrażenie, że wykonują się równolegle. W przypadku procesorów wielordzeniowych lub
+wielowątkowych, możliwe jest faktycznie współbieżne przetwarzanie. Tego rodzaju przetwarzanie jest
+też możliwe w architekturach wieloprocesorowych.
+Zastosowanie w serwerach, które obsługują liczne żądania od różnych klientów. Jednoczesna praca na
+współdzielonych danych może doprowadzić do utraty ich spójności, dlatego konieczne jest stosowanie
+mechanizmów synchronizacyjnych. Do taki zaliczyć można monitory (obiekty, które mogą być
+bezpiecznie wykorzystane przez wiele wątków), tudzież semafory (chronione zmienne).
+
+</pre>
+<h3>9. Czym różni się programowanie równoległe od rozproszonego?</h3>
+<pre>
+Programowanie równoległe i programowanie rozproszone to dwa różne paradygmaty 
+programowania, które są używane do osiągnięcia wysokiej wydajności i skalowalności 
+w systemach oprogramowania.
+
+Programowanie równoległe polega na podzieleniu pojedynczego zadania na mniejsze 
+podzadania, które mogą być wykonywane jednocześnie przez wiele procesorów lub rdzeni. 
+W programowaniu równoległym wszystkie elementy przetwarzające mają wspólną pamięć 
+i komunikują się ze sobą za pomocą współdzielonych zmiennych. Celem programowania 
+równoległego jest przyspieszenie wykonania pojedynczego zadania poprzez rozłożenie
+go na wiele elementów przetwarzających.
+
+Z drugiej strony programowanie rozproszone polega na podzieleniu dużego zadania na 
+mniejsze podzadania, które mogą być wykonywane przez różne komputery połączone przez 
+sieć. W programowaniu rozproszonym każdy element przetwarzający ma własną pamięć i 
+komunikuje się z innymi elementami przetwarzającymi za pomocą przekazywania komunikatów. 
+Celem programowania rozproszonego jest rozwiązanie większego problemu poprzez podzielenie 
+go na mniejsze podzadania, które mogą być wykonywane równolegle na różnych komputerach.
+</pre>
+<h3>10. W jaki sposób realizowane jest wywoływanie funkcji systemu operacyjnego?</h3>
+<pre>
+Wywoływanie funkcji systemu operacyjnego jest zazwyczaj realizowane poprzez wywołania 
+systemowe, które są interfejsami programistycznymi udostępnianymi przez system operacyjny
+w celu umożliwienia aplikacjom interakcji z usługami systemu.
+
+Kiedy aplikacja musi wykonać funkcję systemową, taką jak odczyt pliku lub utworzenie 
+połączenia sieciowego, wykonuje wywołanie systemowe poprzez wydanie żądania do systemu 
+operacyjnego. Żądanie to jest zwykle wykonywane za pomocą specjalnej instrukcji przerwania 
+programowego, która powoduje przełączenie kontekstu z trybu użytkownika do trybu jądra, 
+gdzie wykonywany jest kod systemu operacyjnego.
+
+Gdy system operacyjny otrzyma żądanie, sprawdza jego ważność, w razie potrzeby przydziela 
+zasoby systemowe i wykonuje żądaną operację. Po zakończeniu operacji system operacyjny 
+zwraca kontrolę do aplikacji, wznawiając wykonanie w trybie użytkownika.
+
+Interfejs wywołań systemowych zapewnia zestaw funkcji, które umożliwiają aplikacjom dostęp 
+do usług systemu operacyjnego, w tym do operacji wejścia/wyjścia plików, zarządzania procesami, 
+zarządzania pamięcią, komunikacji sieciowej i innych. Dokładny zestaw wywołań systemowych 
+udostępnianych przez system operacyjny zależy od projektu i implementacji systemu operacyjnego.
+
+</pre>
+<h3>11. Opisać standard wątków POSIX</h3>
+<pre>
+POSIX threads / pthreads – specyfikacja wchodząca w skład standardu POSIX (Portable Operating
+System Interface for UNIX – przenośny interfejs dla systemu operacyjnego Unix), określająca
+implementację wielowątkowości (w ramach jednego procesu wykonywanych jest wiele wątków), która
+obejmuje podstawowe mechanizmy zarządzania wątkami, obiektami synchronizującymi oraz definiuje
+jednolity interfejs programistyczny (API – Application Programming Interface; zbiór reguł ściśle
+opisujący, w jaki sposób programy lub podprogramy komunikują się ze sobą) dla języka C. Standard
+definiuje pewien podstawowy zestaw funkcji oraz szereg opcji, które mogą być udostępnione przez
+implementację. Standard pthreads jest dobrze rozpowszechniony wśród systemów rodziny Unix.
+API jest zaprojektowany obiektowo. Podstawowe funkcje:
+• Tworzenie wątków
+• Synchroniczne kończenie wątków
+• Asynchroniczne kończenie wątków
+• Lokalne dane wątku
+• Stos funkcji finalizujących ułatwiający zarządzanie zasobami w języku C
+Ważniejsze opcje standardu
+• Dodatkowe mechanizmy synchronizacji
+o Blokady do odczytu/zapisu
+o Bariery
+o Wirujące blokady
+• Możliwość współdzielenia obiektów synchronizujących miedzy wątkami różnych procesów
+• Indywidualne ustalanie priorytetów wątku i innych parametrów szeregowania
+• Ograniczone czasowo oczekiwanie na zajście niektórych zdarzeń (np. założenie blokady)
+• Odczyt czasu procesora zużyty przez wątek
+
+
+
+</pre>
+<h3>12. Scharakteryzować interfejs definicji usług internetowych (WSDL)</h3>
+<pre>
+Web Services Description Language (WSDL) – język definiowania usług sieciowych oparty na XML.
+Opisuje protokoły i formaty używane przez usługi sieciowe. Opisy WSDL mogą być umieszczone w
+rejestrze UDDI . WSDL wykorzystuje język XML do opisu punktów dostępu do usług internetowych.
+Język WSDL definiuje zestaw kilku struktur XML pozwalających na pełny opis usług (struktury danych
+wymienianych z usługą, sposób połączenia z usługą, najczęściej http).
+
+</pre>
+<h3>13. Na czym polega przetwarzanie metodą GPGPU? Jakiego rodzaju sprzęt jest w tym celu wykorzystywany?</h3>
+<pre>
+GPGPU (General-Purpose computing on Graphics Processing Units) to technika, 
+która wykorzystuje procesor graficzny (GPU) do wykonywania obliczeń ogólnego 
+przeznaczenia. GPGPU opiera się na fakcie, że procesory graficzne są wysoce 
+równoległymi procesorami zdolnymi do wykonywania wielu prostych operacji 
+jednocześnie, co czyni je dobrze przystosowanymi do pewnych typów obliczeń, 
+które można poddać paralelizacji.
+
+Sprzęt wykorzystywany do przetwarzania GPGPU składa się zazwyczaj z CPU i 
+jednego lub więcej GPU. Jednostka centralna jest odpowiedzialna za kontrolę 
+ogólnego wykonania programu i obsługę zadań, których nie można sparaliżować, 
+takich jak operacje wejścia/wyjścia i zarządzanie systemem. Układy GPU są 
+wykorzystywane do wykonywania wymagających obliczeniowo zadań, takich jak 
+mnożenie macierzy, przetwarzanie obrazów i symulacje.
+
+Układy GPU wykorzystywane do przetwarzania GPGPU to zazwyczaj wysokowydajne 
+karty graficzne przeznaczone do gier lub profesjonalnych zadań graficznych. 
+Te układy GPU są zoptymalizowane do przetwarzania równoległego i mogą wykonywać 
+wiele prostych operacji jednocześnie. Niektóre z popularnych układów GPU 
+wykorzystywanych w przetwarzaniu GPGPU to serie GeForce i Quadro firmy NVIDIA 
+oraz serie Radeon i FirePro firmy AMD.
+
+Aby wykonać przetwarzanie GPGPU, należy napisać program, który wykorzysta 
+możliwości przetwarzania równoległego GPU. Zazwyczaj odbywa się to przy użyciu 
+wyspecjalizowanego języka programowania, takiego jak CUDA (NVIDIA) lub OpenCL 
+(Khronos Group), który zapewnia interfejs umożliwiający aplikacji komunikację 
+z układem GPU i zarządzanie zadaniami przetwarzania równoległego.
+</pre>
+<h3>14. Scharakteryzować zarządzanie pamięcią przez 64-bitowy system operacyjny.</h3>
+<pre>
+Zarządzanie pamięcią w 64-bitowym systemie operacyjnym charakteryzuje się 
+kilkoma kluczowymi cechami i możliwościami, które zostały zaprojektowane 
+w celu efektywnego zarządzania dużymi ilościami pamięci, które są dostępne 
+w systemach 64-bitowych.
+
+Jedną z kluczowych cech zarządzania pamięcią w 64-bitowym systemie operacyjnym 
+jest możliwość adresowania dużych ilości pamięci i uzyskiwania do nich dostępu. 
+Dzięki 64-bitowej przestrzeni adresowej 64-bitowy system operacyjny może 
+teoretycznie zaadresować nawet 16 eksabajtów pamięci, czyli znacznie więcej niż 
+limit 4 GB w systemach 32-bitowych. Umożliwia to aplikacjom pracę z dużo większymi 
+zbiorami danych i może poprawić wydajność aplikacji intensywnie korzystających 
+z pamięci.
+
+Inną ważną cechą zarządzania pamięcią w systemach 64-bitowych jest wykorzystanie 
+pamięci wirtualnej. Pamięć wirtualna to technika, która umożliwia systemowi 
+operacyjnemu wykorzystanie części dysku twardego komputera tak, jakby była to 
+dodatkowa pamięć RAM. Dzięki temu system operacyjny może przydzielać aplikacjom 
+więcej pamięci niż jest fizycznie dostępne w systemie i może zapobiegać wyczerpywaniu 
+się pamięci przez aplikacje. Używanie pamięci wirtualnej jest również ważne z punktu 
+widzenia bezpieczeństwa, ponieważ może uniemożliwić jednej aplikacji dostęp do pamięci 
+używanej przez inną aplikację.
+
+Oprócz pamięci wirtualnej 64-bitowe systemy operacyjne zazwyczaj zawierają inne funkcje
+zarządzania pamięcią, takie jak ochrona pamięci, mapowanie pamięci i zamiana pamięci. 
+Ochrona pamięci służy do uniemożliwienia aplikacjom dostępu do pamięci, do której nie 
+mają uprawnień, natomiast mapowanie pamięci służy do umożliwienia efektywnego dostępu do 
+urządzeń z mapą pamięci, takich jak karty wideo i karty dźwiękowe. Zamiana pamięci służy 
+do tymczasowego przechowywania nieużywanej pamięci na dysku twardym, zwalniając fizyczną 
+pamięć RAM dla innych aplikacji.
+
+</pre>
+<h3>15. Wymienić i krótko omówić dwie metody komunikacji międzyprocesowej. </h3>
+<pre>
+Komunikacja międzyprocesowa (IPC) jest metodą wymiany danych i komunikatów pomiędzy 
+różnymi procesami działającymi na tej samej lub różnych maszynach. Oto dwie metody IPC:
+
+Shared Memory: Pamięć współdzielona to technika, w której dwa lub więcej procesów 
+dzieli wspólny region pamięci, do którego mają bezpośredni dostęp. Technika ta zapewnia 
+szybką komunikację między procesami, ponieważ pozwala uniknąć kosztów ogólnych kopiowania 
+danych między procesami. W pamięci współdzielonej, blok pamięci jest przydzielany przez 
+jeden proces, a pozostałe procesy mogą następnie uzyskać dostęp do tego regionu pamięci 
+poprzez dołączenie się do niego. Pamięć współdzielona jest powszechnie stosowana w 
+aplikacjach, w których wymagany jest szybki transfer danych, takich jak aplikacje 
+multimedialne, symulacje naukowe i systemy czasu rzeczywistego.
+
+Przekazywanie komunikatów: Przekazywanie komunikatów to technika, w której procesy 
+komunikują się poprzez wymianę komunikatów. W tej technice procesy wysyłają do siebie 
+wiadomości za pomocą systemu przesyłania wiadomości dostarczonego przez system operacyjny 
+lub warstwę oprogramowania pośredniego. Wiadomości mogą być wysyłane albo synchronicznie 
+(nadawca czeka na odpowiedź przed kontynuacją) albo asynchronicznie (nadawca nie czeka 
+na odpowiedź). Przekazywanie wiadomości może być realizowane przy użyciu różnych protokołów, 
+takich jak TCP/IP, UDP i RPC (Remote Procedure Call). Technika ta jest szeroko stosowana w 
+systemach rozproszonych, gdzie procesy działają na różnych maszynach i muszą komunikować się 
+ze sobą przez sieć.
+
+Zarówno pamięć współdzielona, jak i przekazywanie komunikatów mają swoje wady i zalety, a 
+wybór techniki zależy od specyficznych wymagań aplikacji. Pamięć współdzielona zapewnia 
+szybką komunikację, ale wymaga starannego zarządzania, aby uniknąć problemów z synchronizacją 
+i konfliktów pamięci. Przekazywanie komunikatów jest bardziej elastyczne i może obsługiwać 
+bardziej złożone scenariusze komunikacyjne, ale wiąże się z większym narzutem z powodu 
+konieczności kodowania i dekodowania wiadomości.
+</pre>
+<h3>16. Omówić metody zabezpieczenia aplikacji internetowych.</h3>
+<pre>
+Zabezpieczanie aplikacji internetowych jest ważnym zadaniem, aby chronić wrażliwe 
+dane i zapobiegać nieautoryzowanemu dostępowi. Oto kilka metod zabezpieczania 
+aplikacji internetowych:
+
+Walidacja wejść: Walidacja wejścia to proces weryfikacji i walidacji danych 
+wprowadzanych przez użytkownika. Proces ten pomaga zapobiec złośliwym atakom 
+takim jak SQL injection, cross-site scripting (XSS) oraz cross-site request 
+forgery (CSRF). Walidacja danych wejściowych może być wykonana przy użyciu skryptów
+ po stronie serwera lub klienta i może pomóc zapobiec wstrzyknięciu złośliwego kodu 
+ do formularzy internetowych.
+
+Uwierzytelnianie i autoryzacja: Uwierzytelnianie i autoryzacja to ważne metody 
+zabezpieczania aplikacji internetowych. Uwierzytelnianie to proces weryfikacji 
+tożsamości użytkownika, natomiast autoryzacja to proces określania praw dostępu 
+użytkownika do określonych zasobów lub funkcji. Nazwy użytkowników i hasła są 
+powszechnie używane do uwierzytelniania, podczas gdy listy kontroli dostępu (ACL) 
+lub kontrola dostępu oparta na rolach (RBAC) są powszechnie używane do autoryzacji.
+
+Bezpieczna komunikacja: Bezpieczna komunikacja jest niezbędna do zabezpieczenia 
+aplikacji internetowych. Komunikacja pomiędzy klientem a serwerem powinna być szyfrowana
+przy użyciu protokołów takich jak HTTPS, SSL lub TLS. Protokoły te pomagają zapobiegać 
+podsłuchom, atakom typu man-in-the-middle oraz innym formom przechwytywania poufnych danych.
+
+Zarządzanie sesją: Zarządzanie sesją to proces zarządzania sesjami użytkowników w 
+aplikacji internetowej. Obejmuje on zarządzanie identyfikatorami sesji, limitami 
+czasu sesji oraz danymi sesji. Właściwe zarządzanie sesją może pomóc w zapobieganiu 
+porwania sesji, gdzie atakujący uzyskuje dostęp do sesji użytkownika poprzez kradzież 
+jego identyfikatora sesji.
+
+Rejestrowanie i monitorowanie dostępu: Rejestrowanie dostępu i monitorowanie to ważne 
+metody wykrywania i zapobiegania nieautoryzowanemu dostępowi do aplikacji internetowych. 
+Logi dostępu powinny być włączone, aby rejestrować wszystkie próby dostępu, w tym próby 
+udane i nieudane. Narzędzia monitorujące mogą być również wykorzystywane do wykrywania 
+podejrzanych zachowań, takich jak powtarzające się próby logowania lub nietypowe wzorce ruchu.
+
+</pre>
+<h3>17. Wymienić i krótko omówić systemy zarządzania bazami danych</h3>
+<pre>
+System zarządzania bazą danych (DBMS) to oprogramowanie służące do zarządzania i 
+organizowania danych w bazie danych. Oto kilka popularnych typów DBMS i krótki 
+opis każdego z nich:
+
+Relacyjny DBMS (RDBMS): RDBMS organizuje dane w jedną lub więcej tabel z unikalnym 
+kluczem dla każdego wiersza. RDBMS używa SQL (Structured Query Language) do manipulacji
+ i zarządzania danymi. Przykłady RDBMS to MySQL, Oracle Database i Microsoft SQL Server.
+
+Obiektowy system DBMS (OODBMS): OODBMS organizuje dane w obiekty, które mogą zawierać 
+atrybuty danych i metody zachowania. Systemy OODBMS wykorzystują koncepcje programowania
+ obiektowego do manipulacji i zarządzania danymi. Przykładami OODBMS są ObjectStore i ObjectDB.
+
+DBMS zorientowany na dokumenty: DBMS zorientowany na dokumenty organizuje dane w dokumentach,
+ które mogą zawierać struktury danych JSON lub XML. DBMS zorientowane na dokumenty są często 
+ używane w aplikacjach internetowych i bazach danych NoSQL. Przykłady DBMS zorientowanych 
+ na dokumenty to MongoDB i CouchDB.
+
+DBMS klucz-wartość: DBMS klucz-wartość organizuje dane w pary klucz-wartość, gdzie klucz jest
+ używany do identyfikacji danych, a wartość jest rzeczywistymi danymi. SZBD klucz-wartość są 
+ często używane w systemach buforowania i do przechowywania danych sesji. Przykłady SZBD 
+ klucz-wartość to Redis i Riak.
+
+Grafowy SZBD: Grafowy SZBD organizuje dane w węzły i krawędzie, które są używane do 
+reprezentowania złożonych relacji pomiędzy danymi. Grafowe systemy DBMS są często używane 
+w sieciach społecznościowych i systemach rekomendacji. Przykłady grafowych SZBD obejmują Neo4j 
+i OrientDB.
+
+</pre>
+<h3>18. Wymienić i krótko omówić różne typy indeksów w SQL</h3>
+<pre>
+W języku SQL, indeks jest strukturą danych używaną do poprawy wydajności zapytań 
+poprzez umożliwienie systemowi zarządzania bazą danych szybsze znalezienie danych. 
+Oto kilka rodzajów indeksów w SQL i krótki opis każdego z nich:
+
+Indeks klastrowany: Indeks klastrowany określa fizyczną kolejność danych w tabeli. 
+Każda tabela może posiadać tylko jeden indeks klastrowany i jest on zazwyczaj tworzony
+ na kluczu głównym tabeli.
+
+Indeks niezgrupowany: Indeks niezgrupowany jest oddzielną strukturą danych, która 
+przechowuje kopię indeksowanych kolumn i wskaźnik do lokalizacji danych w tabeli. 
+Każda tabela może posiadać wiele indeksów niezgrupowanych i są one zazwyczaj tworzone
+na kolumnach często używanych w zapytaniach.
+
+Indeks unikalny: Indeks unikalny zapewnia, że wartości w indeksowanej kolumnie lub 
+kolumnach są unikalne. Może być utworzony jako indeks klastrowany lub nieklastrowany.
+
+Indeks bitmapowy: Indeks bitmapowy jest używany do indeksowania kolumn z małą liczbą 
+odrębnych wartości. Indeks bitmapowy jest używany do indeksowania kolumn z małą liczbą 
+wartości. Używa on struktury danych bitmapowych do reprezentowania obecności lub braku 
+wartości w indeksowanej kolumnie.
+
+Indeks pokrycia: Indeks zakrywający zawiera wszystkie kolumny wymagane do zaspokojenia 
+zapytania, więc system zarządzania bazą danych nie musi uzyskiwać dostępu do tabeli bazowej. 
+Ten typ indeksu może poprawić wydajność zapytania poprzez zmniejszenie liczby 
+wymaganych odczytów z dysku.
+
+</pre>
+<h3>19. Jakie są rodzaje złączeń w SQL? Krótko je omów.</h3>
+<pre>
+W języku SQL join jest metodą łączenia danych z dwóch lub więcej tabel na podstawie 
+wspólnej kolumny między nimi. Oto kilka rodzajów złączeń w SQL i krótki opis każdego z nich:
+
+Złączenie wewnętrzne: Złącze wewnętrzne zwraca tylko te wiersze, które mają pasujące 
+wartości w obu łączonych tabelach. Jest to najczęściej spotykany typ złączenia w SQL 
+i jest używany do łączenia powiązanych danych z dwóch lub więcej tabel.
+
+Złączenie lewe: Lewe złączenie zwraca wszystkie wiersze z lewej tabeli i pasujące wiersze 
+z prawej tabeli. Jeśli nie ma dopasowania w prawej tabeli, wynik zawiera wartości NULL.
+
+Złączenie prawe: Prawe złączenie zwraca wszystkie wiersze z prawej tabeli i pasujące wiersze 
+z lewej tabeli. Jeśli nie ma dopasowania w lewej tabeli, wynik zawiera wartości NULL.
+
+Pełne złączenie zewnętrzne: Pełne złączenie zewnętrzne zwraca wszystkie wiersze z obu łączonych 
+tabel wraz z wszelkimi niedopasowanymi wierszami. Jeśli nie ma dopasowania w jednej z tabel, 
+wynik zawiera wartości NULL.
+
+Złączenie krzyżowe: Złączenie krzyżowe, znane również jako produkt kartezjański, zwraca 
+wszystkie możliwe kombinacje wierszy z obu łączonych tabel. Jest ono używane, gdy nie ma 
+wspólnej kolumny między łączonymi tabelami.
+</pre>
+<h3>20. Wymień podstawowe cechy baz typu NoSQL. Podaj przykłądy takich baz</h3>
+<pre>
+Bazy danych typu NoSQL to nierelacyjne bazy danych, które nie wykorzystują SQL jako 
+podstawowego języka zapytań. Oto kilka podstawowych cech baz danych typu NoSQL:
+
+Schema-free: Bazy danych NoSQL nie mają ustalonego schematu, co oznacza, że dane mogą 
+być dodawane lub usuwane bez konieczności modyfikacji struktury bazy.
+
+Skalowalność: Bazy danych NoSQL są zaprojektowane do skalowania poziomego, co oznacza, 
+że mogą obsługiwać duże ilości danych poprzez dodawanie kolejnych węzłów do klastra bazy danych.
+
+Wysoka wydajność: Bazy danych NoSQL są zoptymalizowane pod kątem wydajności i mogą 
+obsługiwać duże ilości danych oraz wysoką przepustowość.
+
+Rozproszone: Bazy danych NoSQL są zaprojektowane do pracy w systemach rozproszonych, 
+co oznacza, że dane mogą być przechowywane i przetwarzane na wielu maszynach.
+
+Wsparcie dla niestrukturalnych danych: Bazy danych NoSQL są zaprojektowane do obsługi 
+nieustrukturyzowanych danych, takich jak dokumenty, obrazy i filmy.
+
+Przykłady baz danych NoSQL obejmują:
+
+MongoDB: Baza danych zorientowana na dokumenty, która wykorzystuje dokumenty podobne do 
+JSON do przechowywania danych.
+
+Cassandra: Kolumnowa baza danych, która jest zoptymalizowana do ciężkich prac związanych 
+z zapisem i może obsługiwać duże ilości danych w wielu centrach danych.
+
+Couchbase: Baza danych zorientowana na wartości kluczowe i dokumenty, która jest przeznaczona
+do wysokowydajnych, rozproszonych aplikacji.
+
+Redis: Magazyn wartości kluczowych, który może być używany do buforowania, zarządzania sesjami 
+i przetwarzania danych w czasie rzeczywistym.
+
+Amazon DynamoDB: Baza danych zorientowana na wartości kluczowe i dokumenty, która jest w pełni 
+zarządzana i zaprojektowana dla skalowalnych aplikacji.
+</pre>
+<h3>1. Podać określenie (definicję) i różnice między pojęciami: język programowania, algorytm, program.</h3>
+<pre>
+Język programowania to zestaw reguł i instrukcji, które określają, jak należy zaprogramować 
+komputer w celu wykonania określonego zadania. Algorytm to precyzyjny opis krok po kroku, 
+jak rozwiązać pewien problem lub wykonać określone zadanie. Program to zbiór instrukcji 
+napisanych w języku programowania, które wykonują określone zadania lub rozwiązują konkretne problemy.
+Różnica między językiem programowania a algorytmem polega na tym, że język programowania 
+to narzędzie, które umożliwia tworzenie programów, a algorytm to sposób rozwiązania problemu. 
+Program natomiast jest już gotowym produktem, który wykonuje określone zadania lub rozwiązuje 
+konkretne problemy, a składa się z instrukcji napisanych w języku programowania.
+</pre>
+<h3>2. Scharakteryzować reprezentację (implementację) w pamięci operacyjnej danych, typów wartościujących (prostych) i referencyjnych (złożonych).</h3>
+<pre>
+W pamięci operacyjnej, dane typów wartościowych (prostych) są przechowywane bezpośrednio 
+na stosie. Każda zmienna przechowująca wartość typu wartościowego ma swój własny obszar 
+w pamięci, a zmienne te są przechowywane w porządku chronologicznym zgodnie z ich deklaracją 
+w kodzie programu.
+
+W przypadku typów referencyjnych (złożonych), zmienna przechowuje adres w pamięci, gdzie 
+znajduje się obiekt. Obiekt ten może składać się z wielu pól, które są również przechowywane 
+w pamięci. Przechowywanie typów referencyjnych odbywa się w stercie, a nie na stosie. 
+Wszystkie zmienne referencyjne zajmują tyle miejsca na stosie, ile potrzeba na przechowywanie 
+adresu do obiektu. Obiekt natomiast zajmuje miejsce w stercie, a adres wskazujący na początek 
+obiektu przechowywany jest na stosie.
+
+W przypadku zmiennej przechowującej typ referencyjny, można przypisać do niej wartość null, 
+co oznacza, że zmienna nie wskazuje na żaden obiekt w pamięci. Wartość null jest również 
+przechowywana w zmiennej jako adres wskazujący na brak obiektu.
+
+Warto zauważyć, że zmienne typów referencyjnych i wartościowych są przekazywane do funkcji 
+w różny sposób. W przypadku typów wartościowych, przekazywana jest kopia wartości zmiennej, 
+podczas gdy w przypadku typów referencyjnych, przekazywany jest adres obiektu, a nie kopia 
+samego obiektu.
+</pre>
+<h3>3. Podać klasyfikacje oraz scharakteryzować metody testowania programów.</h3>
+<pre>
+Klasyfikacje testów programów:
+
+Testy jednostkowe - sprawdzają poprawność kodu dla pojedynczych jednostek kodu 
+(np. pojedyncze funkcje, metody). Przeprowadzane są zwykle przez programistów, 
+którzy tworzą testy jednostkowe dla swojego kodu. Są to testy automatyczne, 
+które umożliwiają szybkie wykrycie błędów w kodzie.
+
+Testy integracyjne - sprawdzają poprawność interakcji między różnymi jednostkami 
+kodu (np. modułami, komponentami). Pozwalają na wykrycie błędów, które nie są 
+wykrywane podczas testów jednostkowych.
+
+Testy funkcjonalne - sprawdzają, czy program działa zgodnie z wymaganiami 
+funkcjonalnymi. Testują różne funkcjonalności programu, a ich wynik zależy 
+od oczekiwanego zachowania systemu.
+
+Testy wydajnościowe - sprawdzają, czy program działa w wymaganym czasie i z 
+wymaganą wydajnością. Pomagają wykryć problemy z wydajnością systemu i optymalizować kod.
+
+Testy bezpieczeństwa - sprawdzają, czy program jest bezpieczny, tj. czy chroni poufne 
+dane i jest odporny na ataki z zewnątrz.
+
+Testy użyteczności - sprawdzają, czy program jest intuicyjny i łatwy w obsłudze 
+przez użytkowników.
+
+Metody testowania programów:
+
+Testy manualne - polegają na ręcznym przeprowadzaniu testów przez testerów, którzy 
+wykonują określone scenariusze i obserwują zachowanie systemu. Są to testy bardziej 
+podatne na pomyłki, ale jednocześnie pozwalają na zidentyfikowanie problemów, których 
+nie jest w stanie wykryć automatyczny system testowy.
+
+Testy automatyczne - polegają na automatycznym przeprowadzaniu testów przez specjalne 
+oprogramowanie, które generuje przypadki testowe i wykonuje je w sposób zautomatyzowany. 
+Jest to szybsza i bardziej skuteczna metoda testowania niż testy manualne, ale wymaga 
+odpowiedniego narzędzia do przeprowadzania testów automatycznych.
+
+Testy exploracyjne - polegają na eksplorowaniu systemu przez testerów bez wykorzystania 
+wcześniej przygotowanych scenariuszy testowych. Ta metoda pozwala na odkrycie problemów, 
+które nie były przewidziane w scenariuszach testowych, ale jednocześnie wymaga doświadczenia 
+i wiedzy na temat systemu.
+</pre>
+<h3>4. Scharakteryzować paradygmaty programowania zorientowanego obiektowo (enkapsulacja, dziedziczenie, polimorfizm, abstrakcja).</h3>
+<pre>
+Programowanie zorientowane obiektowo (OOP) to paradygmat programowania, 
+który skupia się na projektowaniu i tworzeniu programów złożonych z obiektów, 
+które są wzajemnie powiązane i posiadają określone cechy i zachowania.
+
+Enkapsulacja - jest to mechanizm, który umożliwia ukrycie stanu obiektu i 
+udostępnienie tylko tych operacji, które są potrzebne do manipulowania tym stanem. 
+Enkapsulacja pozwala na zachowanie integralności i bezpieczeństwa danych obiektu, 
+poprzez uniemożliwienie bezpośredniego dostępu do jego prywatnych pól.
+
+Dziedziczenie - jest to mechanizm, który umożliwia tworzenie nowych klas na podstawie 
+już istniejących klas. Klasa dziedzicząca (podklasa) dziedziczy po klasie nadrzędnej 
+(nadklasa) jej cechy i zachowania, a także może je modyfikować lub rozszerzać. 
+Dziedziczenie umożliwia tworzenie hierarchii klas, które odzwierciedlają rzeczywiste 
+relacje pomiędzy obiektami.
+
+Polimorfizm - jest to mechanizm, który umożliwia tworzenie wielu metod o tej samej 
+nazwie, ale o różnych implementacjach w zależności od typu obiektu, na którym są 
+wywoływane. Polimorfizm umożliwia bardziej elastyczne i łatwiejsze w użyciu programy, 
+ponieważ metody mogą być stosowane do różnych typów obiektów, a ich implementacja 
+zależy od typu obiektu.
+
+Abstrakcja - jest to mechanizm, który umożliwia abstrahowanie od szczegółów 
+implementacyjnych i skupienie się na ogólnych cechach obiektów i ich zachowaniach. 
+Abstrakcja pozwala na tworzenie bardziej ogólnych i elastycznych modeli obiektowych, 
+co ułatwia projektowanie i utrzymanie programów. W OOP, abstrakcję realizuje 
+się poprzez definiowanie klas abstrakcyjnych i interfejsów, które nie posiadają 
+implementacji, ale określają jedynie ogólne cechy i zachowania.
+</pre>
+<h3>5. Omówić znaczenie identyfikacji i specyfikacji wymagań aplikacji (systemu) informatycznej dla procesu jej projektowania.</h3>
+<pre>
+Identyfikacja i specyfikacja wymagań aplikacji (systemu) informatycznej są 
+kluczowe dla procesu projektowania systemów informatycznych, ponieważ stanowią 
+podstawę dla całego procesu projektowania. Bez precyzyjnego zdefiniowania wymagań, 
+projektowanie aplikacji lub systemu informatycznego staje się chaotyczne i nieefektywne, 
+a produkt końcowy może być nieodpowiedni dla oczekiwań użytkowników i biznesu.
+
+Identyfikacja wymagań polega na zbieraniu informacji o celach, oczekiwaniach i wymaganiach
+ biznesowych oraz użytkowników systemu. Wymagania mogą być funkcjonalne (dotyczące tego, 
+ co system powinien robić), niefunkcjonalne (dotyczące tego, jak system powinien działać) 
+ lub wymagania biznesowe (dotyczące celów biznesowych, które mają być osiągnięte). 
+ Wymagania mogą być również podzielone na wymagania użytkowników, systemu i techniczne.
+
+Specyfikacja wymagań polega na formalnym zapisaniu zebranych informacji o wymaganiach 
+w sposób zrozumiały dla wszystkich członków zespołu projektowego. Dokument specyfikacji 
+wymagań powinien zawierać szczegółowe opisy wymagań, ich priorytety, zależności między 
+wymaganiami, warunki testowe, ograniczenia techniczne i biznesowe, a także scenariusze 
+użytkowania.
+
+Poprawna identyfikacja i specyfikacja wymagań jest kluczowa dla projektowania aplikacji 
+lub systemu informatycznego, ponieważ umożliwia zrozumienie, co powinien robić system, 
+jak powinien działać i jakie cele biznesowe ma osiągnąć. To pozwala na tworzenie dokładnego 
+planu projektowego, który uwzględnia wszystkie wymagania, ograniczenia i cele biznesowe. 
+Dzięki temu projektanci mogą stworzyć system, który spełnia oczekiwania użytkowników i biznesu,
+a także jest łatwy do utrzymania i rozwijania w przyszłości.
+</pre>
+<h3>6. Scharakteryzować algorytmy sortowania z podaniem ich złożoności obliczeniowej.</h3>
+<pre>
+Sortowanie bąbelkowe - algorytm ten porównuje pary sąsiednich elementów i zamienia je, 
+jeśli są w niewłaściwej kolejności. Następnie porównuje kolejne pary sąsiednich elementów 
+aż do momentu, gdy cały zbiór danych jest uporządkowany. Złożoność obliczeniowa to O(n^2).
+
+Sortowanie przez wstawianie - algorytm ten wybiera jeden element ze zbioru danych i wstawia 
+go w odpowiednie miejsce w już uporządkowanej części zbioru. Proces ten powtarzany jest dla 
+każdego elementu zbioru. Złożoność obliczeniowa to O(n^2).
+
+Sortowanie przez wybieranie - algorytm ten wybiera najmniejszy element ze zbioru danych i 
+umieszcza go na początku zbioru. Następnie proces ten powtarzany jest dla pozostałych elementów. 
+Złożoność obliczeniowa to O(n^2).
+
+Sortowanie przez scalanie - algorytm ten dzieli zbiór danych na połowę i rekurencyjnie 
+sortuje każdą z połówek. Następnie scalane są posortowane połówki w jeden zbiór, w którym 
+elementy są już posortowane. Złożoność obliczeniowa to O(n log n).
+
+Szybkie sortowanie - algorytm ten dzieli zbiór danych na podzbiory i rekurencyjnie sortuje 
+każdy z podzbiorów. Proces ten jest wykonywany poprzez wybór jednego elementu, nazywanego pivota,
+który dzieli zbiór na dwie części: elementy mniejsze od pivota i elementy większe od pivota. 
+Następnie proces ten jest powtarzany dla każdej z dwóch części zbioru. 
+Złożoność obliczeniowa to O(n log n).
+
+Sortowanie kubełkowe - algorytm ten polega na umieszczeniu każdego elementu zbioru w 
+odpowiednim kubełku, który reprezentuje przedział wartości, do którego należy element. 
+Następnie każdy kubełek jest sortowany i scalany w jeden zbiór. Złożoność obliczeniowa to 
+O(n + k), gdzie k to liczba kubełków.
+</pre>
+<h3>7. Scharakteryzuj podstawowe formaty plików graficznych: JPEG (Joint Photographic Experts Group), TIFF (Tagged Image File Format), GIF (Graphics Interchange Format), PNG (Portable Network Graphics), BMP (BitMaP), SVG (Scalable Vector Graphics), EPS (Encapsulated PostScript).</h3>
+<pre>
+JPEG (Joint Photographic Experts Group) - jest to format pliku graficznego, który został 
+opracowany z myślą o zapisie fotografii cyfrowych. Jest to format stratny, co oznacza, 
+że niektóre dane z oryginalnego obrazu są tracone podczas kompresji, co prowadzi do utraty 
+jakości obrazu. JPEG obsługuje paletę kolorów RGB, a także dodatkowe funkcje, 
+takie jak kompresja z stratami i bezstratna kompresja.
+
+TIFF (Tagged Image File Format) - jest to format pliku graficznego, który został stworzony 
+w celu umożliwienia przechowywania obrazów z różnych urządzeń i platform. TIFF obsługuje 
+wiele rodzajów kompresji i rozdzielczości, co czyni go idealnym formatem do przechowywania 
+zdjęć cyfrowych, grafik wektorowych, a także dokumentów tekstowych. TIFF obsługuje paletę 
+kolorów RGB, CMYK i szarości.
+
+GIF (Graphics Interchange Format) - jest to format pliku graficznego, który został 
+zaprojektowany z myślą o przechowywaniu animacji i grafiki o niskiej rozdzielczości. 
+GIF obsługuje paletę kolorów RGB i indeksację kolorów, co oznacza, że każdy piksel w 
+obrazie ma przypisany konkretny kolor z palety. GIF obsługuje także funkcję przezroczystości.
+
+PNG (Portable Network Graphics) - jest to format pliku graficznego, który został opracowany 
+jako alternatywa dla formatu GIF. PNG obsługuje paletę kolorów RGB, CMYK i szarości, 
+a także funkcję przezroczystości. PNG jest formatem bezstratnym, co oznacza, że nie traci 
+jakości podczas kompresji. Jest to format często wykorzystywany do przechowywania grafiki wektorowej.
+
+BMP (BitMaP) - jest to format pliku graficznego, który przechowuje obrazy bez kompresji. 
+BMP obsługuje paletę kolorów RGB i indeksację kolorów, ale nie obsługuje funkcji przezroczystości. 
+BMP jest formatem prostym i łatwym w użyciu, ale zwykle zajmuje więcej miejsca niż inne formaty 
+z powodu braku kompresji.
+
+SVG (Scalable Vector Graphics) - jest to format pliku graficznego, który przechowuje grafikę wektorową.
+ SVG obsługuje paletę kolorów RGB i indeksację kolorów, a także wiele innych funkcji, 
+ takich jak przezroczystość i animacja. SVG jest formatem skalowalnym, co oznacza, 
+ że może być powiększany bez utraty jakości obrazu.
+
+EPS (Encapsulated PostScript) - jest to format pliku graficznego, który został opracowany 
+z myślą o druku. EPS obsługuje paletę kolorów RGB, CMYK i szarości, a także wiele innych funkcji
+</pre>
+<h3>8. Omówić tworzenie grafiki 2D w wybranym języku programowania.</h3>
+<pre>
+Kotlin to język programowania rozwijany przez JetBrains, który może być wykorzystywany
+ do tworzenia różnych aplikacji, w tym również gier i aplikacji multimedialnych. 
+ Kotlin jest kompatybilny z językiem Java, dzięki czemu można korzystać z bibliotek 
+ dostępnych dla tej platformy.
+
+Jedną z popularnych bibliotek do tworzenia gier w języku Java jest biblioteka LibGDX,
+która jest również dostępna dla Kotlina. Dzięki LibGDX możemy tworzyć aplikacje 2D i 3D, 
+a także obsługiwać muzykę, dźwięki, animacje i wiele innych.
+
+Aby rozpocząć tworzenie grafiki 2D w Kotlin z wykorzystaniem LibGDX, należy najpierw 
+zainstalować bibliotekę. Można to zrobić dodając odpowiednie zależności do pliku build.gradle:
+
+<i>dependencies {
+    implementation 'com.badlogicgames.gdx:gdx:1.10.0'
+    implementation 'com.badlogicgames.gdx:gdx-box2d:1.10.0'
+}</i>
+<i>import com.badlogic.gdx.ApplicationAdapter
+import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.graphics.GL20
+import com.badlogic.gdx.graphics.OrthographicCamera
+import com.badlogic.gdx.graphics.g2d.SpriteBatch
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer
+import com.badlogic.gdx.math.Vector2
+
+class MyGame : ApplicationAdapter() {
+    lateinit var camera: OrthographicCamera
+    lateinit var batch: SpriteBatch
+    lateinit var shapeRenderer: ShapeRenderer
+
+    override fun create() {
+        camera = OrthographicCamera()
+        camera.setToOrtho(false, Gdx.graphics.width.toFloat(), Gdx.graphics.height.toFloat())
+
+        batch = SpriteBatch()
+        shapeRenderer = ShapeRenderer()
+    }
+
+    override fun render() {
+        // Czyszczenie ekranu
+        Gdx.gl.glClearColor(1f, 1f, 1f, 1f)
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
+
+        // Ustawienie koloru rysowania
+        shapeRenderer.color = com.badlogic.gdx.graphics.Color.RED
+
+        // Rozpoczęcie rysowania prostokąta
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Filled)
+        shapeRenderer.rect(100f, 100f, 200f, 100f)
+        shapeRenderer.end()
+    }
+
+    override fun resize(width: Int, height: Int) {
+        camera.setToOrtho(false, width.toFloat(), height.toFloat())
+    }
+
+    override fun dispose() {
+        batch.dispose()
+        shapeRenderer.dispose()
+    }
+}</i>
+Klasa MyGame rozszerza klasę ApplicationAdapter dostarczoną przez LibGDX i nadpisuje 
+jej metody, aby zapewnić własne zachowanie.
+
+W metodzie create() tworzona jest OrthographicCamera i ustawiana na tryb projekcji ortograficznej. 
+tryb projekcji. Tworzone są również SpriteBatch i ShapeRenderer.
+
+W metodzie render(), ekran jest czyszczony do białości, a ShapeRenderer jest ustawiony 
+na rysowanie w kolorze czerwonym. Następnie przy użyciu ShapeRenderer rysowany jest wypełniony prostokąt.
+
+W metodzie resize(), kamera jest dopasowywana do nowego rozmiaru ekranu.
+
+W metodzie dispose(), zasoby są czyszczone poprzez usunięcie SpriteBatch 
+i ShapeRenderer.
+</pre>
+<h3>9. Podać klasyfikację i charakterystykę baz danych.</h3>
+<pre>
+Bazy danych relacyjne - są najczęściej stosowanym rodzajem baz danych, w których 
+dane są zorganizowane w postaci tabel z wierszami i kolumnami. Dane w tabelach 
+są powiązane za pomocą kluczy obcych. W bazach relacyjnych stosuje się język SQL 
+do zarządzania danymi.
+
+Bazy danych NoSQL - to rodzaj baz danych, które nie stosują schematu relacyjnego 
+i SQL. NoSQL charakteryzuje się brakiem jednoznacznie zdefiniowanej struktury danych 
+i elastycznością w przechowywaniu danych. NoSQL obejmuje wiele rodzajów baz danych, 
+takich jak bazy klucz-wartość, dokumentowe, grafowe czy kolumnowe.
+
+Bazy danych obiektowe - w tych bazach danych dane są przechowywane w postaci obiektów, 
+które są zapisywane bezpośrednio w bazie danych. Bazy danych obiektowe są szczególnie 
+przydatne w aplikacjach korzystających z języków programowania obiektowego, 
+takich jak Java czy C++.
+
+Bazy danych hierarchiczne - to rodzaj baz danych, w którym dane są zorganizowane w 
+hierarchicznej strukturze. Każdy rekord jest reprezentowany przez węzeł, który może 
+mieć wiele potomków. Bazy danych hierarchiczne są często wykorzystywane w systemach 
+operacyjnych i bazach danych dla przechowywania informacji o plikach i katalogach.
+
+Bazy danych czasowe - to bazy danych, które umożliwiają przechowywanie informacji o 
+zdarzeniach, które nastąpiły w czasie. Bazy danych czasowe są przydatne w aplikacjach, 
+które śledzą zdarzenia w czasie rzeczywistym, takie jak systemy monitorowania sieci 
+czy systemy detekcji anomalii.
+
+Charakterystyka baz danych obejmuje również kilka elementów:
+
+Struktura danych - to sposób, w jaki dane są zorganizowane i przechowywane w bazie danych.
+
+Język zapytań - to język programowania, który umożliwia dostęp do danych w bazie danych 
+i manipulowanie nimi.
+
+Zabezpieczenia - to metody zabezpieczenia danych przed dostępem nieautoryzowanym.
+
+Wydajność - to szybkość przetwarzania danych i skalowalność bazy danych w zależności 
+od ilości danych.
+
+Odporność na awarie - to zdolność bazy danych do utrzymania integralności danych nawet 
+w przypadku awarii sprzętu czy oprogramowania.
+</pre>
+<h3>10. Omówić mechanizmy sprzętowe potrzebne do realizacji wielodostępnych, wieloprocesowych systemów operacyjnych.</h3>
+<pre>
+Realizacja wielodostępnych, wieloprocesowych systemów operacyjnych wymaga zaawansowanych
+mechanizmów sprzętowych i oprogramowania, które umożliwiają efektywną obsługę wielu zadań 
+jednocześnie. Poniżej przedstawiam krótki opis najważniejszych mechanizmów sprzętowych 
+potrzebnych do realizacji takich systemów operacyjnych:
+
+Procesory wielordzeniowe - są to procesory, które posiadają więcej niż jedno fizyczne rdzenie. 
+Dzięki temu są w stanie wykonywać wiele zadań jednocześnie, co poprawia wydajność 
+systemu operacyjnego.
+
+Pamięć RAM - większa ilość pamięci RAM pozwala na uruchamianie większej liczby aplikacji 
+jednocześnie oraz zwiększa wydajność systemu.
+
+Dyski twarde - szybki dostęp do danych jest niezbędny dla efektywnej pracy systemu operacyjnego. 
+Dlatego dyski twarde powinny mieć dużą pojemność i szybki interfejs.
+
+Kontrolery sieciowe - umożliwiają komunikację między komputerami w sieci. Są niezbędne dla 
+systemów operacyjnych, które obsługują wiele użytkowników jednocześnie.
+
+Systemy RAID - pozwalają na zwiększenie niezawodności i wydajności przechowywania danych 
+poprzez łączenie kilku dysków w jedną logiczną jednostkę.
+
+Mechanizmy synchronizacji - umożliwiają kontrolowanie dostępu do współdzielonych zasobów, 
+takich jak pamięć czy urządzenia wejścia-wyjścia.
+
+Powyższe mechanizmy sprzętowe muszą być poparte odpowiednio skonfigurowanym oprogramowaniem 
+systemowym, takim jak systemy plików, schedulery czy mechanizmy synchronizacji i komunikacji 
+międzyprocesowej, aby zapewnić sprawną i niezawodną pracę wielodostępnych, wieloprocesowych 
+systemów operacyjnych.
+</pre>
+<h3>11. Scharakteryzować pojęcie: pamięć wirtualna oraz podać cechy charakterystyczne dla różnych technik realizacji pamięci wirtualnej (strategie wymiany informacji w pamięci operacyjnej).</h3>
+<pre>
+Pamięć wirtualna to mechanizm, który umożliwia programom korzystanie z większej 
+przestrzeni adresowej niż faktycznie posiadają. Pamięć wirtualna jest realizowana 
+przez system operacyjny poprzez tworzenie na dysku twardym pliku stronicowania, 
+który stanowi rozszerzenie pamięci operacyjnej.
+
+Cechy charakterystyczne dla różnych technik realizacji pamięci wirtualnej to:
+
+Wymiana całych stron - jest to najprostsza technika wymiany informacji w pamięci 
+operacyjnej. Polega na kopiowaniu całych stron pomiędzy pamięcią operacyjną a 
+plikiem stronicowania na dysku. Technika ta jest prosta w implementacji, ale może 
+prowadzić do dużych opóźnień związanych z przenoszeniem dużych ilości danych 
+między pamięcią a dyskiem.
+
+Wymiana fragmentów stron - ta technika polega na kopiowaniu tylko tych fragmentów 
+strony, które są faktycznie używane. Technika ta wymaga bardziej złożonej implementacji, 
+ale pozwala na oszczędność przepustowości pamięci operacyjnej i dysku.
+
+Wirtualny magazyn podręczny - jest to technika, w której system operacyjny tworzy bufor 
+na dysku, w którym przechowuje często używane fragmenty danych. Dzięki temu dane te są 
+szybko dostępne w pamięci operacyjnej, co pozwala na zwiększenie wydajności systemu.
+
+Podejście hybrydowe - to podejście łączy w sobie różne techniki wymiany informacji 
+w pamięci operacyjnej. System operacyjny wykorzystuje różne strategie w zależności 
+od potrzeb, co pozwala na osiągnięcie jak najlepszej wydajności systemu.
+</pre>
+<h3>12. Porównać pamięci SRAM i DRAM: realizacje układowe, czasy dostępu, pobór mocy i zastosowania.</h3>
+<pre>
+Pamięci SRAM (Static Random Access Memory) i DRAM (Dynamic Random Access Memory) to 
+dwie podstawowe kategorie pamięci RAM (Random Access Memory) wykorzystywanych w 
+urządzeniach elektronicznych. Oto porównanie między SRAM i DRAM:
+
+Realizacje układowe:
+SRAM: składa się z pojedynczych tranzystorów, które są w stanie przechowywać dane 
+przez długi czas bez potrzeby odświeżania. Dzięki temu SRAM działa szybciej i zużywa 
+mniej energii niż DRAM.
+
+DRAM: składa się z pojedynczych kondensatorów, które przechowują ładunek elektryczny, 
+reprezentujący dane. Kondensatory te muszą być odświeżane w regularnych odstępach czasu,
+aby uniknąć utraty danych. Dlatego DRAM działa wolniej i zużywa więcej energii niż SRAM.
+
+Czasy dostępu:
+
+SRAM: zapewnia szybki dostęp do danych, ponieważ nie wymaga czasochłonnego odświeżania 
+pamięci. Czas dostępu do SRAM wynosi około 10 ns.
+
+DRAM: wymaga odświeżania pamięci, co wydłuża czas dostępu do danych. Czas dostępu do 
+DRAM wynosi około 60 ns.
+
+Pobór mocy:
+
+SRAM: zużywa mniej energii niż DRAM, ponieważ nie wymaga ciągłego odświeżania pamięci.
+
+DRAM: zużywa więcej energii niż SRAM, ponieważ wymaga ciągłego odświeżania pamięci.
+
+Zastosowania:
+
+SRAM: jest stosowana tam, gdzie wymagane są szybkie i częste operacje odczytu i 
+zapisu danych, takie jak cache procesora, pamięć podręczna lub rejestr przesuwny.
+
+DRAM: jest stosowana tam, gdzie wymagana jest duża pojemność pamięci w stosunku do 
+kosztów produkcji, takie jak pamięć RAM w komputerach osobistych i urządzeniach mobilnych.
+</pre>
+<h3>13. Omówić mechanizm bezpośredniego dostępu do pamięci DMA (Direct Memory Access).</h3>
+<pre>
+Mechanizm bezpośredniego dostępu do pamięci (DMA - Direct Memory Access) jest 
+technologią umożliwiającą urządzeniom peryferyjnym bezpośrednią wymianę danych 
+z pamięcią RAM komputera, bez potrzeby zaangażowania procesora. Dzięki temu, 
+urządzenia peryferyjne mogą przesyłać dane w sposób bardziej efektywny i szybki, 
+co jest szczególnie ważne w przypadku przesyłania dużej ilości danych.
+
+Mechanizm DMA działa w taki sposób, że urządzenie peryferyjne, takie jak karta 
+sieciowa, dysk twardy czy karta dźwiękowa, ma bezpośredni dostęp do kontrolera DMA, 
+który znajduje się na płycie głównej. Kontroler DMA ma możliwość bezpośredniego zapisu 
+i odczytu danych z pamięci RAM, co pozwala na przesyłanie danych między urządzeniem 
+peryferyjnym a pamięcią RAM bez udziału procesora.
+
+Dzięki zastosowaniu DMA, procesor jest zwolniony z zadania przesyłania danych między 
+pamięcią RAM a urządzeniem peryferyjnym. Zamiast tego, kontroler DMA przeprowadza 
+transfer danych między pamięcią RAM a urządzeniem, co znacznie zwiększa wydajność systemu.
+
+W praktyce, DMA jest stosowane do przesyłania dużych ilości danych, takich jak pliki 
+multimedialne, obrazy czy strumienie wideo. Dzięki temu, urządzenia peryferyjne mogą 
+pracować z większą szybkością, a procesor może skupić się na wykonywaniu innych zadań, 
+co poprawia ogólną wydajność systemu.
+</pre>
+<h3>14. Omówić wpływ pamięci kieszeniowej (cache) na wydajność systemu komputerowego.</h3>
+<pre>
+Pamięć podręczna (ang. cache) to rodzaj pamięci operacyjnej, która jest używana w 
+celu przyspieszenia operacji odczytu i zapisu danych. Pamięć ta przechowuje kopię 
+części danych z pamięci operacyjnej, która była ostatnio używana przez procesor. 
+Dzięki temu procesor może uzyskać dostęp do danych znacznie szybciej, ponieważ pamięć 
+podręczna znajduje się na układzie scalonym (procesorze) i ma szybszy czas dostępu niż 
+pamięć operacyjna.
+
+Wpływ pamięci podręcznej na wydajność systemu komputerowego jest bardzo istotny. Dzięki temu, 
+że procesor ma dostęp do części danych bezpośrednio z pamięci podręcznej, a nie musi za każdym 
+razem odwoływać się do pamięci operacyjnej, czas wykonania operacji związanych z dostępem do 
+danych zostaje znacznie skrócony. Dzięki temu zwiększa się wydajność systemu.
+
+W przypadku niektórych operacji, takich jak odczyt lub zapis dużych plików, pamięć podręczna 
+może nie przynieść takiego samego korzyści jak w przypadku operacji na małych danych. Wynika 
+to z faktu, że pamięć podręczna jest stosunkowo mała w porównaniu z pamięcią operacyjną i nie 
+jest w stanie przechować wszystkich danych. W takim przypadku procesor musi odwołać się do 
+pamięci operacyjnej, co wydłuża czas dostępu do danych.
+
+Warto również zauważyć, że pamięć podręczna może prowadzić do pewnych problemów, takich jak 
+błędy koherencji pamięci. Wynika to z faktu, że pamięć podręczna przechowuje kopię danych z 
+pamięci operacyjnej, a jeśli dane zostaną zmienione w pamięci operacyjnej, to procesor może 
+nie odnotować tych zmian, jeśli używa kopii z pamięci podręcznej. W takim przypadku konieczne 
+jest skojarzenie zmian w pamięci operacyjnej z odpowiadającymi im wartościami w pamięci podręcznej, 
+aby uniknąć takich problemów.
+</pre>
+<h3>15. Omówić budowę i charakterystykę płyt: CD-R (Compact Disc-Recordable), CD-RW (Compact Disc-ReWritable), DVD (Digital Versatile Disc).</h3>
+<pre>
+Płyty CD-R (Compact Disc-Recordable), CD-RW (Compact Disc-ReWritable) i DVD (Digital Versatile Disc) 
+to nośniki danych, na których można przechowywać informacje w postaci cyfrowej. Każdy z tych rodzajów 
+płyt różni się od siebie pod względem technologii zapisu, pojemności i zastosowań.
+
+CD-R to płyta, na którą można zapisać dane tylko jeden raz. Zapis danych na płycie CD-R polega
+ na nagrzewaniu specjalnej warstwy umieszczonej na powierzchni płyty, co powoduje zmianę 
+ jej struktury chemicznej i utrwalenie informacji. Po zapisaniu danych na CD-R nie można 
+ ich już zmienić ani usunąć. Płyta CD-R ma pojemność zwykle od 650 do 700 MB i jest stosowana 
+ głównie do przechowywania muzyki, filmów, plików z danymi lub kopii zapasowych.
+
+CD-RW to płyta, na którą można wielokrotnie zapisać i usunąć dane. Płyty CD-RW wykorzystują 
+specjalną warstwę związków chemicznych, której struktura może być zmieniana za pomocą lasera. 
+Dzięki temu informacje na płycie CD-RW mogą być nadpisywane i kasowane wielokrotnie. 
+Płyta CD-RW ma pojemność podobną do CD-R, ale ze względu na wyższą cenę i mniejszą popularność, 
+jest rzadziej stosowana.
+
+DVD to płyta o większej pojemności niż CD, dzięki zastosowaniu dwóch warstw umieszczonych na 
+jednej płycie. DVD może przechowywać dane w formacie cyfrowym, a także filmy w jakości Full HD. 
+Płyty DVD są też dostępne w różnych wersjach, takich jak DVD-R (zapis jednorazowy), DVD-RW 
+(zapis wielokrotny) i DVD+RW (zapis wielokrotny). Płyty DVD mogą mieć pojemność od 4,7 GB do 17 GB, 
+a w przypadku płyt dwuwarstwowych pojemność może wynosić nawet 30 GB.
+
+Wszystkie te płyty mają zastosowanie w różnych dziedzinach, od przechowywania danych i kopii 
+zapasowych po nagrywanie muzyki, filmów i programów telewizyjnych. Wybór rodzaju płyty zależy od 
+indywidualnych potrzeb i wymagań.
+</pre>
+<h3>16. Scharakteryzować budowę i charakterystykę pamięci RAID (Redundant Array of Independent Disks).</h3>
+<pre>
+RAID (Redundant Array of Independent Disks) to technologia polegająca na połączeniu kilku dysków
+ fizycznych w jedno logiczne urządzenie. Celem RAID jest zwiększenie niezawodności i wydajności 
+ systemu, poprzez redundancję danych oraz równoległą pracę kilku dysków.
+
+W zależności od trybu RAID, dyski są łączone w różne sposoby. Podstawowe tryby RAID to:
+
+RAID 0 - połączenie dwóch lub więcej dysków w taki sposób, że dane są równomiernie rozłożone 
+(striped) pomiędzy nimi. RAID 0 nie zapewnia redundancji danych, ale pozwala na zwiększenie 
+wydajności systemu poprzez równoległe odczyty i zapisy z kilku dysków.
+
+RAID 1 - połączenie dwóch lub więcej dysków w taki sposób, że dane są kopiowane (mirrored) 
+pomiędzy nimi. RAID 1 zapewnia redundancję danych, ale kosztem pojemności dysków - 
+pojemność całego systemu równa się pojemności najmniejszego dysku w zestawie.
+
+RAID 5 - połączenie trzech lub więcej dysków w taki sposób, że dane są dzielone (striped) 
+pomiędzy nimi, a dodatkowo dla każdego bloku danych jest obliczana suma kontrolna (parity). 
+Suma kontrolna jest przechowywana na kolejnym dysku, a w przypadku awarii jednego z dysków, 
+umożliwia odtworzenie utraconych danych. RAID 5 zapewnia dobrą równowagę pomiędzy 
+wydajnością a niezawodnością.
+
+RAID 6 - podobny do RAID 5, ale z dwoma sumami kontrolnymi dla każdego bloku danych. 
+Pozwala na  odtworzenie danych po awarii dwóch dysków jednocześnie.
+
+Pamięci RAID są zwykle stosowane w serwerach i systemach, które wymagają dużej pojemności 
+i niezawodności, jak np. bazy danych, systemy plików lub serwery sieciowe.
+</pre>
+<h3>17. Omówić strukturę i parametry interfejsu (standardu) komunikacyjnego USB (Universal Serial Bus).</h3>
+<pre>
+Interfejs USB (Universal Serial Bus) to standard komunikacyjny wykorzystywany do łączenia 
+urządzeń z komputerem. USB umożliwia transfer danych, zasilanie urządzeń oraz kontrolę nad nimi.
+
+Struktura interfejsu USB składa się z 4 warstw:
+
+Fizyczna (ang. Physical Layer) - warstwa ta odpowiada za transmisję danych poprzez 4 żyły przewodu 
+USB (D+, D-, VBUS, GND).
+
+Warstwa protokołów (ang. Protocol Layer) - odpowiada za wykrywanie podłączonych urządzeń i 
+zarządzanie nimi, a także określa jak dane są przesyłane między urządzeniami.
+Warstwa hosta (ang. Host Controller) - jest to oprogramowanie, które zarządza transmisją 
+danych między urządzeniem a komputerem.
+Warstwa urządzenia (ang. Device Controller) - jest to oprogramowanie kontrolera urządzenia, 
+które zarządza danymi przesyłanymi przez urządzenie.
+USB obsługuje wiele prędkości transmisji danych, a w zależności od wersji standardu, mogą one wynosić:
+
+USB 1.0/Low-Speed: 1,5 Mb/s
+USB 1.1/Full-Speed: 12 Mb/s
+USB 2.0/High-Speed: 480 Mb/s
+USB 3.0/SuperSpeed: 5 Gb/s
+USB 3.1/SuperSpeed+: 10 Gb/s
+USB posiada także różne typy złączy, takie jak:
+
+Typ A - najbardziej popularny, stosowany w komputerach jako port wyjściowy.
+Typ B - stosowany jako port wejściowy w urządzeniach peryferyjnych.
+Typ C - nowszy typ, umożliwiający przesyłanie danych w dwie strony, obsługuje protokół Thunderbolt 3, 
+a także umożliwia zasilanie urządzenia z zewnętrznego źródła.
+USB jest jednym z najpopularniejszych interfejsów komunikacyjnych i jest stosowany w szerokim zakresie 
+urządzeń, takich jak klawiatury, myszki, dyski zewnętrzne, karty sieciowe, kamery internetowe, itp.
+</pre>
+<h3>18. Porównać sieci LAN (Local Area Network) i WAN (Wide Area Network).</h3>
+<pre>
+Sieć LAN (Local Area Network) i WAN (Wide Area Network) różnią się przede wszystkim 
+zasięgiem i szybkością transmisji danych. Oto krótkie porównanie między sieciami LAN i WAN:
+
+Zasięg: Sieć LAN zwykle obejmuje obszar w promieniu do 1 km, podczas gdy sieć WAN może 
+obejmować wiele miast, państw lub kontynentów.
+
+Prędkość transmisji danych: Sieć LAN zazwyczaj zapewnia znacznie wyższą prędkość transmisji 
+danych niż sieć WAN. Sieci LAN mogą osiągnąć prędkości przesyłu danych do 100 Gb/s, podczas 
+gdy sieci WAN zazwyczaj działają z prędkościami rzędu kilku Mb/s lub kilkudziesięciu Mb/s.
+
+Topologia: Sieć LAN jest zazwyczaj zorganizowana w topologię bus, ring lub gwiazdy, podczas 
+gdy sieć WAN jest zazwyczaj zorganizowana w topologię punkt-do-punkt lub siatkową.
+Koszty: Sieć LAN jest zazwyczaj tańsza w instalacji i utrzymaniu niż sieć WAN. Sieć WAN 
+wymaga często kosztownych połączeń międzymiastowych lub międzynarodowych, a także bardziej 
+złożonej infrastruktury sieciowej.
+
+Bezpieczeństwo: Sieć WAN jest bardziej narażona na zagrożenia zewnętrzne niż sieć LAN, 
+z uwagi na większy zasięg i udostępnienie danych na większym obszarze. Sieci WAN wymagają 
+zwykle bardziej skomplikowanych mechanizmów zabezpieczeń, takich jak wirtualne sieci 
+prywatne (VPN) lub szyfrowanie danych.
+
+Podsumowując, sieci LAN i WAN różnią się zasięgiem, prędkością transmisji danych, topologią, 
+kosztami i bezpieczeństwem. Sieci LAN są zwykle tańsze i łatwiejsze do zainstalowania i utrzymania, 
+ale mają ograniczony zasięg, podczas gdy sieci WAN są droższe i wymagają bardziej zaawansowanej 
+infrastruktury, ale umożliwiają transmisję danych na duże odległości.
+</pre>
+<h3>19. Wyjaśnić pojęcia: „topologia logiczna” i „topologia fizyczna” sieci komputerowej.</h3>
+<pre>
+Topologia sieci komputerowej określa sposób, w jaki urządzenia w sieci są połączone 
+i komunikują się między sobą. Istnieją dwie podstawowe kategorie topologii sieci: 
+topologia logiczna i topologia fizyczna.
+
+Topologia logiczna odnosi się do sposobu, w jaki dane są przesyłane między urządzeniami 
+w sieci. Opisuje ona ścieżki, jakie muszą przejść dane między nadawcą a odbiorcą, oraz 
+sposób, w jaki sieć jest kontrolowana. Istnieją trzy główne topologie logiczne: magistrala, 
+pierścień i gwiazda.
+
+Topologia fizyczna odnosi się do fizycznego położenia urządzeń w sieci i sposobu, w jaki są 
+one połączone. Opisuje ona położenie, rodzaj kabli, wtyczek i innych elementów fizycznych, 
+jakie są wykorzystywane do połączenia urządzeń w sieci. Istnieją różne topologie fizyczne, 
+takie jak topologia magistrali, pierścienia, gwiazdy, drzewa, siatki czy hybrydy.
+
+Podsumowując, topologia logiczna odnosi się do sposobu, w jaki urządzenia w sieci wymieniają 
+dane, natomiast topologia fizyczna opisuje fizyczne położenie urządzeń i ich połączenia.
+</pre>
+<h3>20. Scharakteryzować podstawowe właściwości sieci bezprzewodowych.</h3>
+<pre>
+Sieci bezprzewodowe (ang. wireless networks) są rodzajem sieci komputerowych, w których komunikacja 
+między urządzeniami odbywa się bez użycia przewodów, a zamiast tego wykorzystywane są fale radiowe 
+lub światło podczerwone.
+
+Podstawowe właściwości sieci bezprzewodowych to:
+
+Mobilność: Urządzenia korzystające z sieci bezprzewodowych mogą się swobodnie poruszać, 
+nie ograniczając się do określonego miejsca, jak w przypadku sieci przewodowych.
+
+Łatwość instalacji: Sieci bezprzewodowe są łatwe do zainstalowania i uruchomienia, ponieważ 
+nie wymagają uciążliwej instalacji przewodów.
+
+Elastyczność: Możliwość szybkiej rekonfiguracji sieci bezprzewodowej, zmiany położenia urządzeń 
+bez konieczności przeciągania przewodów.
+
+Zasięg: Sieci bezprzewodowe umożliwiają komunikację na większych odległościach niż sieci przewodowe, 
+ale jednocześnie są bardziej podatne na zakłócenia z zewnątrz.
+
+Bezpieczeństwo: Sieci bezprzewodowe wymagają odpowiedniego zabezpieczenia przed nieautoryzowanym 
+dostępem, co jest szczególnie ważne ze względu na ich bezprzewodową naturę.
+
+Przepustowość: Sieci bezprzewodowe zazwyczaj mają mniejszą przepustowość niż sieci przewodowe, 
+co może wpłynąć na jakość transmisji danych.
+
+Kompatybilność: Urządzenia pracujące w sieciach bezprzewodowych muszą być kompatybilne ze standardami 
+transmisji danych, takimi jak Wi-Fi, Bluetooth czy NFC.
+
+Łatwość skalowania: Sieci bezprzewodowe są łatwe do skalowania, ponieważ nowe urządzenia mogą być 
+łatwo dodawane do sieci bez potrzeby instalacji nowych przewodów.
+</pre>
+		</div>
+		<div class="divs divright">
+<h3>1 Перечислите и кратко охарактеризуйте наиболее важные модели жизненного цикла программного обеспечения.</h3>
+<pre>
+Последовательная (например, каскадная (водопад)/waterfall) - последовательные этапы 
+разработки программного обеспечения следуют друг за другом непосредственно. Последовательная 
+этапы модели: планирование, анализ, проектирование, реализация, тестирование, сопровождение 
+сопровождение. Не допускается переход к следующему этапу до завершения 
+предыдущего. Ошибка, допущенная на этапе планирования, влияет на весь 
+проект. Легкий контроль за реализацией проекта. Большое количество документации о 
+его создания. 
+
+Эволюционный (Agile-разработка, инкрементная/инкрементная модель, спиральная модель) 
+- виды деятельности переплетаются.
+
+Incremental/incremental, спиральная модель) - виды деятельности переплетаются. 
+Те же этапы, что и в последовательной модели, но допускается возврат к 
+этапам, предшествующим текущему. Наиболее важной особенностью этой
+модели является то, что система адаптируется к изменениям в требованиях и исправляет 
+допущенные ошибки. Реализация проекта с использованием этой модели 
+модели трудно контролировать и поэтому требует дополнительных стратегий для 
+структурирования процесса разработки программного обеспечения.
+
+Прототипирование - модель, основанная на производстве прототипов, т.е. неполных 
+систем, которые отвечают только части требований. Прототип используется 
+используется для тестирования решений, использованных для его создания. 
+Прототип может быть легко изменен. Существование прототипа позволяет заказчику
+увидеть, как будет выглядеть система в большей или меньшей степени. Основным недостатком 
+прототипирования является высокая стоимость создания системы.
+
+Компонентная модель - сводится к сборке системы из готовых 
+компонентов (программ). После определения требований (первый этап) происходит следующее 
+анализ возможности использования существующих, готовых компонентов. 
+Затем следует этап модификации требований, как следствие использования 
+компонентов. Следует иметь в виду, что требования, предъявляемые готовыми компонентами
+могут быть несовместимы с требованиями заказчика. Модификации кода могут быть затруднены 
+из-за отсутствия контроля над компонентами, поставляемыми извне. Использование этого 
+типа решения является низкозатратным.
+
+Итеративная (инкрементальная) модель - после определения требований (первый этап проекта) 
+разбивается на последовательные итерации. проекта) разбивается на последовательные итерации 
+(инкременты), т.е. системные функции. которые могут быть реализованы и протестированы. 
+Первые версии обычно включают основные функциональные возможности системы. Спиральная модель 
+- предусматривает использование готовых компонентов. Фаза оценки в каждом цикле позволяет 
+избежать ошибок или обнаружить их раньше. Все время 
+возможно развитие.
+</pre>
+<h3>2. Перечислите и кратко обсудите применение наиболее важных диаграмм UML.</h3>
+<pre>
+Диаграмма классов - представляет классы и отношения между ними. 
+Она позволяет подробно описать классы, выделяя имеющиеся атрибуты и операции. 
+Диаграмма классов позволяет представить участок более крупной системы. Между классами 
+устанавливаются отношения (например, наследование, ассоциация, агрегация и т.д.). 
+
+Диаграмма компонентов - ключевую роль играют компоненты. 
+Компонент следует понимать как часть системы, которая имеет свои интерфейсы, 
+Ключевую роль играет компонент, который следует понимать как часть системы, имеющую свои интерфейсы, 
+т.е. точно определенные способы взаимодействия с другими компонентами. 
+
+Диаграмма развертывания - используется для отображения зависимостей между программным и 
+аппаратным обеспечением. Программное и аппаратное обеспечение. Используется для демонстрации того,
+как реализовано приложение.
+
+Диаграмма последовательности - одна из диаграмм взаимодействия. Диаграмма последовательности 
+показывает порядок выполнения методов в отдельных объектах.</pre>
+<h3>3. Что такое экстремальное программирование?</h3>
+<pre>
+Одна из agile-методологий разработки программного обеспечения (agile-программирование), 
+характеризующаяся простотой коммуникации, обратной связью и смелостью. XP снижает стоимость возможных 
+изменений требований за счет использования коротких циклов итераций. Определить стабильный набор 
+требований с помощью этой методологии невозможно. Благодаря коротким итерациям продукт доставляется 
+на ранних этапах заказчику, который следит за ходом работы и может быстро предоставить обратную связь.
+обратную связь. К недостаткам можно отнести отсутствие точной спецификации разрабатываемого 
+программного  обеспечения, постоянное присутствие представителя заказчика, отсутствие документации.</pre>
+<h3>4. Назовите характеристики SCRUM.</h3>
+<pre>
+Ускоренный подход к производству нового продукта (программного обеспечения и других). 
+Разработка продукта делится на спринты - итерации, длящиеся максимум один месяц 
+(рекомендуются интервалы фиксированной длины). После каждого спринта команда предоставляет 
+рабочую версию продукта клиенту. Требования пользователей собираются в виде пользовательских 
+историй. Каждая история - это одна особенность/функциональность. Владелец продукта 
+(Product Owner) представляет приоритеты требований, на основе которых создается бэклог 
+продукта. Каждый спринт реализует определенное количество требований (Sprint Backlog). 
+Скрам-мастер - это лицо, ответственное за правильное внедрение процесса и методов.</pre>
+<h3>5. Назовите и кратко охарактеризуйте виды тестирования программного обеспечения.</h3>
+<pre>
+Функциональные тесты (например, тесты безопасности) - проверяют, как работает система или модуль. 
+Эти тесты охватывают функции, описанные в документах, и взаимодействие тестируемой системы 
+с другими системами.
+Они касаются внешнего поведения программного обеспечения, рассматривая его как "черный ящик".
+Нефункциональные тесты (производительность, нагрузка, перегрузка, удобство использования,
+ремонтопригодность, надежность, переносимость) - тестирование, необходимое для измерения
+характеристики систем и программного обеспечения, которые могут быть оценены по шкале (напр.
+время отклика в случае тестов производительности).
+Структурное тестирование - используется сразу после методов, основанных на спецификации, в поддержку
+измерения точности. Это позволяет измерить точность тестирования путем оценки
+степень покрытия выбранного типа структуры. Охват - это степень, в которой набор тестов
+использовал объект покрытия. То есть, в какой степени структура была протестирована тестовым набором
+тестов, выраженное в процентах от покрытых предметов.
+Подтверждающее тестирование - повторное тестирование, которое подтверждает, что ошибка была исправлена.
+Регрессионное тестирование - повторное тестирование ранее протестированной программы после 
+внесения в нее изменений в ней, чтобы убедиться, что в результате изменений не возникло 
+новых дефектов или что дефекты не дефекты были выявлены в неизмененной части программы.
+</pre>
+<h3>6. Перечислите этапы жизненного цикла информационной системы и дайте краткий обзор</h3>
+<pre>
+1. планирование - определение целей системы с точки зрения будущего пользователя системы,
+область применения и контекст системы, определение функций и областей, которые внедряемая система
+будет поддерживать
+2. анализ - исследование информационных потребностей, моделирование системы; детальное определение
+те области деятельности организации, которые должна поддерживать информационная система.
+Определение результирующей информации, которую должна выдать система, и исходных данных,
+которые необходимы для получения результирующей информации.
+3 Проектирование - проектирование диалога, базы данных, процессов; технологическое
+преобразование логической модели системы в физическую модель.
+4 Программирование - реализация; разработка программы на основе проекта системы
+5. внедрение - установка программного обеспечения и передача пользовательской документации, обучение
+пользователей системы, ввод системы в эксплуатацию. 6.
+6. эксплуатация - непрерывное использование информационной системы, обеспечение правильности ее
+функционирования в соответствии с установленными требованиями пользователей, совершенствование 
+системы в соответствии с изменяющимися информационными потребностями
+</pre>
+<h3>7. Описать диаграмму отношений между сущностями (ERD)</h3>
+<pre>
+Тип графического представления структур данных и отношений между ними. Диаграмма демонстрирует 
+логические отношения между различными сущностями (массивами). Отношения имеют две характеристики:
+(a) необязательность - каждая сущность должна или может встречаться одновременно с другой. В
+графическом представлении пунктирная линия указывает на необязательность отношения, в то время 
+как сплошная линия является требованием отношения (b) Множественность - указывает, сколько 
+сущностей включено в отношения.
+a. 1:1 (один к одному) - сущность соответствует ровно одной сущности
+b. 1:N (один ко многим) - одна или более сущностей соответствуют одной сущности
+c. M:N (многие ко многим) - одна или несколько сущностей соответствуют одной или нескольким сущностям.
+Здесь, в реляционных базах данных, необходимо применить нормализацию диаграммы, которая заключается 
+в том, чтобы добавлении промежуточной сущности и замене отношений M:N на два отношения 1:N 
+с новой сущностью.
+Среди условных обозначений, используемых для ERD-диаграмм, можно назвать IDEF1X, нотацию UML, 
+"вороньи ноги", нотация Чена, нотация (min,max) и т.д.
+</pre>
+<h3>8. Что такое параллельное программирование?</h3>
+<pre>
+Обработка, основанная на сосуществовании нескольких потоков или процессов, работающих с общими данными.
+данные. Потоки, работающие на одном процессоре, переключаются через короткие промежутки времени,
+что создает впечатление, что они выполняются параллельно. В случае многоядерных или
+многоядерных или многопоточных процессоров, действительно возможна параллельная обработка. 
+Такой вид обработки также возможен в многопроцессорных архитектурах.
+Применяется в серверах, которые обрабатывают несколько запросов от разных клиентов. 
+Одновременная работа с общими данными может привести к потере целостности данных, поэтому 
+необходимо использовать механизмы синхронизации. К таким механизмам относятся мониторы 
+(объекты, которые могут безопасно использоваться несколькими потоками), 
+или семафоры (защищенные переменные).
+</pre>
+<h3>9. В чем разница между параллельным и распределенным программированием?</h3>
+<pre>
+Параллельное программирование и распределенное программирование - это две разные 
+парадигмы программирования программирования, которые используются для достижения 
+высокой производительности и масштабируемости в программных системах.
+
+Параллельное программирование подразумевает разделение одной задачи на более мелкие 
+подзадачи, которые могут выполняться одновременно несколькими процессорами или ядрами. 
+При параллельном программировании все элементы обработки имеют общую память 
+и взаимодействуют друг с другом с помощью общих переменных. Цель параллельного 
+программирования. Цель параллельного программирования - ускорить выполнение одной 
+задачи, распределив ее на несколько вычислительных элементов.
+
+Распределенное программирование, с другой стороны, предполагает разделение большой задачи на 
+меньшие подзадачи, которые могут быть выполнены различными компьютерами, соединенными через 
+сеть. При распределенном программировании каждый элемент обработки имеет свою собственную память и 
+взаимодействует с другими элементами обработки посредством передачи сообщений. 
+Цель распределенного программирования - решить большую задачу, разбив ее на более мелкие подзадачи. 
+ее на более мелкие подзадачи, которые могут выполняться параллельно на разных компьютерах.</pre>
+<h3>10. как реализован вызов функций операционной системы?</h3>
+<pre>
+Вызовы функций операционной системы обычно реализуются через вызовы 
+системные вызовы, которые представляют собой программные интерфейсы, предоставляемые 
+операционной системойчтобы позволить приложениям взаимодействовать с системными службами.
+
+Когда приложению необходимо выполнить системную функцию, например, прочитать файл 
+или создать сетевое соединение, оно выполняет системный вызов, выдавая запрос 
+операционной системе. Этот запрос обычно выполняется с помощью специальной инструкции прерывания 
+программное прерывание, которое переключает контекст из пользовательского режима в режим ядра, 
+где выполняется код операционной системы.
+
+Когда операционная система получает запрос, она проверяет его достоверность, выделяет, 
+если необходимо системные ресурсы и выполняет запрошенную операцию. Как только операция 
+завершена, операционная система возвращает управление приложению, 
+возобновляя выполнение в пользовательском режиме.
+
+Интерфейс системных вызовов предоставляет набор функций, которые позволяют приложениям 
+получать доступ к сервисам операционной системы, включая операции ввода/вывода файлов, 
+управление процессами управление памятью, сетевое взаимодействие и другие. 
+Точный набор системных вызовов предоставляемых операционной системой, зависит от дизайна 
+и реализации операционной системы.</pre>
+<h3>11. описание стандарта POSIX threads</h3>
+<pre>
+POSIX threads / pthreads - спецификация в рамках стандарта POSIX (Portable Operating
+Системный интерфейс для UNIX (Portable Operating System Interface for Unix) стандарт, 
+который определяет реализацию многопоточности (несколько потоков выполняются в рамках 
+одного процесса), которая определяет включает основные механизмы для управления потоками, 
+синхронизации объектов и определяет единый интерфейс программирования 
+(API - Application Programming Interface; набор правил, строго описывающих, 
+как программы или подпрограммы взаимодействуют друг с другом) для языка C. Стандарт
+определяет определенный базовый набор функций и ряд опций, которые могут быть доступны при
+реализации. Стандарт pthreads хорошо распространен среди систем семейства Unix.
+API разработан объектно-ориентированным. Основные функции:
+- Создание потоков
+- Синхронное завершение потоков
+- Асинхронное завершение потоков
+- Локальные данные потоков
+- Стек завершающих функций для облегчения управления ресурсами в C
+Важные особенности стандарта
+- Дополнительные механизмы синхронизации
+o Блокировки чтения/записи
+o Барьеры
+o Вращающиеся блокировки
+- Возможность совместного использования объектов синхронизации между потоками 
+различных процессов
+- Индивидуальная настройка приоритетов потоков и других параметров планирования
+- Ограниченное по времени ожидание наступления определенных событий (например, установление блокировки)
+- Считывание процессорного времени, потребляемого потоком</pre>
+<h3>12. охарактеризовать интерфейс определения веб-сервисов (WSDL)</h3>
+<pre>
+Язык описания веб-сервисов (WSDL) - язык на основе XML для определения веб-сервисов.
+Он описывает протоколы и форматы, используемые веб-службами. Описания WSDL 
+могут быть размещены в реестре UDDI. WSDL использует XML для описания точек доступа 
+к веб-сервисам. Язык WSDL определяет набор из нескольких XML-структур, которые 
+позволяют полностью описать сервисы (структуры данных которыми обменивается сервис, 
+способ подключения к сервису, чаще всего http).</pre>
+<h3>13. В чем заключается обработка данных на GPGPU? Какое оборудование используется для этого?</h3>
+<pre>
+GPGPU (General-Purpose computing on Graphics Processing Units) - это технология, 
+которая использует графический процессор (GPU) для выполнения вычислений общего назначения. 
+цель. В основе GPGPU лежит тот факт, что графические процессоры - это очень 
+параллельные процессоры, способные выполнять множество простых операций 
+одновременно, что делает их хорошо подходящими для определенных типов вычислений, 
+которые могут быть распараллелены.
+
+Аппаратное обеспечение, используемое для обработки на GPGPU, обычно состоит из центрального процессора 
+и одного или нескольких графических процессоров. Центральный процессор отвечает за управление 
+общее выполнение программы и обработку задач, которые не могут быть распараллелены, 
+например, операции ввода/вывода и управление системой. Графические процессоры 
+используются для выполнения задач с интенсивными вычислениями, таких как 
+матричное умножение, обработка изображений и моделирование.
+
+GPU, используемые для обработки GPGPU, обычно представляют собой высокопроизводительные 
+графические карты, предназначенные для игр или профессиональных графических задач. 
+Эти графические процессоры оптимизированы для параллельной обработки и могут выполнять 
+множество простых операций одновременно. Некоторые из популярных графических процессоров 
+используемых в GPGPU, являются серии GeForce и Quadro от NVIDIA 
+и серии Radeon и FirePro от AMD.
+
+Чтобы выполнить обработку на GPGPU, вам нужно написать программу, которая использует преимущества 
+возможности параллельной обработки данных на GPU. Обычно для этого используется 
+специализированного языка программирования, такого как CUDA (NVIDIA) или OpenCL 
+(Khronos Group), который предоставляет интерфейс, позволяющий приложению взаимодействовать 
+с GPU и управлять задачами параллельной обработки.</pre>
+<h3>14. Охарактеризуйте управление памятью в 64-битной операционной системе.</h3>
+<pre>
+Управление памятью в 64-битной операционной системе характеризуется 
+несколькими ключевыми функциями и возможностями, которые разработаны 
+для того, чтобы эффективно управлять большими объемами памяти, которые доступны 
+в 64-битных системах.
+
+Одной из ключевых особенностей управления памятью в 64-битной операционной системе 
+является возможность адресации и доступа к большим объемам памяти. 
+С 64-битным адресным пространством 64-битная операционная система может 
+теоретически адресовать до 16 экзабайт памяти, что значительно больше, чем 
+4 ГБ в 32-разрядных системах. Это позволяет приложениям работать с гораздо большими 
+наборов данных и может повысить производительность приложений, интенсивно использующих память. 
+приложений с большим объемом памяти.
+
+Еще одной важной особенностью управления памятью в 64-битных системах является использование 
+виртуальной памяти. Виртуальная память - это техника, которая позволяет операционной системе 
+использовать часть компьютера. 
+Операционной системе использовать часть жесткого диска компьютера, как если бы это была 
+дополнительную оперативную память. Это позволяет операционной системе выделять приложениям 
+больше памяти, чем физически доступно в системе, и может предотвратить исчерпание памяти приложениями. 
+исчерпание памяти приложениями. Использование виртуальной памяти также важно с точки зрения 
+безопасности, поскольку оно может предотвратить доступ одного приложения к памяти 
+используемой другим приложением.
+
+В дополнение к виртуальной памяти 64-битные операционные системы обычно включают другие функции
+управления памятью, такие как защита памяти, отображение памяти и свопинг памяти. 
+Защита памяти используется для предотвращения доступа приложений к памяти, к которой они не 
+в то время как отображение памяти используется для обеспечения эффективного доступа к 
+устройствам, сопоставленным с памятью, таким как видеокарты и звуковые карты. Подмена памяти 
+используется для временного хранения неиспользуемой памяти на жестком диске, освобождая физическую 
+память для других приложений. ОЗУ для других приложений.</pre>
+<h3>15. Перечислите и кратко обсудите два метода межпроцессного взаимодействия.</h3>
+<pre>
+Межпроцессное взаимодействие (IPC) - это метод обмена данными и сообщениями между 
+различными процессами, запущенными на одной или разных машинах. Вот два метода IPC:
+
+Общая память: Общая память - это метод, при котором два или более процессов 
+разделяют общую область памяти, к которой они имеют прямой доступ. Эта техника обеспечивает 
+быстрое взаимодействие между процессами, поскольку позволяет избежать накладных расходов на 
+копирование данных между процессами. При использовании общей памяти блок памяти выделяется 
+одним процессом, а другие процессы могут получить доступ к этой области памяти 
+присоединяясь к нему. Общая память обычно используется в 
+приложениях, где требуется быстрая передача данных, таких как мультимедийные приложения 
+мультимедиа, научное моделирование и системы реального времени.
+
+Передача сообщений: Передача сообщений - это техника, при которой процессы 
+обмениваются сообщениями. В этой технике процессы посылают друг другу 
+сообщения, используя систему обмена сообщениями, предоставляемую операционной системой 
+или промежуточным программным обеспечением. Сообщения могут быть отправлены либо синхронно 
+(отправитель ждет ответа, прежде чем продолжить) или асинхронно (отправитель не ждет 
+ответа). Пересылка сообщений может быть реализована с использованием различных протоколов, 
+таких как TCP/IP, UDP и RPC (удаленный вызов процедур). Эта техника широко используется в 
+распределенных системах, где процессы выполняются на разных машинах и должны взаимодействовать 
+друг с другом по сети.
+
+Как общая память, так и передача сообщений имеют свои преимущества и недостатки, и 
+выбор техники зависит от конкретных требований приложения. Общая память обеспечивает 
+быструю связь, но требует тщательного управления, чтобы избежать проблем синхронизации 
+и конфликтов памяти. Передача сообщений является более гибкой и может обрабатывать 
+более сложные сценарии взаимодействия, но требует больших накладных расходов из-за 
+необходимости кодировать и декодировать сообщения.</pre>
+<h3>16. Обсудите методы обеспечения безопасности веб-приложений.</h3>
+<pre>
+Обеспечение безопасности веб-приложений является важной задачей для защиты конфиденциальных 
+данных и предотвращения несанкционированного доступа. Вот некоторые методы обеспечения безопасности 
+веб-приложений:
+
+Валидация ввода: Валидация ввода - это процесс проверки и подтверждения данных. 
+введенных пользователем. Этот процесс помогает предотвратить вредоносные атаки 
+таких как SQL-инъекции, межсайтовый скриптинг (XSS) и межсайтовая подделка запросов (CSRF). 
+подделка межсайтового запроса (CSRF). Проверка ввода может быть выполнена с помощью скриптов
+ на стороне сервера или на стороне клиента и может помочь предотвратить внедрение вредоносного кода 
+ в веб-формы.
+
+Аутентификация и авторизация: Аутентификация и авторизация являются важными методами для 
+обеспечения безопасности веб-приложений. Аутентификация - это процесс проверки 
+личности пользователя, в то время как аутентификация - это процесс определения прав доступа
+пользователя к определенным ресурсам или функциям. Имена пользователей и пароли 
+обычно используются для аутентификации, в то время как списки контроля доступа (ACL) 
+или управление доступом на основе ролей (RBAC) обычно используются для авторизации.
+
+Безопасная связь: Безопасная связь необходима для обеспечения безопасности 
+веб-приложений. Связь между клиентом и сервером должна быть зашифрована
+используя такие протоколы, как HTTPS, SSL или TLS. Эти протоколы помогают предотвратить 
+подслушивание, атаки "человек посередине" и другие формы перехвата конфиденциальных данных.
+
+Управление сеансами: Управление сеансами - это процесс управления сеансами пользователей в 
+веб-приложении. Оно включает в себя управление идентификаторами сеансов, ограничениями времени сеанса 
+тайм-ауты сеансов и данные сеанса. Правильное управление сеансами может помочь предотвратить 
+перехвата сеанса, когда злоумышленник получает доступ к сеансу пользователя путем кражи 
+его/ее идентификатор сеанса.
+
+Регистрация и мониторинг доступа: Регистрация и мониторинг доступа являются важными 
+методы обнаружения и предотвращения несанкционированного доступа к веб-приложениям. 
+Журналы доступа должны быть включены для записи всех попыток доступа, включая успешные 
+и неуспешные попытки. Инструменты мониторинга также могут быть использованы для обнаружения 
+подозрительного поведения, например, повторяющихся попыток входа в систему или необычных 
+моделей трафика.</pre>
+<h3>17. Перечислите и кратко обсудите системы управления базами данных</h3>
+<pre>
+Система управления базами данных (СУБД) - это программное обеспечение, используемое для управления и 
+организации данных в базе данных. Ниже приведены некоторые распространенные типы СУБД и краткое 
+описание каждой из них:
+
+Реляционная СУБД (РСУБД): Реляционная СУБД организует данные в одну или несколько таблиц с уникальным 
+ключом для каждой строки. РСУБД использует SQL (язык структурированных запросов) для 
+манипулирования и управления данными.Примерами СУБД являются MySQL, Oracle Database и 
+Microsoft SQL Server.
+
+Объектно-ориентированная СУБД (OODBMS): СУБД OODBMS организует данные в объекты, 
+которые могут содержать атрибуты данных и поведенческие методы. Системы OODBMS используют 
+концепции объектно-ориентированного программирования для манипулирования и управления данными. 
+Примерами OODBMS являются ObjectStore и ObjectDB.
+
+Документно-ориентированная СУБД: Документо-ориентированная СУБД организует данные в виде документов,
+которые могут содержать структуры данных JSON или XML. Документно-ориентированные СУБД часто 
+используются в веб-приложениях и базах данных NoSQL. Примеры документно-ориентированных СУБД 
+ориентированных на документы являются MongoDB и CouchDB.
+
+СУБД "ключ-значение": СУБД "ключ-значение" организует данные в пары "ключ-значение", где ключ
+используется для идентификации данных, а значение - это фактические данные. Ключево-значимые СУБД 
+часто используются в системах кэширования и для хранения сессионных данных. Примерами СЗБД 
+Key-value включают Redis и Riak.
+
+Графовая СЗБД: Графовая СЗБД организует данные в узлы и ребра, которые используются для 
+представления сложных отношений между данными. Графовые СУБД часто используются 
+в социальных сетях и рекомендательных системах. Примерами графовых СУБД являются Neo4j и OrientDB.
+</pre>
+<h3>18. Перечислите и кратко обсудите различные типы индексов в SQL</h3>
+<pre>
+В SQL индекс - это структура данных, используемая для повышения производительности запросов. 
+позволяя системе управления базой данных быстрее находить данные. 
+Вот несколько типов индексов в SQL и краткое описание каждого из них:
+
+Кластерный индекс: кластерный индекс определяет физический порядок данных в таблице. 
+Каждая таблица может иметь только один кластеризованный индекс, и обычно он создается
+ на первичном ключе таблицы.
+
+Некластеризованный индекс: Некластеризованный индекс представляет собой отдельную 
+структуру данных, которая хранит копию индексируемых столбцов и указатель на 
+расположение данных в таблице. Каждая таблица может иметь несколько несгруппированных 
+индексов, и обычно они создаются на столбцах, часто используемых в запросах.
+
+Уникальный индекс: уникальный индекс гарантирует, что значения в индексируемом столбце или 
+столбца или столбцов являются уникальными. Он может быть создан как кластеризованный или 
+некластеризованный индекс.
+
+Растровый индекс: растровый индекс используется для индексирования столбцов с небольшим числом 
+отдельных значений. Растровый индекс используется для индексирования столбцов с небольшим количеством 
+значений. Он использует растровую структуру данных для представления наличия или отсутствия 
+значений в индексируемом столбце.
+
+Накрывающий индекс: Накрывающий индекс содержит все столбцы, необходимые для выполнения запроса. 
+Таким образом, системе управления базой данных не нужно обращаться к базовой таблице. 
+Этот тип индекса может повысить производительность запроса за счет уменьшения количества 
+необходимых дисковых чтений.</pre>
+<h3>19. Какие существуют типы объединений в SQL? Кратко расскажите о них.</h3>
+<pre>
+В SQL соединение - это метод объединения данных из двух или более таблиц на основе 
+общего столбца между ними. Вот несколько типов объединений в SQL и краткое описание каждого из них:
+
+Внутреннее соединение: внутреннее соединение возвращает только те строки, которые имеют совпадающие 
+значения в обеих объединяемых таблицах. Это наиболее распространенный тип соединения в SQL 
+и используется для объединения связанных данных из двух или более таблиц.
+
+Левое соединение: левое соединение возвращает все строки из левой таблицы и совпадающие строки 
+из правой таблицы. Если в правой таблице нет совпадений, результат содержит значения NULL.
+
+Правое соединение: Правое соединение возвращает все строки из правой таблицы и совпадающие строки 
+из левой таблицы. Если в левой таблице нет совпадений, результат содержит значения NULL.
+
+Полное внешнее объединение: Полное внешнее объединение возвращает все строки из обеих объединенных 
+таблицы вместе с любыми несовпадающими строками. Если ни в одной из таблиц нет совпадений, 
+результат содержит значения NULL.
+
+Перекрестное соединение: Перекрестное соединение, также известное как декартово произведение, 
+возвращает все возможные комбинации строк из обеих объединяемых таблиц. Оно используется, 
+когда нет общего столбца между объединяемыми таблицами.</pre>
+<h3>20. Перечислите основные особенности баз данных типа NoSQL. Приведите примеры таких баз данных</h3>
+<pre>
+Базы данных NoSQL - это нереляционные базы данных, которые не используют SQL 
+в качестве основного языка запросов. Вот некоторые основные особенности баз данных типа NoSQL:
+
+Бессхемность: Базы данных NoSQL не имеют фиксированной схемы, что означает, что данные 
+могут быть добавлены или удалены без изменения структуры базы данных.
+
+Масштабируемость: базы данных NoSQL разработаны для горизонтального масштабирования, что означает, 
+что они могут обрабатывать большие объемы данных путем добавления дополнительных 
+узлов в кластер базы данных.
+
+Высокая производительность: базы данных NoSQL оптимизированы для производительности и могут 
+обрабатывать большие объемы данных и высокую пропускную способность.
+
+Распределенность: Базы данных NoSQL предназначены для работы в распределенных системах, 
+Это означает, что данные могут храниться и обрабатываться на нескольких машинах.
+
+Поддержка неструктурированных данных: Базы данных NoSQL разработаны для поддержки 
+неструктурированных данных, таких как документы, изображения и видео.
+
+Примеры баз данных NoSQL включают:
+
+MongoDB: документально-ориентированная база данных, которая использует документы, похожие на 
+JSON для хранения данных.
+
+Cassandra: колоночная база данных, которая оптимизирована для больших нагрузок на 
+хранения и может обрабатывать большие объемы данных в нескольких центрах обработки данных.
+
+Couchbase: база данных, ориентированная на ключи-значения и документы, разработанная для 
+высокопроизводительных распределенных приложений.
+
+Redis: хранилище ключевых значений, которое может использоваться для кэширования, управления сессиями 
+и обработки данных в реальном времени.
+
+Amazon DynamoDB: база данных, ориентированная на ключевые значения и документы, которая полностью 
+управляемой и предназначенной для масштабируемых приложений.</pre>
+<h3>1. Дайте понятие (определение) и различия между терминами: язык программирования, алгоритм, программа</h3>
+<pre>
+Язык программирования - это набор правил и инструкций, которые определяют, как должен работать 
+компьютер для выполнения определенной задачи. Алгоритм - это точное пошаговое описание того. 
+как решить определенную проблему или выполнить определенную задачу. Программа - это набор инструкций 
+написанных на языке программирования, которые выполняют определенные задачи или решают конкретные проблемы.
+Разница между языком программирования и алгоритмом заключается в том, что язык программирования 
+это инструмент, позволяющий создавать программы, а алгоритм - это способ решения проблемы. 
+С другой стороны, программа - это готовый продукт, который выполняет конкретные задачи или решает 
+конкретные проблемы, и состоит из инструкций, написанных на языке программирования.
+</pre>
+<h3>2. Охарактеризуйте представление (реализацию) в рабочей памяти данных, значений (простых) и ссылок (сложных) типов.</h3>
+<pre>
+В рабочей памяти данные ценностных (простых) типов хранятся непосредственно 
+в стеке. Каждая переменная, хранящая значение ценного типа, имеет свою собственную область 
+в памяти, и эти переменные хранятся в хронологическом порядке в соответствии с их объявлением 
+в программном коде.
+
+В случае ссылочных (сложных) типов переменная хранит адрес в памяти, по которому находится объект. 
+объект. Этот объект может состоять из нескольких полей, которые также хранятся 
+в памяти. Ссылочные типы хранятся в куче, а не в стеке. 
+Все ссылочные переменные занимают в стеке столько места, сколько необходимо для хранения 
+адрес объекта. Объект, с другой стороны, занимает место в куче, а адрес, указывающий на начало объекта, хранится в стеке. 
+хранится в стеке.
+
+В случае переменной, хранящей ссылочный тип, ей может быть присвоено нулевое значение, 
+что означает, что переменная не указывает ни на какой объект в памяти. Нулевое значение также 
+хранится в переменной как адрес, указывающий на отсутствие объекта.
+
+Стоит отметить, что переменные ссылочного типа и типа значения передаются в функции 
+по-разному. В случае со стоимостными типами передается копия значения переменной, 
+тогда как в случае ссылочных типов передается адрес объекта, а не копия самого объекта. 
+самого объекта.
+</pre>
+<h3>3. Приведите классификации и охарактеризуйте методы тестирования программ.</h3>
+<pre>
+Классификации тестирования программ:
+
+Юнит-тесты - проверяют код для отдельных единиц кода 
+(например, отдельные функции, методы). Они обычно выполняются программистами, 
+которые создают модульные тесты для своего кода. Это автоматизированные тесты, 
+которые позволяют быстро обнаружить ошибки в коде.
+
+Интеграционные тесты - проверяют корректность взаимодействия между различными единицами кода (например, модулями, методами). 
+кода (например, модулями, компонентами). Они позволяют обнаружить ошибки, которые не были обнаружены во время модульных тестов. 
+обнаруженные во время модульных тестов.
+
+Функциональные тесты - проверяют, работает ли программа в соответствии с 
+функциональным требованиям. Они тестируют различные функциональные возможности программы, и их результат зависит от ожидаемого 
+ожидаемого поведения системы.
+
+Тесты производительности - проверяют, что программа работает в течение требуемого времени и с 
+требуемой производительностью. Они помогают обнаружить проблемы производительности системы и оптимизировать код.
+
+Тесты безопасности - проверяют, что программа безопасна, т.е. что она защищает конфиденциальные 
+данных и устойчива к внешним атакам.
+
+Тесты на удобство использования - проверяют, является ли программа интуитивно понятной и простой в использовании 
+пользователями.
+
+Методы тестирования программы:
+
+Ручное тестирование - предполагает ручное тестирование тестировщиками, которые 
+выполняют определенные сценарии и наблюдают за поведением системы. Такие тесты более 
+подвержены ошибкам, но в то же время позволяют выявить проблемы, которые 
+не могут быть обнаружены автоматизированной системой тестирования.
+
+Автоматизированное тестирование - предполагает автоматическое выполнение тестов с помощью специального 
+программного обеспечения, которое генерирует тестовые случаи и выполняет их в автоматическом режиме. 
+Это более быстрый и эффективный метод тестирования, чем ручное тестирование, но для него требуется 
+соответствующего инструмента для автоматизированного тестирования.
+
+Исследовательское тестирование - предполагает изучение системы тестировщиками без использования 
+заранее подготовленных тестовых сценариев. Этот метод позволяет обнаружить проблемы 
+которые не были предусмотрены в тестовых сценариях, но в то же время требует опыта 
+и знания системы.
+</pre>
+<h3>4. Охарактеризуйте парадигмы объектно-ориентированного программирования (инкапсуляция, наследование, полиморфизм, абстракция).</h3>
+<pre>
+Объектно-ориентированное программирование (ООП) - это парадигма программирования, 
+которая фокусируется на проектировании и разработке программ, состоящих из объектов. 
+которые взаимосвязаны и обладают определенными характеристиками и поведением.
+
+Инкапсуляция - это механизм, который позволяет скрыть состояние объекта и 
+сделать доступными только те операции, которые необходимы для манипулирования этим состоянием. 
+Инкапсуляция сохраняет целостность и безопасность данных объекта, 
+предотвращая прямой доступ к его закрытым полям.
+
+Наследование - это механизм, который позволяет создавать новые классы на основе 
+уже существующих классов. Наследуемый класс (подкласс) наследует от суперкласса 
+(суперкласса) его свойства и поведение, а также может изменять или расширять их. 
+Наследование позволяет создавать иерархии классов, которые отражают реальные 
+отношения между объектами.
+
+Полиморфизм - это механизм, который позволяет создавать несколько методов с одинаковым 
+именем, но с различными реализациями в зависимости от типа объекта, на котором они вызываются. 
+вызываются. Полиморфизм позволяет программам быть более гибкими и простыми в использовании, 
+поскольку методы могут применяться к различным типам объектов, а их реализация 
+зависит от типа объекта.
+
+Абстракция - это механизм, который позволяет абстрагироваться от деталей реализации 
+деталей реализации и сосредоточиться на общих характеристиках объектов и их поведении. 
+Абстракция позволяет создавать более общие и гибкие объектные модели, 
+облегчая разработку и сопровождение программ. В ООП абстракция реализуется 
+достигается путем определения абстрактных классов и интерфейсов, которые не имеют 
+реализации, а лишь определяют общие свойства и поведение.
+</pre>
+<h3>5. Обсудите важность определения и уточнения требований к ИТ-приложению (системе) для процесса его проектирования.</h3>
+<pre>
+Определение и спецификация требований к приложению (системе) информационных технологий имеют решающее значение для процесса проектирования информационных систем. 
+имеют решающее значение для процесса проектирования информационных систем, поскольку они формируют 
+основу для всего процесса проектирования. Без точного определения требований, 
+проектирование ИТ-приложения или системы становится хаотичным и неэффективным, 
+а конечный продукт может оказаться неадекватным ожиданиям пользователей и бизнеса.
+
+Определение требований включает в себя сбор информации о целях, ожиданиях и требованиях
+ бизнеса и пользователей системы. Требования могут быть функциональными (касающимися того, 
+ что должна делать система), нефункциональными (как система должна работать) 
+ или бизнес-требования (касающиеся бизнес-целей, которые должны быть достигнуты). 
+ Требования также можно разделить на пользовательские, системные и технические требования.
+
+Спецификация требований включает в себя формальную запись собранной информации о требованиях 
+в форме, которая может быть понятна всем членам команды проекта. Документ спецификации требований 
+Документ спецификации должен содержать подробное описание требований, их приоритетов, зависимостей между 
+требований, условий тестирования, технических и бизнес ограничений, а также сценариев использования. 
+сценарии использования.
+
+Правильная идентификация и спецификация требований имеет решающее значение для проектирования приложения 
+или ИТ-системы, поскольку это позволяет понять, что должна делать система, 
+как она должна работать и какие бизнес-цели она должна достигать. Это позволяет создать точный 
+план проектирования, учитывающий все требования, ограничения и бизнес-цели. 
+Это позволяет проектировщикам создать систему, которая отвечает ожиданиям пользователей и бизнеса,
+а также легко поддерживается и развивается в будущем.
+</pre>
+<h3>6. Охарактеризуйте алгоритмы сортировки с их вычислительной сложностью.</h3>
+<pre>
+Пузырьковая сортировка - этот алгоритм сравнивает пары соседних элементов и меняет их местами, 
+если они расположены в неправильном порядке. Затем он сравнивает последовательные пары соседних элементов. 
+пока весь набор данных не будет упорядочен. Вычислительная сложность составляет O(n^2).
+
+Сортировка вставкой - этот алгоритм выбирает один элемент из набора данных и вставляет его в соответствующее место. 
+его в соответствующее место в уже упорядоченной части набора. Этот процесс повторяется для 
+каждого элемента набора. Вычислительная сложность составляет O(n^2).
+
+Сортировка по выбору - этот алгоритм выбирает наименьший элемент из набора данных и 
+помещает его в начало набора. Затем процесс повторяется для оставшихся элементов. 
+Вычислительная сложность составляет O(n^2).
+
+Сортировка объединением - этот алгоритм делит набор данных пополам и рекурсивно 
+сортирует каждую из половин. Затем отсортированные половины объединяются в один набор, в котором 
+элементы уже отсортированы. Вычислительная сложность составляет O(n log n).
+
+Быстрая сортировка - этот алгоритм делит набор данных на подмножества и рекурсивно сортирует 
+каждое из подмножеств. Этот процесс выполняется путем выбора одного элемента, называемого поворотным,
+который делит множество на две части: элементы меньше стержня и элементы больше стержня. 
+Затем этот процесс повторяется для каждой из двух частей множества. 
+Вычислительная сложность составляет O(n log n).
+
+Сортировка по ведрам - этот алгоритм предполагает помещение каждого элемента множества в 
+соответствующее ведро, которое представляет собой диапазон значений, к которому принадлежит элемент. 
+Затем каждое ведро сортируется и объединяется в один набор. Вычислительная сложность составляет 
+O(n + k), где k - количество ведер.
+</pre>.
+<h3>7. Охарактеризуйте основные форматы файлов изображений: JPEG (Joint Photographic Experts Group), TIFF (Tagged Image File Format), GIF (Graphics Interchange Format), PNG (Portable Network Graphics), BMP (BitMaP), SVG (Scalable Vector Graphics), EPS (Encapsulated PostScript).</h3> </h3>
+<pre>
+JPEG (Joint Photographic Experts Group) - это формат графических файлов, который был разработан для хранения цифровых фотографий. 
+разработан для хранения цифровых фотографий. Это формат с потерями, что означает, 
+что некоторые данные из исходного изображения теряются во время сжатия, что приводит к потере 
+качества изображения. JPEG поддерживает цветовую палитру RGB, а также дополнительные функции, 
+такие как сжатие с потерями и сжатие без потерь.
+
+TIFF (Tagged Image File Format) - это формат графических файлов, который был создан для того. 
+для обеспечения возможности хранения изображений с различных устройств и платформ. TIFF поддерживает 
+множество типов сжатия и разрешения, что делает его идеальным форматом для хранения 
+цифровых фотографий, векторной графики, а также текстовых документов. TIFF поддерживает цветовую палитру 
+RGB, CMYK и серые цвета.
+
+GIF (Graphics Interchange Format) - это формат графических файлов, который был разработан для хранения анимации и низкокачественных документов. 
+разработан для хранения анимации и графики низкого разрешения. 
+GIF поддерживает цветовую палитру RGB и цветовую индексацию, что означает, что каждому пикселу в 
+изображения присваивается определенный цвет из палитры. GIF также поддерживает прозрачность.
+
+PNG (Portable Network Graphics) - это формат графических файлов, который был разработан 
+в качестве альтернативы формату GIF. PNG поддерживает палитру цветов RGB, CMYK и серый цвет, 
+а также функцию прозрачности. PNG - это формат без потерь, что означает, что он не теряет качество при сжатии. 
+качество при сжатии. Этот формат часто используется для хранения векторной графики.
+
+BMP (BitMaP) - это формат графических файлов, который хранит изображения без сжатия. 
+BMP поддерживает цветовую палитру RGB и индексацию цветов, но не поддерживает прозрачность. 
+BMP - простой и удобный в использовании формат, но занимает больше места, чем другие форматы. 
+из-за отсутствия сжатия.
+
+SVG (Scalable Vector Graphics) - формат графических файлов, в котором хранится векторная графика.
+ SVG поддерживает цветовую палитру RGB и индексацию цветов, а также многие другие возможности, 
+ такие как прозрачность и анимация. SVG является масштабируемым форматом, что означает, 
+ что он может быть увеличен без потери качества изображения.
+
+EPS (Encapsulated PostScript) - это формат графических файлов, который был разработан 
+для печати. EPS поддерживает палитру цветов RGB, CMYK и серый, а также многие другие функции.
+</pre>
+<h3>8. Обсудите создание двухмерной графики на выбранном вами языке программирования.</h3>
+<pre>
+Kotlin - это язык программирования, разработанный компанией JetBrains, который может быть использован
+ для создания различных приложений, включая игры и мультимедийные приложения. 
+ Kotlin совместим с Java, поэтому вы можете использовать библиотеки, доступные для этой платформы. 
+ доступные для этой платформы.
+
+Одной из популярных библиотек для создания игр на Java является библиотека LibGDX,
+которая также доступна для Kotlin. С помощью LibGDX мы можем создавать 2D и 3D приложения, 
+а также работать с музыкой, звуками, анимацией и многим другим.
+
+Чтобы начать создавать 2D-графику в Kotlin с помощью LibGDX, сначала необходимо 
+установить библиотеку. Это можно сделать, добавив соответствующие зависимости в файл build.gradle:
+<i>dependencies {
+    implementation 'com.badlogicgames.gdx:gdx:1.10.0'
+    implementation 'com.badlogicgames.gdx:gdx-box2d:1.10.0'
+}</i>
+<i>import com.badlogic.gdx.ApplicationAdapter
+import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.graphics.GL20
+import com.badlogic.gdx.graphics.OrthographicCamera
+import com.badlogic.gdx.graphics.g2d.SpriteBatch
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer
+import com.badlogic.gdx.math.Vector2
+
+class MyGame : ApplicationAdapter() {
+    lateinit var camera: OrthographicCamera
+    lateinit var batch: SpriteBatch
+    lateinit var shapeRenderer: ShapeRenderer
+
+    override fun create() {
+        camera = OrthographicCamera()
+        camera.setToOrtho(false, Gdx.graphics.width.toFloat(), Gdx.graphics.height.toFloat())
+
+        batch = SpriteBatch()
+        shapeRenderer = ShapeRenderer()
+    }
+
+    override fun render() {
+        // Czyszczenie ekranu
+        Gdx.gl.glClearColor(1f, 1f, 1f, 1f)
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
+
+        // Ustawienie koloru rysowania
+        shapeRenderer.color = com.badlogic.gdx.graphics.Color.RED
+
+        // Rozpoczęcie rysowania prostokąta
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Filled)
+        shapeRenderer.rect(100f, 100f, 200f, 100f)
+        shapeRenderer.end()
+    }
+
+    override fun resize(width: Int, height: Int) {
+        camera.setToOrtho(false, width.toFloat(), height.toFloat())
+    }
+
+    override fun dispose() {
+        batch.dispose()
+        shapeRenderer.dispose()
+    }
+}</i>
+Класс MyGame расширяет класс ApplicationAdapter, предоставляемый LibGDX, и переопределяет его методы для обеспечения собственного поведения. 
+его методы, чтобы обеспечить собственное поведение.
+
+В методе create() создается OrthographicCamera и устанавливается режим ортографической проекции. 
+режим проекции. Также создаются SpriteBatch и ShapeRenderer.
+
+В методе render() экран очищается до белого цвета, а ShapeRenderer устанавливается 
+рисовать красным цветом. Затем с помощью ShapeRenderer рисуется заполненный прямоугольник.
+
+В методе resize() камера подгоняется под новый размер экрана.
+
+В методе dispose() ресурсы очищаются путем удаления SpriteBatch 
+и ShapeRenderer.
+</pre>
+<h3>9. Назовите классификацию и характеристики баз данных.</h3>
+<pre>
+Реляционные базы данных - наиболее распространенный тип баз данных, в которых данные организованы в виде таблиц. 
+данные организованы в виде таблиц со строками и столбцами. Данные в таблицах 
+связаны между собой с помощью внешних ключей. Реляционные базы данных используют язык SQL 
+для управления данными.
+
+Базы данных NoSQL - это тип баз данных, которые не используют реляционную схему 
+и SQL. NoSQL характеризуется отсутствием четко определенной структуры данных 
+и гибкостью в хранении данных. NoSQL включает в себя множество типов баз данных, 
+такие как базы данных типа "ключ-значение", "документ", "граф" или "столбец".
+
+Объектно-ориентированные базы данных - в этих базах данных данные хранятся в виде объектов, 
+которые хранятся непосредственно в базе данных. Объектно-ориентированные базы данных особенно 
+полезны в приложениях, использующих объектно-ориентированные языки программирования, 
+такие как Java или C++.
+
+Иерархические базы данных - это тип баз данных, в которых данные организованы в виде 
+иерархической структуре. Каждая запись представлена узлом, который может 
+иметь несколько потомков. Иерархические базы данных часто используются в 
+операционных системах и базах данных для хранения информации о файлах и каталогах.
+
+Временные базы данных - это базы данных, которые позволяют хранить информацию о 
+событиях, произошедших с течением времени. Темпоральные базы данных полезны в приложениях, 
+которые отслеживают события в реальном времени, например, системы мониторинга сети 
+или системы обнаружения аномалий.
+
+Характеристики баз данных также включают несколько элементов:
+
+Структура данных - это то, как данные организованы и хранятся в базе данных.
+
+Язык запросов - это язык программирования, который позволяет получать доступ к данным в базе данных 
+и манипулировать ими.
+
+Безопасность - это методы защиты данных от несанкционированного доступа.
+
+Производительность - скорость обработки данных и масштабируемость базы данных в зависимости от объема данных. 
+в зависимости от объема данных.
+
+Отказоустойчивость - это способность базы данных поддерживать целостность данных даже 
+в случае аппаратного или программного сбоя.
+</pre>
+<h3>10. Обсудите аппаратные механизмы, необходимые для реализации многопользовательских, многопроцессных операционных систем.</h3>
+<pre>
+Реализация многопользовательских, многопроцессных операционных систем требует передовых
+аппаратных и программных механизмов для эффективной обработки нескольких задач 
+одновременно. Ниже приводится краткое описание наиболее важных аппаратных механизмов. 
+необходимых для реализации таких операционных систем:
+
+Многоядерные процессоры - это процессоры, имеющие более одного физического ядра. 
+В результате они могут выполнять несколько задач одновременно, что повышает производительность операционной системы. 
+операционной системы.
+
+Оперативная память - большее количество оперативной памяти позволяет запускать больше приложений 
+одновременно и повышает производительность системы.
+
+Жесткие диски - быстрый доступ к данным необходим для эффективной работы операционной системы. 
+Поэтому жесткие диски должны иметь большую емкость и быстрый интерфейс.
+
+Сетевые контроллеры - обеспечивают связь между компьютерами в сети. Они незаменимы для 
+операционных систем, поддерживающих множество одновременных пользователей.
+
+RAID-системы - повышают надежность и эффективность хранения данных 
+путем объединения нескольких дисков в одну логическую единицу.
+
+Механизмы синхронизации - позволяют контролировать доступ к общим ресурсам, 
+таким как память или устройства ввода/вывода.
+
+Эти аппаратные механизмы должны поддерживаться соответствующим образом настроенным программным обеспечением 
+системное программное обеспечение, такое как файловые системы, планировщики или механизмы синхронизации и межпроцессного взаимодействия, чтобы 
+механизмы межпроцессного взаимодействия для обеспечения эффективной и надежной работы многопользовательских, многопроцессных 
+операционных систем.
+</pre>
+<h3>11. Охарактеризуйте термин: виртуальная память и приведите характеристики различных методов реализации виртуальной памяти (стратегии обмена информацией в рабочей памяти).</h3>
+<pre>
+Виртуальная память - это механизм, который позволяет программам использовать большее 
+адресного пространства, чем они имеют на самом деле. Виртуальная память реализуется 
+операционной системой путем создания файла подкачки на жестком диске, 
+который является расширением оперативной памяти.
+
+Различные методы реализации виртуальной памяти характеризуются следующими особенностями:
+
+Обмен целыми страницами - это самая простая техника обмена информацией в памяти 
+оперативной памяти. Она включает в себя копирование целых страниц между рабочей памятью и 
+файлом подкачки на диске. Эта техника проста в реализации, но может 
+привести к высокой задержке при передаче больших объемов данных 
+между памятью и диском.
+
+Обмен фрагментами страниц - эта техника предполагает копирование только тех фрагментов страниц, которые действительно используются. 
+страниц, которые фактически используются. Эта техника требует более сложной реализации, 
+но экономит пропускную способность памяти и диска.
+
+Виртуальный кэш - эта техника заключается в том, что операционная система создает буфер 
+на диске, в котором хранятся часто используемые фрагменты данных. Это делает эти данные 
+быстро доступными в оперативной памяти, что повышает производительность системы.
+
+Гибридный подход - этот подход объединяет различные техники обмена информацией 
+в оперативной памяти. Операционная система использует различные стратегии в зависимости 
+от ее потребностей, тем самым достигая наилучшей производительности системы.
+</pre>
+<h3>12. Сравнение SRAM и DRAM: реализация микросхем, время доступа, энергопотребление и применение.</h3>
+<pre>
+SRAM (статическая память с произвольным доступом) и DRAM (динамическая память с произвольным доступом) - это... 
+Две основные категории оперативной памяти (Random Access Memory), используемые в 
+электронных устройствах. Ниже приводится сравнение между SRAM и DRAM:
+
+Схемы реализации:
+SRAM: состоит из отдельных транзисторов, которые способны хранить данные 
+в течение длительных периодов времени без необходимости обновления. В результате SRAM работает быстрее и потребляет 
+меньше энергии, чем DRAM.
+
+DRAM: состоит из отдельных конденсаторов, которые хранят электрический заряд, 
+представляющий данные. Эти конденсаторы необходимо обновлять через регулярные промежутки времени,
+чтобы избежать потери данных. Поэтому DRAM работает медленнее и потребляет больше энергии, чем SRAM.
+
+Время доступа:
+
+SRAM: обеспечивает быстрый доступ к данным, поскольку не требует длительного обновления памяти. 
+памяти. Время доступа для SRAM составляет приблизительно 10 нс.
+
+DRAM: требует обновления памяти, что увеличивает время доступа к данным. Время доступа для 
+DRAM составляет приблизительно 60 нс.
+
+Потребление энергии:
+
+SRAM: потребляет меньше энергии, чем DRAM, поскольку не требует постоянного обновления памяти.
+
+DRAM: потребляет больше энергии, чем SRAM, поскольку требует постоянного обновления памяти.
+
+Области применения:
+
+SRAM: используется там, где требуется быстрое и частое чтение и 
+записи данных, например, кэш-память процессора, кэш-память или регистр сдвига.
+
+DRAM: используется там, где требуется большая емкость памяти по отношению к 
+стоимость производства, например, оперативная память в персональных компьютерах и мобильных устройствах.
+</pre>
+<h3>13. Обсудите механизм прямого доступа к памяти (DMA).</h3>
+<pre>
+Механизм прямого доступа к памяти (DMA) представляет собой 
+технология, которая позволяет периферийным устройствам напрямую обмениваться данными 
+с оперативной памятью компьютера без участия процессора. Это позволяет, 
+периферийные устройства могут передавать данные более эффективно и быстро, 
+что особенно важно при передаче больших объемов данных.
+
+Механизм DMA работает таким образом, что периферийное устройство, такое как сетевая карта 
+сетевая карта, жесткий диск или звуковая карта, имеет прямой доступ к контроллеру DMA, 
+который расположен на материнской плате. Контроллер DMA имеет возможность напрямую записывать 
+и считывать данные из оперативной памяти, что позволяет передавать данные между 
+периферийным устройством и оперативной памятью без участия процессора.
+
+При использовании DMA процессор освобождается от задачи передачи данных между оперативной памятью и периферийным устройством. 
+оперативной памятью и периферийным устройством. Вместо этого контроллер DMA выполняет 
+передачу данных между оперативной памятью и устройством, что значительно повышает производительность системы.
+
+На практике DMA используется для передачи больших объемов данных, таких как мультимедийные файлы 
+мультимедийные файлы, изображения или видеопотоки. В результате периферийные устройства могут 
+работать на более высокой скорости, а процессор может сосредоточиться на выполнении других задач, 
+что повышает общую производительность системы.
+</pre>
+<h3>14. Обсудите влияние карманной памяти (кэша) на производительность компьютерной системы.</h3>
+<pre>
+Кэш-память - это тип оперативной памяти, которая используется для 
+ускорения операций чтения и записи данных. В этой памяти хранится копия 
+той части данных в оперативной памяти, которая в последний раз использовалась процессором. 
+Это позволяет процессору получать доступ к данным гораздо быстрее, поскольку память 
+кэш находится на чипе (процессоре) и имеет более быстрое время доступа, чем 
+оперативной памяти.
+
+Влияние кэш-памяти на производительность компьютерной системы очень важно. Благодаря этому факту, 
+процессор может получить доступ к части данных непосредственно из кэш-памяти, вместо того, чтобы каждый раз обращаться к оперативной памяти. 
+каждый раз обращаться к оперативной памяти, время выполнения операций, связанных с доступом к данным, значительно сокращается. 
+данным, значительно сокращается. Это повышает производительность системы.
+
+Для некоторых операций, таких как чтение или запись больших файлов, кэш-память 
+может не обеспечить такого же преимущества, как для операций с небольшими данными. Это связано с тем, что 
+это связано с тем, что кэш относительно мал по сравнению с оперативной памятью и не 
+способна хранить все данные. В этом случае процессор должен обращаться к 
+оперативной памяти, что увеличивает время доступа к данным.
+
+Также стоит отметить, что кэш-память может привести к определенным проблемам, таким как 
+ошибки когерентности памяти. Это связано с тем, что в кэш-памяти хранится копия данных из 
+оперативной памяти, и если данные в оперативной памяти изменяются, процессор может 
+не примет к сведению эти изменения, если он использует копию из кэша. В этом случае необходимо 
+ассоциация изменений в оперативной памяти с соответствующими значениями в кэше, 
+чтобы избежать подобных проблем.
+</pre>
+<h3>15. Обсудите структуру и характеристики дисков: CD-R (Compact Disc-Recordable), CD-RW (Compact Disc-ReWritable), DVD (Digital Versatile Disc).</h3>
+<pre>
+CD-R (Compact Disc-Recordable), CD-RW (Compact Disc-ReWritable) и DVD (Digital Versatile Disc) 
+это носители данных, на которых информация может храниться в цифровой форме. Каждый из этих типов 
+дисков различаются по технологии записи, емкости и применению.
+
+CD-R - это диск, на который данные могут быть записаны только один раз. Запись данных на CD-R включает в себя
+ Запись на диск CD-R включает в себя нагрев специального слоя на поверхности диска, который изменяет химическую 
+ химическую структуру диска и фиксирует информацию. После того как данные были записаны на CD-R, они не могут быть 
+ После того как данные были записаны на CD-R, их нельзя изменить или стереть. Емкость CD-R обычно составляет от 650 до 700 МБ и используется 
+ в основном для хранения музыки, фильмов, файлов данных или резервных копий.
+
+CD-RW - это диск, на который можно многократно записывать и удалять данные. В дисках CD-RW используется 
+специальный слой химических соединений, структура которого может быть изменена с помощью лазера. 
+Это позволяет многократно перезаписывать и стирать информацию на диске CD-RW. 
+CD-RW имеет емкость, аналогичную CD-R, но из-за более высокой цены и меньшей популярности, 
+он используется реже.
+
+DVD - это диск с большей емкостью, чем CD, благодаря использованию двух слоев на одном диске. 
+одном диске. DVD-диски могут хранить данные в цифровом формате, а также видео в формате Full HD. 
+DVD-диски также доступны в различных версиях, таких как DVD-R (однократная запись), DVD-RW 
+(перезаписываемый) и DVD+RW (перезаписываемый). Объем DVD-дисков может составлять от 4,7 Гб до 17 Гб, 
+а в случае двухслойных дисков емкость может достигать 30 Гб.
+
+Все эти диски находят широкое применение - от хранения данных и резервного копирования 
+резервного копирования до записи музыки, фильмов и телевизионных программ. Выбор типа диска зависит от 
+индивидуальных потребностей и требований.
+</pre>
+<h3>16. Опишите конструкцию и характеристики памяти RAID (Redundant Array of Independent Disks).</h3>
+<pre>
+RAID (Redundant Array of Independent Disks) - это технология, предполагающая объединение нескольких физических дисков в одно логическое устройство.
+ физических дисков в одно логическое устройство. Целью RAID является повышение надежности и производительности 
+ системы за счет избыточности данных и параллельной работы нескольких дисков.
+
+В зависимости от режима RAID диски подключаются различными способами. Основными режимами RAID являются:
+
+RAID 0 - подключение двух или более дисков таким образом, что данные равномерно распределяются 
+(чередование) между ними. RAID 0 не обеспечивает избыточность данных, но позволяет повысить
+производительность системы за счет параллельного чтения и записи с нескольких дисков.
+
+RAID 1 - соединение двух или более дисков таким образом, что данные копируются (зеркалируются) между ними. 
+RAID 1 обеспечивает избыточность данных, но за счет емкости диска - емкость всей системы равна емкости самого маленького диска. 
+емкости самого маленького диска в наборе.
+
+RAID 5 - соединение трех или более дисков таким образом, что данные делятся (чередуются) между ними, 
+и, кроме того, для каждого блока данных вычисляется контрольная сумма (четность). Контрольная сумма 
+хранится на следующем диске и в случае выхода из строя одного из дисков позволяет восстановить потерянные данные. 
+данные. RAID 5 обеспечивает хороший баланс между производительностью и надежностью.
+
+RAID 6 - аналогичен RAID 5, но с двумя контрольными суммами для каждого блока данных. Позволяет 
+восстанавливать данные после одновременного выхода из строя двух дисков.
+
+RAID-массивы обычно используются в серверах и системах, требующих высокой емкости и надежности, 
+таких как базы данных, файловые системы или сетевые серверы.
+</pre>
+<h3>17. Обсудите структуру и параметры коммуникационного интерфейса USB (Universal Serial Bus) (стандарт).</h3>
+<pre>
+Интерфейс USB (универсальная последовательная шина) - это стандарт связи, используемый для соединения 
+устройств с компьютером. USB позволяет передавать данные, подавать питание и управлять устройствами.
+
+Структура интерфейса USB состоит из 4 уровней:
+
+Физический (Physical Layer) - этот уровень отвечает за передачу данных по 4 проводам кабеля. 
+USB-КАБЕЛЯ (D+, D-, VBUS, GND).
+
+Протокольный уровень - отвечает за обнаружение и 
+управление, и определяет, как данные передаются между устройствами.
+Уровень хост-контроллера - это программное обеспечение, которое управляет передачей данных 
+между устройством и компьютером.
+Уровень контроллера устройства - это программное обеспечение контроллера устройства, 
+которое управляет данными, передаваемыми устройством.
+USB поддерживает несколько скоростей передачи данных, и в зависимости от версии стандарта они могут быть следующими:
+
+USB 1.0/Low-Speed: 1,5 Мбит/с
+USB 1.1/Full-Speed: 12 Мбит/с
+USB 2.0/High-Speed: 480 Мбит/с
+USB 3.0/SuperSpeed: 5 Гбит/с
+USB 3.1/SuperSpeed+: 10 Гбит/с
+USB также имеет различные типы разъемов, такие как:
+
+Тип A - самый распространенный, используется в компьютерах в качестве выходного порта.
+Тип B - используется как входной порт в периферийных устройствах.
+Тип C - более новый тип, обеспечивающий двустороннюю передачу данных, поддерживающий протокол Thunderbolt 3, 
+а также позволяет питать устройство от внешнего источника.
+USB является одним из самых популярных коммуникационных интерфейсов и используется в широком спектре 
+устройств, таких как клавиатуры, мыши, внешние накопители, сетевые карты, веб-камеры и т.д.
+</pre>
+<h3>18. Сравните LAN (Local Area Network) и WAN (Wide Area Network).</h3>
+<pre>
+LAN (локальная вычислительная сеть) и WAN (глобальная вычислительная сеть) различаются, прежде всего, 
+радиусом действия и скоростью передачи данных. 
+диапазоном и скоростью передачи данных. Вот краткое сравнение между локальными и глобальными сетями:
+
+Охват: локальная сеть обычно охватывает территорию в радиусе до 1 км, в то время как глобальная сеть 
+может охватывать несколько городов, стран или континентов. 
+охватывать несколько городов, стран или континентов.
+
+Скорость передачи данных: ЛВС обычно обеспечивает гораздо более высокую скорость передачи данных 
+данных, чем глобальная сеть. Локальные сети могут достигать скорости передачи данных до 100 Гбит/с, в то время как 
+WAN обычно работают на скорости в несколько Мбит/с или десятков Мбит/с.
+
+Топология: локальная сеть обычно организована в виде шины, кольца или звезды, в то время как 
+глобальная сеть обычно организована в виде шины, кольца или звезды. 
+WAN обычно организована по топологии "точка-точка" или "сетка".
+Стоимость: ЛВС обычно дешевле в установке и обслуживании, чем глобальная сеть. WAN 
+часто требует дорогостоящих междугородних или международных соединений, а также более 
+сложную сетевую инфраструктуру.
+
+Безопасность: глобальная сеть более уязвима для внешних угроз, чем локальная сеть, 
+из-за ее большей протяженности и обмена данными на большей территории. Глобальные сети требуют 
+как правило, более сложные механизмы безопасности, такие как виртуальные частные сети (VPN) или 
+частные сети (VPN) или шифрование данных.
+
+В целом, локальные и глобальные сети различаются по охвату, скорости передачи данных, топологии, 
+стоимости и безопасности. Локальные сети, как правило, дешевле и проще в установке и обслуживании, 
+но имеют ограниченный радиус действия, в то время как глобальные сети дороже и требуют более сложной 
+инфраструктуры, но позволяют передавать данные на большие расстояния.
+</pre>
+<h3>19. Объясните термины: "логическая топология" и "физическая топология" компьютерной сети.</h3>
+<pre>
+Топология компьютерной сети определяет способ, которым устройства в сети соединены 
+и взаимодействуют друг с другом. Существует две основные категории топологии сети: 
+логическая топология и физическая топология.
+
+Логическая топология относится к способу передачи данных между устройствами 
+в сети. Она описывает пути, по которым данные должны проходить между отправителем и получателем, и 
+способ управления сетью. Существуют три основные логические топологии: шина, 
+кольцо и звезда.
+
+Физическая топология относится к физическому расположению устройств в сети и способу их соединения. 
+они соединены. Она описывает расположение, тип кабелей, штекеров и других физических элементов. 
+которые используются для соединения устройств в сети. Существуют различные физические топологии, 
+такие как шина, кольцо, звезда, дерево, сетка или гибридная топология.
+
+В целом, логическая топология относится к способу, с помощью которого устройства в сети обмениваются 
+данными, в то время как физическая топология описывает физическое расположение устройств и их соединений.
+</pre>
+<h3>20. Охарактеризуйте основные характеристики беспроводных сетей.</h3>
+<pre>
+Беспроводные сети (беспроводные сети) - это тип компьютерной сети, в которой связь 
+Связь между устройствами осуществляется без проводов, используя вместо них 
+радиоволны или инфракрасный свет вместо радиоволн.
+
+Основными характеристиками беспроводных сетей являются:
+
+Мобильность: устройства, использующие беспроводные сети, могут свободно перемещаться, 
+не будучи привязанными к определенному месту, как в случае с проводными сетями.
+
+Простота установки: Беспроводные сети легко устанавливать и развертывать, поскольку они 
+они не требуют прокладки громоздких кабелей.
+
+Гибкость: возможность быстро изменить конфигурацию беспроводной сети, переставляя устройства 
+без прокладки проводов.
+
+Дальность: беспроводные сети обеспечивают связь на больших расстояниях, чем проводные сети, 
+но они также более подвержены внешним помехам.
+
+Безопасность: Беспроводные сети требуют соответствующей защиты для предотвращения 
+несанкционированного доступа, что особенно важно из-за их беспроводной природы.
+
+Пропускная способность: беспроводные сети обычно имеют меньшую пропускную способность, 
+чем проводные сети, что может повлиять на качество передачи данных.
+
+Совместимость: Устройства, работающие в беспроводных сетях, должны быть совместимы 
+со стандартами для передачи данных, такими как Wi-Fi, Bluetooth или NFC.
+
+Простота масштабирования: Беспроводные сети легко масштабировать, так как новые 
+устройства могут быть легко добавлять в сеть без необходимости прокладки новых кабелей.
+</pre>
+		</div>
+	</div>
+</body>
+</html>
