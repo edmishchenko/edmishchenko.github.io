@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <title>Eduard Test</title>
     <style>
+        .product-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
         .product-block {
-          width: 300px;
-          display: inline-block;
-          margin-right: 20px;
+          width: calc(50% - 10px);
           margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+          .product-block {
+            width: 100%;
+          }
         }
 
         .product-block img {
@@ -29,7 +39,7 @@
           font-size: 1.5rem;
           font-weight: bold;
         }
-        
+
         .product-block button {
           background-color: #007bff;
           color: #fff;
@@ -47,17 +57,15 @@
     </style>
 </head>
 <body>
-    <table>
-        <td>
-            <div class="product-block">
-                <img src="product1.png" alt="Product 1">
-                <h2>Product 1 Title</h2>
-                <p>Description of Product 1 goes here</p>
-                <p class="price">$29.99</p>
-                <button>Add to Cart</button>
-            </div>
-        </td>
-        <td>
+    <div class="product-wrapper">
+        <div class="product-block">
+            <img src="product1.png" alt="Product 1">
+            <h2>Product 1 Title</h2>
+            <p>Description of Product 1 goes here</p>
+            <p class="price">$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+
         <div class="product-block">
             <img src="product2.png" alt="Product 2">
             <h2>Product 2 Title</h2>
@@ -65,7 +73,6 @@
             <p class="price">$39.99</p>
             <button>Add to Cart</button>
         </div>
-        </td>
-    </table>
+    </div>
 </body>
 </html>
