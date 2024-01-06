@@ -1,3 +1,8 @@
+html , body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 body {
     width: 100%;
     margin: 0 auto;
@@ -29,12 +34,11 @@ main {
 
 .content {
     color: rgba(255, 255, 255, 1);
-    font-family: 'Mona-Sans', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
     width: 100%;
     margin-top: auto;
     max-height: 317px;
+    font-size: 24px;
+    font-family: 'Mona Sans', sans-serif;
 }
 
 .line {
@@ -67,6 +71,7 @@ main {
     font-size: 16px;
     line-height: 19px;
     cursor: pointer;
+    font-family: 'Mona Sans', sans-serif;
 }
 
 .content .download-link {
@@ -87,10 +92,10 @@ main {
     line-height: 19px;
     margin-left: 16px;
     cursor: pointer;
+    font-family: 'Mona Sans', sans-serif;
 }
 
 .content .swift-for-android-text {
-    font-family: 'Mona-Sans-Expanded', sans-serif;
     font-size: 64px;
     line-height: 77px;
     font-weight: 500;
@@ -286,16 +291,6 @@ footer .social-media-container img {
         order: 2;
         padding: 0;
         align-items: start;
-    }
-
-    .content .small-screen-img {
-        /*display: block;*/
-        /*width: 90%;*/
-    }
-
-    .content .big-screen-img {
-        /*display: none;*/
-        /*width: 90%;*/
     }
 
     .third-column {

@@ -117,13 +117,13 @@ main .second-column h3 {
 }
 
 main .second-column pre {
-    font-family: 'Mona-Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: rgba(60, 60, 67, 0.7);
     white-space: pre-wrap;
     margin: 0;
+    font-family: 'Mona Sans', sans-serif;
 }
 
 main .second-column .container {
@@ -131,7 +131,6 @@ main .second-column .container {
     grid-template-columns: 2fr 1fr;
     grid-gap: 16px;
     margin-right: 20%;
-    /*max-width: 660px;*/
 }
 
 main .second-column .container .article-block{
@@ -168,6 +167,7 @@ main .second-column .container .article-block button {
     font-size: 16px;
     line-height: 19px;
     width: 100%;
+    font-family: 'Inter', sans-serif;
 }
 
 footer {
@@ -190,6 +190,11 @@ footer .logo-text {
     font-size: 20px;
     line-height: 24px;
     color: rgba(227, 227, 227, 1);
+}
+
+footer pre {
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
 }
 
 @media (max-width: 992px) {
@@ -224,5 +229,7 @@ footer .logo-text {
         right: 0;
         background-color: rgb(255, 255, 255);
         z-index: 2;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
     }
 }
