@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Mona Sans Expanded';
-    src: url('../fonts/MonaSansExpanded-Regular.woff2') format('woff2'),
-    url('../fonts/MonaSansExpanded-Regular.woff') format('woff');
-    font-weight: 500 800;
+    src: url('../fonts/MonaSansExpanded-Medium.woff2') format('woff2'),
+    url('../fonts/MonaSansExpanded-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -39,6 +39,15 @@
     src: url('../fonts/Inter-Regular.woff2') format('woff2'),
     url('../fonts/Inter-Regular.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+    url('../fonts/Inter-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }

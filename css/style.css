@@ -9,14 +9,12 @@ body {
     padding: 0;
     overflow: hidden;
     min-height: 100vh;
-    /*background: #0C0C2C url('../img/background-desktop-test.png') no-repeat;*/
-    background-image: url("../img/background-desktop-test.png");
+    background-image: url("../img/background-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-color: #0C0C2C;
-    /*background-size: 100% 100%;*/
     display: flex;
     flex-direction: column;
 }
@@ -102,6 +100,7 @@ main {
 }
 
 .content .swift-for-android-text {
+    font-family: 'Mona Sans Expanded', sans-serif;
     font-size: 64px;
     line-height: 77px;
     font-weight: 500;
@@ -119,8 +118,8 @@ main {
 
 .content .options {
     line-height: 30px;
-    margin-top: 26px;
-    margin-bottom: 26px;
+    margin-top: 29px;
+    margin-bottom: 29px;
 }
 
 footer {
@@ -352,7 +351,7 @@ footer .social-media-container img {
 
 @media (max-width: 470px) {
     body {
-        background-image: url('../img/background-small-test.png');
+        background-image: url('../img/background-small.png');
         background-repeat: no-repeat;
         background-attachment: scroll;
     }
