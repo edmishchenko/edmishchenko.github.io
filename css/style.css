@@ -273,9 +273,10 @@ footer .social-media-container svg {
     }
 
     .content .get-started {
-        width: 95%;
+        width: 98%;
         height: 59px;
-        margin: 59px 0 0;
+        /*margin: 59px auto;*/
+        margin: 69px 1% 1% 0;
         font-size: 16px;
     }
 
