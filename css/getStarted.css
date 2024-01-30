@@ -526,4 +526,8 @@ footer .social-media-container svg {
         top: 8px;
         right: 8px;
     }
+
+    footer {
+        padding-bottom: 50px;
+    }
 }
