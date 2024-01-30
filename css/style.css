@@ -280,6 +280,7 @@ footer .social-media-container svg {
         box-sizing: border-box;
         outline: none;
         margin: 59px 0 59px 5%;
+        border: 2px;
     }
 
     .content .third-column p {
