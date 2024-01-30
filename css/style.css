@@ -274,12 +274,12 @@ footer .social-media-container svg {
     }
 
     .content .get-started {
-        width: 100%;
+        width: 90%;
         height: 59px;
-        margin: 59px 0;
         font-size: 16px;
         box-sizing: border-box;
         outline: none;
+        margin: 59px 0 59px 5%;
     }
 
     .content .third-column p {
