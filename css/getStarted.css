@@ -113,7 +113,7 @@ main {
 }
 
 main .second-column {
-    width: 100%;
+    width: 78%;
     margin-left: 22%;
     font-family: 'Mona Sans', sans-serif;
 }
@@ -509,7 +509,6 @@ footer .social-media-container svg {
 
     .footer {
         padding-bottom: 100px;
-        width: 100%;
         margin-top: 0;
     }
 
